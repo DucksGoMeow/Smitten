@@ -1,3 +1,5 @@
+//DO NOT EDIT
+
 #macro TEXT new TextAction
 #macro GOTO new GotoAction
 #macro CHOICE new ChoiceAction
@@ -10,7 +12,7 @@ function DialogueAction() constructor {
 	act = function() { };
 }
 
-// Define new text to type out
+//Define new text to type out
 function TextAction(_text) : DialogueAction() constructor {
 	text = _text;
 
@@ -20,7 +22,7 @@ function TextAction(_text) : DialogueAction() constructor {
 	}
 }
 
-// Automatically go to a specified topic
+//Automatically go to a specified topic
 function GotoAction(_topic): DialogueAction() constructor {
 	topic = _topic;
 
@@ -31,7 +33,7 @@ function GotoAction(_topic): DialogueAction() constructor {
 }
 
 
-// Define a branch in the dialogue
+//Define a branch in the dialogue
 function ChoiceAction(_text) : DialogueAction() constructor {
 	text = _text;
 
@@ -46,7 +48,7 @@ function ChoiceAction(_text) : DialogueAction() constructor {
 	}
 }
 
-// Place options within the ChoiceAction
+//Place options within the ChoiceAction
 function OptionAction(_text, _topic): DialogueAction() constructor {
 	text = _text;
 	topic = _topic;
@@ -57,12 +59,14 @@ function OptionAction(_text, _topic): DialogueAction() constructor {
 	}
 }
 
-// Controls which side a portrait will appear on
-// Same - keep the current side
-// Left - swap to the left side
-// Right - swap to the right side
+//Controls which side a portrait will appear on
+//Same - keep the current side (no need to type everytime as long as you don't change it it 
+//will remain on the side you left it on)
 
-// Set the speaker, optionally its portrait and side the portrait is on
+//Left - swap to the left side
+//Right - swap to the right side
+
+//Set the speaker, optionally its portrait and side the portrait is on
 function SpeakerAction(_name, _sprite = undefined, _side = PORTRAIT_SIDE.SAME): DialogueAction() constructor {
 	name = _name;
 	sprite = _sprite;
@@ -81,7 +85,7 @@ function SpeakerAction(_name, _sprite = undefined, _side = PORTRAIT_SIDE.SAME): 
 	}
 }
 
-// Set the current speaker portrait
+//Set the current speaker portrait
 function PortraitAction(_sprite, _side = PORTRAIT_SIDE.SAME): DialogueAction() constructor {
 	sprite = _sprite;
 	side = _side;
@@ -94,9 +98,7 @@ function PortraitAction(_sprite, _side = PORTRAIT_SIDE.SAME): DialogueAction() c
 	}
 }
 
-// Make some custom action happen!
-// Change rooms, grant the player an item, set a story flag
-// The possibilities are endless!
+//Make some custom action happen
 function CustomAction(_action): DialogueAction() constructor {
 	action = _action;
 	

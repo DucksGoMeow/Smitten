@@ -1,5 +1,3 @@
-
-
 function TextGroup(_text, styles) constructor {
 	effects = {};
 	for (var i = 0; i < array_length(styles); i++) {
@@ -12,7 +10,7 @@ function TextGroup(_text, styles) constructor {
 	length = string_length(text);
 }
 
-// Parses a text into effect groups so that it can be drawn by __type
+//Parses a text into effect groups so that it can be drawn by __type
 function __parse(text) {
 	var styles = [global.text_styles[$ "standard"]];
 	var groups = [];
@@ -24,12 +22,12 @@ function __parse(text) {
 		if (char == "<" && prev_char != "\\") {
 			array_push(groups, new TextGroup(string_copy(text, start, i - start), styles));
 			
-			// what effect is this?
+			//What effect does the text have?
 			var style_name = "";
-			// skip past <
+			//Skip past <
 			while (i <= string_length(text)) {
-				// We need to increase progress as we advance past the effect symbol
-				// To prevent pauses in typing
+				//We need to increase progress as we advance past the effect symbol
+				//To prevent pauses in typing
 				i++;
 				char = string_char_at(text, i);
 				if (char == ">")
@@ -59,8 +57,8 @@ function __parse(text) {
 	return groups;
 }
 
-// Used to type out text typewriter style
-// As well as handle any text effects present
+//Used to type out text typewriter style
+//As well as handle any text effects present
 function __type(x, y, text_groups, progress, width) {
 	var draw_x = 0;
 	var draw_y = 0;
@@ -83,13 +81,13 @@ function __type(x, y, text_groups, progress, width) {
 		
 		var char = string_char_at(current_group.text, i);
 		
-		// Handle normal line breaks
+		//Handle normal line breaks
 		if (char == "\n") {
 			draw_x = 0;
 			draw_y += string_height("A");
 		}
 		
-		// If we're starting a new word, we can line break
+		//If we're starting a new word, we can line break
 		else if (char == " ") {
 			draw_x += string_width(char);
 			
@@ -98,12 +96,12 @@ function __type(x, y, text_groups, progress, width) {
 			while (ii <= current_group.length) {
 				var word_char = string_char_at(current_group.text, ii);
 				
-				// If we reached the end of the word, stop checking
+				//If we reached the end of the word, stop checking
 				if (word_char == "\n" || word_char == " ")
 					break;
 				
-				// If the current word extends past the width boundary,
-				// then move it to the next line
+				//If the current word extends past the width boundary,
+				//then move it to the next line
 				word_width += string_width(word_char);
 				if (draw_x + word_width > width) {
 					draw_x = 0;
@@ -123,9 +121,9 @@ function __type(x, y, text_groups, progress, width) {
 	}
 }
 
-// Any effects that change letters individually (like a wave effect) can do their modifications here
+//Any effects that change letters individually (like a wave effect) can do their modifications here
 function draw_character(x, y, char, position) {
-	// Our specially defined wavy property changes where text draws!
+	//Our specially defined wavy property changes where text draws!
 	if (wavy) {
 		static AMPLITUDE = 3;
 		static PERIOD = 0.7;

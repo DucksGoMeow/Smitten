@@ -1,3 +1,6 @@
+//I actually don't rememeber but I am assuming that it helps w going backwards on the dialogue from what I 
+//can see
+
 /**
  * @function string_backspace
  * @param {String} _str

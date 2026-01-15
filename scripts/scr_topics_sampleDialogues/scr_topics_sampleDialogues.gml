@@ -26,7 +26,7 @@ function scr_topics_sampleDialogues(topics){
 	topics[$ "Effects"] = [
 	//TEXT(" ")
 	SPEAKER("Harley", spr_portrait_harley, PORTRAIT_SIDE.LEFT),
-	CHOICE("Make a <wavy>choicee</wavy>",
+	CHOICE("Make a <wavy>choicee</wavy>", //<effect>TEXT<effect>
 		OPTION("Choice one", "One"),
 		OPTION("Choice two", "Two"))
 ];
