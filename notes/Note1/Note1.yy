@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"Note1",
+  "name":"Note1",
+  "parent":{
+    "name":"Smitten",
+    "path":"Smitten.yyp",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

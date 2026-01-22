@@ -41,6 +41,7 @@
   "resources":[
     {"id":{"name":"fnt_dtm_sans","path":"fonts/fnt_dtm_sans/fnt_dtm_sans.yy",},},
     {"id":{"name":"fnt_text","path":"fonts/fnt_text/fnt_text.yy",},},
+    {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
     {"id":{"name":"obj_blue","path":"objects/obj_blue/obj_blue.yy",},},
     {"id":{"name":"obj_cass","path":"objects/obj_cass/obj_cass.yy",},},
     {"id":{"name":"obj_color","path":"objects/obj_color/obj_color.yy",},},
