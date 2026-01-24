@@ -61,6 +61,7 @@
     {"id":{"name":"obj_green","path":"objects/obj_green/obj_green.yy",},},
     {"id":{"name":"obj_harley","path":"objects/obj_harley/obj_harley.yy",},},
     {"id":{"name":"obj_monster1","path":"objects/obj_monster1/obj_monster1.yy",},},
+    {"id":{"name":"obj_monster2","path":"objects/obj_monster2/obj_monster2.yy",},},
     {"id":{"name":"obj_mouseTracker","path":"objects/obj_mouseTracker/obj_mouseTracker.yy",},},
     {"id":{"name":"obj_name","path":"objects/obj_name/obj_name.yy",},},
     {"id":{"name":"obj_normal","path":"objects/obj_normal/obj_normal.yy",},},
@@ -149,9 +150,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"TMCT_Demo_Room","path":"rooms/TMCT_Demo_Room/TMCT_Demo_Room.yy",},},
     {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"roomId":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},},
+    {"roomId":{"name":"TMCT_Demo_Room","path":"rooms/TMCT_Demo_Room/TMCT_Demo_Room.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

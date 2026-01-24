@@ -30,6 +30,7 @@
     {"name":"obj_green","order":2,"path":"objects/obj_green/obj_green.yy",},
     {"name":"obj_harley","order":1,"path":"objects/obj_harley/obj_harley.yy",},
     {"name":"obj_monster1","order":2,"path":"objects/obj_monster1/obj_monster1.yy",},
+    {"name":"obj_monster2","order":4,"path":"objects/obj_monster2/obj_monster2.yy",},
     {"name":"obj_mouseTracker","order":1,"path":"objects/obj_mouseTracker/obj_mouseTracker.yy",},
     {"name":"obj_name","order":1,"path":"objects/obj_name/obj_name.yy",},
     {"name":"obj_normal","order":5,"path":"objects/obj_normal/obj_normal.yy",},
