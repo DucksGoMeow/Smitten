@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"TMCT_AddGesture",
   "parent":{
-    "name":"Mouse Tracking",
-    "path":"folders/Scripts/Mouse Tracking.yy",
+    "name":"TMC_TOUCH",
+    "path":"folders/Scripts/TMC_TOUCH.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

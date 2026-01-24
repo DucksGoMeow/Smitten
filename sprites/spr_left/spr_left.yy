@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Replace L8r",
-    "path":"folders/Sprites/Replace L8r.yy",
+    "name":"Edit L8r",
+    "path":"folders/Sprites/Edit L8r.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
