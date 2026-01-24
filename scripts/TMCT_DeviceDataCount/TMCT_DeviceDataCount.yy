@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"TMCT_DeviceDataCount",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"TMCT_DeviceDataCount",
+  "parent":{
+    "name":"TMC_TOUCH",
+    "path":"folders/Scripts/TMC_TOUCH.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

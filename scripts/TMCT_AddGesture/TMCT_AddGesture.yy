@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"TMCT_AddGesture",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"TMCT_AddGesture",
+  "parent":{
+    "name":"TMC_TOUCH",
+    "path":"folders/Scripts/TMC_TOUCH.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

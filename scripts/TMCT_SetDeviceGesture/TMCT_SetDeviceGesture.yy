@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"TMCT_SetDeviceGesture",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"TMCT_SetDeviceGesture",
+  "parent":{
+    "name":"TMC_TOUCH",
+    "path":"folders/Scripts/TMC_TOUCH.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

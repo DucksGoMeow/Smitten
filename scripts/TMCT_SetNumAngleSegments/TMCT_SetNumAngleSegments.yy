@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"TMCT_SetNumAngleSegments",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"TMCT_SetNumAngleSegments",
+  "parent":{
+    "name":"TMC_TOUCH",
+    "path":"folders/Scripts/TMC_TOUCH.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
