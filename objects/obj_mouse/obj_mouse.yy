@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"TMC_Demo_Character",
+  "%Name":"obj_mouse",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"TMC_Demo_Character",
+  "name":"obj_mouse",
   "overriddenProperties":[],
   "parent":{
-    "name":"TMC_TOUCH",
-    "path":"folders/Objects/TMC_TOUCH.yy",
+    "name":"Mouse Tracking",
+    "path":"folders/Objects/Mouse Tracking.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -24,19 +24,13 @@
   "physicsRestitution":0.1,
   "physicsSensor":false,
   "physicsShape":0,
-  "physicsShapePoints":[
-    {"x":16.0,"y":16.0,},
-    {"x":16.0,"y":16.0,},
-  ],
+  "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"TMC_Demo_char_spr",
-    "path":"sprites/TMC_Demo_char_spr/TMC_Demo_char_spr.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

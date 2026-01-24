@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"TMCT_ClearSegment",
   "parent":{
-    "name":"TMC_TOUCH",
-    "path":"folders/Scripts/TMC_TOUCH.yy",
+    "name":"Mouse Tracking",
+    "path":"folders/Scripts/Mouse Tracking.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
