@@ -1,90 +1,0 @@
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_Init\TMCT_Init.gml
-Converted description /// @description TMCT_Init()
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_Destroy\TMCT_Destroy.gml
-Converted description /// @description TMCT_Destroy()
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_SetNumAngleSegments\TMCT_SetNumAngleSegments.gml
-Converted description /// @description TMCT_SetNumAngleSegments(numsegments)/// @param numsegments
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_SetChangeRange\TMCT_SetChangeRange.gml
-Converted description /// @description TMCT_SetChangeRange(distance)/// @param distance
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_SetDetectRange\TMCT_SetDetectRange.gml
-Converted description /// @description TMCT_SetDetectRange(distance)/// @param distance
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_AddGesture\TMCT_AddGesture.gml
-Converted description /// @description TMCT_AddGesture(GestureName,GestureSegments,multiple)/// @param GestureName
-/// @param GestureSegments
-/// @param multiple
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_RemoveGesture\TMCT_RemoveGesture.gml
-Converted description /// @description TMCT_RemoveGesture(GestureName)/// @param GestureName
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_GetSegment\TMCT_GetSegment.gml
-Converted description /// @description TMCT_GetSegment(device)/// @param device
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_ClearSegment\TMCT_ClearSegment.gml
-Converted description /// @description TMCT_ClearSegment(device)/// @param device
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_ClearLastGesture\TMCT_ClearLastGesture.gml
-Converted description /// @description TMCT_ClearLastGesture(device)/// @param device
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_GetLastGesture\TMCT_GetLastGesture.gml
-Converted description /// @description TMCT_GetLastGesture(device)/// @param device
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_GetCurrentGesture\TMCT_GetCurrentGesture.gml
-Converted description /// @description TMCT_GetCurrentGesture(device)/// @param device
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_SetDeviceGesture\TMCT_SetDeviceGesture.gml
-Converted description /// @description TMCT_SetDeviceGesture(device, TMCT_SetDeviceGesture)/// @param device
-/// @param  TMCT_SetDeviceGesture
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_AddSegment\TMCT_AddSegment.gml
-Converted description /// @description TMCT_AddSegment(device,segment)/// @param device
-/// @param segment
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_ClearAllSegments\TMCT_ClearAllSegments.gml
-Converted description /// @description TMCT_ClearAllSegments()
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_SegmentToGestureName\TMCT_SegmentToGestureName.gml
-Converted description /// @description TMCT_SegmentToGestureName(segment)/// @param segment
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_ClearDeviceData\TMCT_ClearDeviceData.gml
-Converted description /// @description TMCT_ClearDeviceData(device)/// @param device
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_ClearAllDevicesData\TMCT_ClearAllDevicesData.gml
-Converted description /// @description TMCT_ClearAllDevicesData()
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_AddDeviceData\TMCT_AddDeviceData.gml
-Converted description /// @description TMCT_AddDeviceData(device,x,y)/// @param device
-/// @param x
-/// @param y
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_DeviceDataCount\TMCT_DeviceDataCount.gml
-Converted description /// @description TMCT_DeviceDataCount(device)/// @param device
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_DeviceGetData\TMCT_DeviceGetData.gml
-Converted description /// @description TMCT_DeviceGetData(device,pos)/// @param device
-/// @param pos
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_DeviceGetDataExtent\TMCT_DeviceGetDataExtent.gml
-Converted description /// @description TMCT_DeviceGetDataExtent(device)/// @param device
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_DeviceGetDataMeans\TMCT_DeviceGetDataMeans.gml
-Converted description /// @description TMCT_DeviceGetDataMeans(device)/// @param device
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_DeviceGetDataLastXY\TMCT_DeviceGetDataLastXY.gml
-Converted description /// @description TMCT_DeviceGetDataLastXY(device)/// @param device
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_DeviceGetDataLastDXDY\TMCT_DeviceGetDataLastDXDY.gml
-Converted description /// @description TMCT_DeviceGetDataLastDXDY(device)/// @param device
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_DeviceGetDataSums\TMCT_DeviceGetDataSums.gml
-Converted description /// @description TMCT_DeviceGetDataSums(device)/// @param device
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_ClearAll\TMCT_ClearAll.gml
-Converted description /// @description TMCT_ClearAll()
-
-Converting GML script: C:\Users\sabin\AppData\Local\GameMakerStudio2\GMS2TEMP\ProjectTool\mvc\1487096993_TMC_Touch_87c80888\mvc\scripts\TMCT_OnStep\TMCT_OnStep.gml
-Converted description /// @description TMCT_OnStep()

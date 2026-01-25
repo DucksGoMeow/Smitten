@@ -47,7 +47,6 @@
     {"id":{"name":"TMC_Touch","path":"extensions/TMC_Touch/TMC_Touch.yy",},},
     {"id":{"name":"fnt_dtm_sans","path":"fonts/fnt_dtm_sans/fnt_dtm_sans.yy",},},
     {"id":{"name":"fnt_text","path":"fonts/fnt_text/fnt_text.yy",},},
-    {"id":{"name":"compatibility_report_240126_1145574557","path":"notes/compatibility_report_240126_1145574557/compatibility_report_240126_1145574557.yy",},},
     {"id":{"name":"obj_blue","path":"objects/obj_blue/obj_blue.yy",},},
     {"id":{"name":"obj_cass","path":"objects/obj_cass/obj_cass.yy",},},
     {"id":{"name":"obj_color","path":"objects/obj_color/obj_color.yy",},},
@@ -67,8 +66,6 @@
     {"id":{"name":"obj_white","path":"objects/obj_white/obj_white.yy",},},
     {"id":{"name":"obj_yellow","path":"objects/obj_yellow/obj_yellow.yy",},},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
-    {"id":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},},
-    {"id":{"name":"TMCT_Demo_Room","path":"rooms/TMCT_Demo_Room/TMCT_Demo_Room.yy",},},
     {"id":{"name":"scr_actions","path":"scripts/scr_actions/scr_actions.yy",},},
     {"id":{"name":"scr_effects","path":"scripts/scr_effects/scr_effects.yy",},},
     {"id":{"name":"scr_nameholding","path":"scripts/scr_nameholding/scr_nameholding.yy",},},
@@ -109,7 +106,6 @@
     {"id":{"name":"spr_backgrounddialogue","path":"sprites/spr_backgrounddialogue/spr_backgrounddialogue.yy",},},
     {"id":{"name":"spr_customMouse_leftClick","path":"sprites/spr_customMouse_leftClick/spr_customMouse_leftClick.yy",},},
     {"id":{"name":"spr_customMouse","path":"sprites/spr_customMouse/spr_customMouse.yy",},},
-    {"id":{"name":"spr_down_1","path":"sprites/spr_down_1/spr_down_1.yy",},},
     {"id":{"name":"spr_down","path":"sprites/spr_down/spr_down.yy",},},
     {"id":{"name":"spr_left","path":"sprites/spr_left/spr_left.yy",},},
     {"id":{"name":"spr_name","path":"sprites/spr_name/spr_name.yy",},},
@@ -138,8 +134,6 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
-    {"roomId":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},},
-    {"roomId":{"name":"TMCT_Demo_Room","path":"rooms/TMCT_Demo_Room/TMCT_Demo_Room.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

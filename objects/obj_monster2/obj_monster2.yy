@@ -33,10 +33,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_testMonster",
-    "path":"sprites/spr_testMonster/spr_testMonster.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
