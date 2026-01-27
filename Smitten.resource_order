@@ -28,6 +28,7 @@
     {"name":"obj_harley","order":1,"path":"objects/obj_harley/obj_harley.yy",},
     {"name":"obj_monster2","order":3,"path":"objects/obj_monster2/obj_monster2.yy",},
     {"name":"obj_monster3","order":5,"path":"objects/obj_monster3/obj_monster3.yy",},
+    {"name":"obj_monster4","order":6,"path":"objects/obj_monster4/obj_monster4.yy",},
     {"name":"obj_mouse","order":4,"path":"objects/obj_mouse/obj_mouse.yy",},
     {"name":"obj_name","order":1,"path":"objects/obj_name/obj_name.yy",},
     {"name":"obj_normal","order":5,"path":"objects/obj_normal/obj_normal.yy",},

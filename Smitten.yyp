@@ -57,6 +57,7 @@
     {"id":{"name":"obj_harley","path":"objects/obj_harley/obj_harley.yy",},},
     {"id":{"name":"obj_monster2","path":"objects/obj_monster2/obj_monster2.yy",},},
     {"id":{"name":"obj_monster3","path":"objects/obj_monster3/obj_monster3.yy",},},
+    {"id":{"name":"obj_monster4","path":"objects/obj_monster4/obj_monster4.yy",},},
     {"id":{"name":"obj_mouse","path":"objects/obj_mouse/obj_mouse.yy",},},
     {"id":{"name":"obj_name","path":"objects/obj_name/obj_name.yy",},},
     {"id":{"name":"obj_normal","path":"objects/obj_normal/obj_normal.yy",},},
