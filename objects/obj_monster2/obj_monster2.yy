@@ -12,8 +12,8 @@
   "name":"obj_monster2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Sample Monsters",
+    "path":"folders/Objects/Sample Monsters.yy",
   },
   "parentObjectId":null,
   "persistent":false,
