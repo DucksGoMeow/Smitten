@@ -1,7 +1,7 @@
 monsterHealth = 200;
 
 tMin = 0;
-tSec = 5;
+tSec = 20;
 tMil = 0; //tenth of a second
 
 alarm[1] = 6; // 60 frames per second 

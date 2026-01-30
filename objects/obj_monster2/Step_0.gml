@@ -1,4 +1,3 @@
-application_surface_enable(false);
 TMCT_OnStep();
 TMCT_SetDeviceGesture(0,TMCT_SegmentToGestureName( TMCT_GetSegment(0)));
 

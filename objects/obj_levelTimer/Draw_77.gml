@@ -41,7 +41,7 @@ if (tSec = 0 && tMin = 0 && tMil = 0){ //toggle pause (whatever trigger youd lik
 		show_debug_message("paused game")			
 		audio_pause_all();
 		
-		//instance_create_layer(0, 0, "Instances_1", obj_pausemenubg);
+		//instance_create_layer(0, 0, "Instances", Object21);
 		instance_create_layer(0, 0, "Instances", obj_monster4);
 
 	}
