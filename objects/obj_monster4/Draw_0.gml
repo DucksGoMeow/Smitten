@@ -68,11 +68,11 @@ if(alarm[0]){
 }
 
 //sprite animations
-if (tSec >= 14 && tSec <= 21){
+if (tSec >= 16 && tSec <= 21){
 	sprite_index = spr_testMonsterComing;
 }
 
-else if (tSec >= 4 && tSec <= 14){
+else if (tSec >= 6 && tSec <= 15){
 	sprite_index = spr_testMonsterAttacking;
 }
 
@@ -82,7 +82,7 @@ else if (tSec >= 0 && tSec <= 5){
 
 //Has to be drawn last so it is ontop of everything
 #region Arrow Pattern
-if (tSec >= 4 && tSec <= 15){
+if (tSec >= 6 && tSec <= 15){
 	if (patternUp){
 		draw_sprite(spr_up, 0, 424, 147);
 		draw_sprite(spr_right, 0, 360, 147);

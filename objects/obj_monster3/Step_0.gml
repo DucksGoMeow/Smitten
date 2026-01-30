@@ -24,7 +24,7 @@ if(dev0Up){
 	}
 	else if(g == "LEFT" && patternLeft = true){
 		patternLeft = false;
-		monsterHealth -= 50;
+		monsterHealth -= 50; 
 	}
 }
 

@@ -1,4 +1,5 @@
 monsterHealth = 200;
+patternFinished = false;
 
 tMin = 0;
 tSec = 20;
