@@ -14,7 +14,3 @@ t += ".";
 t += string(tMil)
 
 draw_text(0, 0, t);
-
-if (pausegame){
-	draw_text(15, 15, "GAME PAUSED");
-}

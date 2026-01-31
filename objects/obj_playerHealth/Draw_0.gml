@@ -17,5 +17,4 @@ if (heartThree){
 }
 else if (!heartThree){
 	draw_sprite(spr_brokenHeart, 0, 1222, 57)
-	show_debug_message(playerHealth);
 }

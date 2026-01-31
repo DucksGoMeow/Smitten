@@ -1,0 +1,1 @@
+draw_sprite(Sprite34, 0, 544, 448);
