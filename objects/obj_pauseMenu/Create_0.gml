@@ -6,5 +6,3 @@ pauseSurfBuffer = -1;
 //be sure to update this object if this changes for whatever reason
 resW = 1536;
 resH = 960;
-
-timerDone = 1;
