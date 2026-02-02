@@ -22,6 +22,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"fnt_dtm_sans","order":2,"path":"fonts/fnt_dtm_sans/fnt_dtm_sans.yy",},
+    {"name":"Note1","order":23,"path":"notes/Note1/Note1.yy",},
     {"name":"obj_color","order":2,"path":"objects/obj_color/obj_color.yy",},
     {"name":"obj_color2","order":3,"path":"objects/obj_color2/obj_color2.yy",},
     {"name":"obj_effects","order":4,"path":"objects/obj_effects/obj_effects.yy",},
