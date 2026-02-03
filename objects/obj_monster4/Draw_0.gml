@@ -1,3 +1,4 @@
+if (!obj_monsterTimer.noMonster){
 //Monster Sprite
 draw_sprite(sprite_index, image_index, 212, 437);
 
@@ -104,6 +105,7 @@ if (tSec >= 6 && tSec <= 15){
 	if (patternLeft){
 		draw_sprite(spr_left, 0, 424, 147);
 	}
+}
 }
 
 #endregion
