@@ -15,7 +15,6 @@ if (pausegame) { //draw frozen image to screen while paused
 if (timerDone == 0 && obj_levelTimer.tSec == 0 && obj_levelTimer.tMin == 0 && obj_levelTimer.tMil == 0){ //toggle pause (whatever trigger youd like)
 	if (!pausegame) { //pause now
 		pausegame = true;
-		show_debug_message(timerDone);
 
 		//deactivate everything other than this instance
 		instance_deactivate_all(true);

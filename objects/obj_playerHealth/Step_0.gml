@@ -6,4 +6,5 @@ else if (playerHealth == 50){
 }
 else if (playerHealth == 0){
 	heartOne = false;
+	obj_monsterTimer.monsterFinished = true;
 }

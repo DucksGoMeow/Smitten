@@ -6,28 +6,31 @@ if(device_mouse_check_button_released(0,mb_any)) dev0Up = 1
 
 g = TMCT_GetCurrentGesture(0);
 
+if (!obj_monsterTimer.noMonster){
 if (tSec >= 4 && tSec <= 15){
 	if(dev0Up){ 
-		if(g == "DOWN" && patternDown = true){
-            patternDown = false;
-            patternLeft = true;
-            monsterHealth -= 50;
-        }
-        else if(g == "LEFT" && patternLeft = true){
-            patternLeft = false;
-            patternUp = true;
-            monsterHealth -= 50;
-        }
-        else if(g == "UP" && patternUp = true){
-            patternUp = false;
-            patternRight = true;
-            monsterHealth -= 50;
-        }
-        else if(g == "RIGHT" && patternRight = true){
-            patternRight = false;
-            monsterHealth -= 50;
-            patternFinished = true;
-	}
+		if(g == "UP" && patternUp = true){
+			patternUp = false;
+			patternRight = true;
+	      monsterHealth -= 50;
+		}
+		else if(g == "RIGHT" && patternRight = true){
+			patternRight = false;
+			patternDown = true;
+			monsterHealth -= 50;
+		}
+		else if(g == "DOWN" && patternDown = true){
+			patternDown = false;
+			patternLeft = true;
+			monsterHealth -= 50;
+		}
+		else if(g == "LEFT" && patternLeft = true){
+			patternLeft = false;
+			monsterHealth -= 50;
+			obj_monsterTimer.noMonster = true;
+			patternFinished = true;
+			obj_monsterTimer.monsterFinished = true;
+		}
 	}
 }
 
@@ -40,4 +43,7 @@ if (tSec >= 4 && tSec <= 15){
 
 if (monsterHealth = 0){
 	instance_destroy();
+}
+
+obj_monsterTimer.noMonster = true;
 }

@@ -1,0 +1,2 @@
+restart monster5 and add the timer reset function to be there at well and set it so that once the monsterTimer
+restarts for the second third whatever time the sprite and timer and health of the monster comes back 

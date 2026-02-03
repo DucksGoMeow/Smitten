@@ -106,7 +106,5 @@ if (tSec >= 6 && tSec <= 15){
 		draw_sprite(spr_left, 0, 424, 147);
 	}
 }
-}
-
 #endregion
-
+}

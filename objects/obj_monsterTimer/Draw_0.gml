@@ -15,4 +15,4 @@ if (tSec < 10){
 t += ".";
 t += string(tMil)
 
-draw_text(0, 0, t);
+draw_text(0, 15, t);

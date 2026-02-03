@@ -1,5 +1,6 @@
+if (!obj_monsterTimer.noMonster){
 //Monster Sprite
-draw_sprite(sprite_index, image_index, 1152, 441);
+draw_sprite(sprite_index, image_index, 212, 437);
 
 //Timer Text (this is temporary)
 var t = "";
@@ -105,6 +106,5 @@ if (tSec >= 6 && tSec <= 15){
 		draw_sprite(spr_left, 0, 424, 147);
 	}
 }
-
 #endregion
-
+}

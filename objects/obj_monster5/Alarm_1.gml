@@ -1,3 +1,4 @@
+if (!obj_monsterTimer.noMonster){
 tMil -= 1;
 
 if (tMil = -1){ //reduce seconds by 1
@@ -8,6 +9,7 @@ if (tMil = -1){ //reduce seconds by 1
 if (tSec = -1){ //reduce minutes by 1
 	tSec = 59;
 	tMin -= 1;
+}
 }
 
 //make sure timer doesn't tick if its at 0
