@@ -1,4 +1,4 @@
-if (heartOne){
+/*if (heartOne){
 	draw_sprite(spr_heart, 0, 942, 57)
 }
 else if (!heartOne){

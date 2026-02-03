@@ -1,15 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_resetLevel",
+  "%Name":"obj_start",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_resetLevel",
+  "name":"obj_start",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu Buttons",
-    "path":"folders/Objects/Menu Buttons.yy",
+    "name":"Main Menu",
+    "path":"folders/Objects/Menu Buttons/Main Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,

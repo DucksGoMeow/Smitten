@@ -32,7 +32,7 @@ if (tSec >= 4 && tSec <= 15){
 }
 
 if(patternFinished = false && tSec >= 0 && tSec <= 5){
-	obj_playerHealth.playerHealth = 100;
+	obj_playerHealthLv1.playerHealth = 100;
 }
 
 if (tSec >= 4 && tSec <= 15){

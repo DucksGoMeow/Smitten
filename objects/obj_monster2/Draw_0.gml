@@ -1,4 +1,4 @@
-draw_sprite(spr_testMonster, 0, 212, 437);
+/*draw_sprite(spr_testMonster, 0, 212, 437);
 
 var barWidth;
 barWidth = 200;

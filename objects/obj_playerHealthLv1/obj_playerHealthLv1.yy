@@ -1,15 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_resetLevel",
+  "%Name":"obj_playerHealthLv1",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_resetLevel",
+  "name":"obj_playerHealthLv1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu Buttons",
-    "path":"folders/Objects/Menu Buttons.yy",
+    "name":"Player Stuff",
+    "path":"folders/Objects/Player Stuff.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Sprite34",
-    "path":"sprites/Sprite34/Sprite34.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

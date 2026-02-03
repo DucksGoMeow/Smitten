@@ -12,10 +12,9 @@ if (pausegame) { //draw frozen image to screen while paused
 	surface_reset_target();
 }
 
-if (timerDone == 0 && obj_levelTimer.tSec == 0 && obj_levelTimer.tMin == 0 && obj_levelTimer.tMil == 0){ //toggle pause (whatever trigger youd like)
+if (keyboard_check_pressed(vk_escape)){ //toggle pause (whatever trigger youd like)
 	if (!pausegame) { //pause now
 		pausegame = true;
-		show_debug_message(timerDone);
 
 		//deactivate everything other than this instance
 		instance_deactivate_all(true);
@@ -43,12 +42,9 @@ if (timerDone == 0 && obj_levelTimer.tSec == 0 && obj_levelTimer.tMin == 0 && ob
 		audio_pause_all();
 		
 		//instance_create_layer(0, 0, "Instances", Object21);
-		instance_create_layer(533, 516.4, "Instances", obj_resetLevel);
-		instance_create_layer(533, 400.9, "Instances", obj_nextLevel);
-		instance_create_layer(533, 448, "Instances", obj_levelTimer);
 
 	}
-	/*else { //unpause now
+	else { //unpause now
 		pausegame = false;
 		instance_activate_all();
 		if (surface_exists(pauseSurf)) surface_free(pauseSurf);
@@ -58,9 +54,7 @@ if (timerDone == 0 && obj_levelTimer.tSec == 0 && obj_levelTimer.tMin == 0 && ob
 		audio_resume_all();
 		
 		//instance_destroy(obj_restartpause);
-		instance_destroy(obj_resetLevel);
-		instance_destroy(obj_nextLevel);
-		}*/
+		}
 	}
 
 
