@@ -1,3 +1,5 @@
+noMonster = true
+ 
 tMin = 0;
 tSec = 59;
 tMil = 0; //tenth of a second
