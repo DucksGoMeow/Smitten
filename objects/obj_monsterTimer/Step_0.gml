@@ -11,6 +11,5 @@ if (monsterFinished){
 	   randomNum = irandom(2);
 	   numChosen = true;
 	}
-	show_debug_message(randomTime);
 	restartTimer();
 }

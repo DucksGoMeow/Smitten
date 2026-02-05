@@ -44,9 +44,7 @@ if (!obj_monsterTimer.noMonster){
 			else if(g == "LEFT" && patternLeft = true){
 				patternLeft = false;
 				monsterHealth -= 50;
-				obj_monsterTimer.noMonster = true;
 				patternFinished = true;
-				obj_monsterTimer.monsterFinished = true;
 			}
 		}
 	}
@@ -63,8 +61,12 @@ if (!obj_monsterTimer.noMonster){
 	}
 
 	if (monsterHealth = 0){
-		instance_destroy();
-		obj_monsterTimer.monsterFinished = true;
+		trying(); 
+		if (tSec == 0){
+			instance_destroy();
+			obj_monsterTimer.monsterFinished = true;
+			show_debug_message(destroying);
+	}
 	}
 	obj_monsterTimer.noMonster = true;
 }

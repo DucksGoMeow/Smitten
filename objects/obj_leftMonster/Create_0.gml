@@ -18,3 +18,10 @@ patternRight = false;
 patternLeft = false;
 
 doneDamage = false;
+
+trying = function(){
+	event_perform(ev_create, 0);
+	tSec = 5;
+	doneDamage = true;
+	event_perform(ev_alarm, 0);
+}

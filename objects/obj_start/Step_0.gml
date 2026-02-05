@@ -4,7 +4,6 @@ if (point_in_rectangle(mouse_x, mouse_y,
     if (mouse_check_button_pressed(mb_left)) {
 		if (gameStarted == false){
 			room_goto(rm_test);
-			show_debug_message(global.whatLevel);
 			gameStarted = true;
 		}
 		if (gameStarted == true){

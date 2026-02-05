@@ -13,6 +13,7 @@ restartTimer = function(){
 	instance_create_layer(212, 437, "Instances", obj_leftMonster);
 	obj_leftMonster.doneDamage = false;
 	obj_leftMonster.numChosen = false;
+	obj_leftMonster.timer5 = false;
 }
 
 switch (randomNum){

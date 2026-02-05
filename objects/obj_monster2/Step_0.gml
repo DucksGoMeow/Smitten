@@ -22,5 +22,4 @@ if(dev0Up){
 }
 
 if (monsterHealth = 0){
-	instance_destroy();
 }

@@ -1,6 +1,3 @@
-
-
-#region Actually drawing the monster sprite
 if (!obj_monsterTimer.noMonster){
 	//Monster Sprite
 	draw_sprite(sprite_index, image_index, 212, 437);
@@ -114,4 +111,3 @@ if (!obj_monsterTimer.noMonster){
 	}
 #endregion
 }
-#endregion
