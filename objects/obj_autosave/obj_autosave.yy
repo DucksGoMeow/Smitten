@@ -6,8 +6,8 @@
   "name":"obj_autosave",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Level Timers",
+    "path":"folders/Objects/Level Timers.yy",
   },
   "parentObjectId":null,
   "persistent":false,

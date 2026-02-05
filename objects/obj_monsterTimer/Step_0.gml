@@ -3,15 +3,16 @@ if (noMonster){
     //Spawn monster
     noMonster = false;
 	numChosen = false;
-	show_debug_message(randomTime);
 	}
 }
+
+
 
 if (monsterFinished){
 	if (!numChosen){
 	   randomNum = irandom(5);
 	   numChosen = true;
-	   show_debug_message(randomNum)
 	}
+	show_debug_message(randomTime);
 	restartTimer();
 }
