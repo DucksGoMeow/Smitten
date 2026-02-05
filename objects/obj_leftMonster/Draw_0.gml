@@ -1,3 +1,6 @@
+
+
+#region Actually drawing the monster sprite
 if (!obj_monsterTimer.noMonster){
 	//Monster Sprite
 	draw_sprite(sprite_index, image_index, 212, 437);
@@ -72,15 +75,15 @@ if (!obj_monsterTimer.noMonster){
 	}*/
 
 	//sprite animations
-	if (tSec >= 16 && tSec <= 21){
-		sprite_index = spr_testMonsterComing;
+	if (tSec == 20){
+		sprite_index = monsterComingSpr;
 	}
 
-	else if (tSec >= 6 && tSec <= 15){
+	else if (tSec == 15){
 		sprite_index = spr_testMonsterAttacking;
 	}
 
-	else if (tSec >= 0 && tSec <= 5){
+	else if (tSec == 5){
 		sprite_index = spr_testMonsterLeaving;
 	}
 
@@ -111,3 +114,4 @@ if (!obj_monsterTimer.noMonster){
 	}
 #endregion
 }
+#endregion

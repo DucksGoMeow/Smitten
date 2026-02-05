@@ -6,11 +6,9 @@ if (noMonster){
 	}
 }
 
-
-
 if (monsterFinished){
 	if (!numChosen){
-	   randomNum = irandom(5);
+	   randomNum = irandom(2);
 	   numChosen = true;
 	}
 	show_debug_message(randomTime);

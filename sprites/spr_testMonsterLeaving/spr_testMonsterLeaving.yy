@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Edit L8r",
-    "path":"folders/Sprites/Edit L8r.yy",
+    "name":"monsters",
+    "path":"folders/Sprites/Edit L8r/monsters.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
