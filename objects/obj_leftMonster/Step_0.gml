@@ -11,11 +11,11 @@ if (!obj_monsterTimer.noMonster){
 	if (!numChosen){
 		randNumType = irandom(3);
 			if (!patternChosen && tutorial){
-				randNumArrow = 1;
+				randNumArrow = irandom(4);
 				patternChosen = true;
 			}
 			if (!tutorial && global.whatlevel = 1 && !patternChosen){
-				randNumArrow = irandom(2);
+				randNumArrow = 5;
 				patternChosen = true;
 			}
 		numChosen = true;
@@ -33,46 +33,18 @@ if (!obj_monsterTimer.noMonster){
 			monsterComingSpr = spr_testMonsterComing3;
 			break;
 	}
-	
-	#region How Many Arrows Spawn
-	if (!ammountChosen){
-		switch (randNumArrow){
-			case 1:
-				randNumArrow1 = irandom(4);
-				ammountChosen = true;
-				break;
-			case 2:
-				randNumArrow1 = irandom(4);
-				randNumArrow2 = irandom(4);
-				ammountChosen = true;
-				break;
-			case 3:
-				randNumArrow1 = irandom(4);
-				randNumArrow2 = irandom(4);
-				randNumArrow3 = irandom(4);
-				ammountChosen = true;
-				break;
-			case 4:
-				randNumArrow1 = irandom(4);
-				randNumArrow2 = irandom(4);
-				randNumArrow3 = irandom(4);
-				randNumArrow4 = irandom(4);
-				ammountChosen = true;
-				break;
-		}
-	}
-	#endregion
-	
-	#region Arrow Dirrections
-	switch (randNumArrow1){
+
+	#region Arrow Pattern
+	//Theres probably an easier way to do this...
+	switch (randNumArrow){
+		#region 1 Arrow
 		case 1:
 			patternUp = true;
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if(g == "UP" && patternUp = true){
+					if (g == "UP" && patternUp){
 					patternUp = false;
 					monsterHealth -= 200;
-					patternFinished = true;
 					}
 				}
 			}
@@ -81,10 +53,9 @@ if (!obj_monsterTimer.noMonster){
 			patternDown = true;
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if(g == "DOWN" && patternDown = true){
+					if (g == "DOWN" && patternDown){
 					patternUp = false;
 					monsterHealth -= 200;
-					patternFinished = true;
 					}
 				}
 			}
@@ -93,10 +64,9 @@ if (!obj_monsterTimer.noMonster){
 			patternLeft = true;
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if(g == "LEFT" && patternLeft = true){
+					if (g == "LEFT" && patternLeft){
 					patternLeft = false;
 					monsterHealth -= 200;
-					patternFinished = true;
 					}
 				}
 			}
@@ -105,45 +75,159 @@ if (!obj_monsterTimer.noMonster){
 			patternRight = true;
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if(g == "RIGHT" && patternRight = true){
+					if (g == "RIGHT" && patternRight = true){
 					patternRight = false;
 					monsterHealth -= 200;
-					patternFinished = true;
 					}
 				}
 			}
 			break;
+		#endregion
+		#region 2 Arrow
+		case 5:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "UP" && !patternUp){
+						patternUp = true;
+						patternDown = true;
+						monsterHealth -= 100;
+					}
+					else if (g == "DOWN" && patternDown){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 6:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "UP" && !patternUp){
+						patternUp = true;
+						patternLeft = true;
+						monsterHealth -= 100;
+					}
+					else if (g == "LEFT" && patternLeft){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 7:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "UP" && !patternUp){
+						patternUp = true;
+						patternRight = true;
+						monsterHealth -= 100;
+					}
+					else if (g == "RIGHT" && patternRight){
+						monsterHealth -= 100;
+					}
+				}
+			}
+		case 8:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "DOWN" && !patternDown){
+						patternDown = true;
+						patternUp = true;
+						monsterHealth -= 100;
+					}
+					else if (g == "UP" && patternUp){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 9:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "DOWN" && !patternDown){
+						patternDown = true;
+						patternLeft = true;
+						monsterHealth -= 100;
+					}
+					else if (g == "LEFT" && patternLeft){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;	
+		case 8:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "DOWN" && !patternDown){
+						patternDown = true;
+						patternRight = true;
+						monsterHealth -= 100;
+					}
+					else if (g == "RIGHT" && patternRight){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;	
+		case 9:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "RIGHT" && !patternRight){
+						patternLeft = true;
+						patternUp = true;
+						monsterHealth -= 100;
+					}
+					else if (g == "UP" && patternUp){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;		
+		case 10:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "RIGHT" && !patternRight){
+						patternLeft = true;
+						patternDown = true;
+						monsterHealth -= 100;
+					}
+					else if (g == "DOWN" && patternDown){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;	
+		case 10:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "RIGHT" && !patternRight){
+						patternRight = true;
+						patternLeft = true;
+						monsterHealth -= 100;
+					}
+					else if (g == "LEFT" && patternLeft){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;	
+		#endregion
+		case 11:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "UP" && !patternUp){
+						patternUp = true;
+						patternDown = true;
+						monsterHealth -= 100;
+					}
+					else if (g == "Down" && patternDown){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;	
 	}
 	#endregion
-	#endregion
 	
-	/*if (tSec >= 4 && tSec <= 15){
-		if(dev0Up){ 
-			if(g == "UP" && patternUp = true){
-				patternUp = false;
-				patternRight = true;
-				monsterHealth -= 50;
-			}
-			else if(g == "RIGHT" && patternRight = true){
-				patternRight = false;
-				patternDown = true;
-				monsterHealth -= 50;
-			}
-			else if(g == "DOWN" && patternDown = true){
-				patternDown = false;
-				patternLeft = true;
-				monsterHealth -= 50;
-			}
-			else if(g == "LEFT" && patternLeft = true){
-				patternLeft = false;
-				monsterHealth -= 50;
-				patternFinished = true;
-			}
-		}
-	}*/
-
-	//theres probably an easier way to do this...
-	if(!patternFinished && tSec == 5 && !doneDamage){
+	if(tSec == 5 && !doneDamage){
 		obj_playerHealthLv1.playerHealth -= 50;
 		doneDamage = true;
 	}

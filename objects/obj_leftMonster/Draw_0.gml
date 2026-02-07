@@ -87,8 +87,8 @@ if (!obj_monsterTimer.noMonster){
 	//Has to be drawn last so it is ontop of everything
 	if (tSec >= 6 && tSec <= 15){
 	#region Draw Arrow Pattern
-		//First Arrow
-		switch (randNumArrow1){
+		switch (randNumArrow){
+			#region 1 Arrow
 			case 1:
 				if (patternUp){
 					draw_sprite(spr_up, 0, 425, 153);
@@ -107,6 +107,27 @@ if (!obj_monsterTimer.noMonster){
 			case 4:
 				if (patternRight){
 					draw_sprite(spr_right, 0, 425, 153);
+				}
+				break;
+			#endregion
+			case 5:
+				if (!patternUp){
+					draw_sprite(spr_up, 0, 425, 153);
+					draw_sprite(spr_down, 0, 361, 153);
+				}
+				
+				if (patternDown){
+					draw_sprite(spr_down, 0, 425, 153);
+				}
+				break;
+			case 6:
+				if (!patternUp){
+					draw_sprite(spr_up, 0, 425, 153);
+					draw_sprite(spr_left, 0, 361, 153);
+				}
+				
+				if (patternLeft){
+					draw_sprite(spr_left, 0, 425, 153);
 				}
 				break;
 		}

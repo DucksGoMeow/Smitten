@@ -20,9 +20,6 @@ switch (randomNum){
 	case 2:
 		randomTime = 5; 
 		break;
-	default:
-		randomTime = 15;
-		break;
 }
 
 tMin = 0;

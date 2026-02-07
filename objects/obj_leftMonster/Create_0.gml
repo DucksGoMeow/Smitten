@@ -17,7 +17,9 @@ randNumArrow2 = 1;
 randNumArrow3 = 1;
 randNumArrow4 = 1;
 
-tutorial = true;
+Arrow1 = 1;
+
+tutorial = false;
 
 //Default Spites
 monsterComingSpr = spr_testMonster;
