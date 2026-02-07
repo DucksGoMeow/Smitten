@@ -1,6 +1,6 @@
 if (!obj_monsterTimer.noMonster){
 	//Monster Sprite
-	draw_sprite(sprite_index, image_index, 212, 437);
+	draw_sprite(sprite_index, image_index, 212, 442);
 
 	//Timer Text (this is temporary)
 	var t = "";
@@ -85,29 +85,31 @@ if (!obj_monsterTimer.noMonster){
 	}
 
 	//Has to be drawn last so it is ontop of everything
-	#region Arrow Pattern
 	if (tSec >= 6 && tSec <= 15){
-		if (patternUp){
-			draw_sprite(spr_up, 0, 424, 147);
-			draw_sprite(spr_right, 0, 360, 147);
-			draw_sprite(spr_down, 0, 296, 147);
-			draw_sprite(spr_left, 0, 232, 147);
+	#region Draw Arrow Pattern
+		//First Arrow
+		switch (randNumArrow1){
+			case 1:
+				if (patternUp){
+					draw_sprite(spr_up, 0, 425, 153);
+				}
+				break;
+			case 2:
+				if (patternDown){
+					draw_sprite(spr_down, 0, 425, 153);
+				}
+				break;
+			case 3:
+				if (patternLeft){
+					draw_sprite(spr_left, 0, 425, 153);
+				}
+				break;
+			case 4:
+				if (patternRight){
+					draw_sprite(spr_right, 0, 425, 153);
+				}
+				break;
 		}
-
-		if (patternRight){
-			draw_sprite(spr_right, 0, 424, 147);
-			draw_sprite(spr_down, 0, 360, 147);
-			draw_sprite(spr_left, 0, 296, 147);
-		}
-
-		if (patternDown){
-			draw_sprite(spr_down, 0, 424, 147);
-			draw_sprite(spr_left, 0, 360, 147);
-		}
-
-		if (patternLeft){
-			draw_sprite(spr_left, 0, 424, 147);
-		}
+	#endregion
 	}
-#endregion
 }
