@@ -1,1 +1,1 @@
-finishing implementing the arrow patterns when you get home make sure to seperate them so its easy to read
+finish the arrow patterns and make sure they all work before adding to them
