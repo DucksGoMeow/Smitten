@@ -1,1 +1,1 @@
-work on the randomization of arrows and then the menus and then i think youre done? yay
+finishing implementing the arrow patterns when you get home make sure to seperate them so its easy to read

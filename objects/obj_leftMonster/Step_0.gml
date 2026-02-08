@@ -15,7 +15,7 @@ if (!obj_monsterTimer.noMonster){
 				patternChosen = true;
 			}
 			if (!tutorial && global.whatlevel = 1 && !patternChosen){
-				randNumArrow = 5;
+				randNumArrow = 16;
 				patternChosen = true;
 			}
 		numChosen = true;
@@ -39,44 +39,36 @@ if (!obj_monsterTimer.noMonster){
 	switch (randNumArrow){
 		#region 1 Arrow
 		case 1:
-			patternUp = true;
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "UP" && patternUp){
-					patternUp = false;
+					if (g == "UP" && !patternUp){
 					monsterHealth -= 200;
 					}
 				}
 			}
 			break;
 		case 2:
-			patternDown = true;
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "DOWN" && patternDown){
-					patternUp = false;
+					if (g == "DOWN" && !patternDown){
 					monsterHealth -= 200;
 					}
 				}
 			}
 			break;
 		case 3:
-			patternLeft = true;
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "LEFT" && patternLeft){
-					patternLeft = false;
+					if (g == "LEFT" && !patternLeft){
 					monsterHealth -= 200;
 					}
 				}
 			}
 			break;
 		case 4:
-			patternRight = true;
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "RIGHT" && patternRight = true){
-					patternRight = false;
+					if (g == "RIGHT" && !patternRight = true){
 					monsterHealth -= 200;
 					}
 				}
@@ -84,6 +76,7 @@ if (!obj_monsterTimer.noMonster){
 			break;
 		#endregion
 		#region 2 Arrow
+		#region Up
 		case 5:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
@@ -125,6 +118,9 @@ if (!obj_monsterTimer.noMonster){
 					}
 				}
 			}
+			break;
+		#endregion
+		#region Down
 		case 8:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
@@ -153,7 +149,7 @@ if (!obj_monsterTimer.noMonster){
 				}
 			}
 			break;	
-		case 8:
+		case 10:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
 					if (g == "DOWN" && !patternDown){
@@ -166,11 +162,13 @@ if (!obj_monsterTimer.noMonster){
 					}
 				}
 			}
-			break;	
-		case 9:
+			break;
+		#endregion
+		#region Left
+		case 11:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "RIGHT" && !patternRight){
+					if (g == "LEFT" && !patternLeft){
 						patternLeft = true;
 						patternUp = true;
 						monsterHealth -= 100;
@@ -181,10 +179,10 @@ if (!obj_monsterTimer.noMonster){
 				}
 			}
 			break;		
-		case 10:
+		case 12:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "RIGHT" && !patternRight){
+					if (g == "LEFT" && !patternLeft){
 						patternLeft = true;
 						patternDown = true;
 						monsterHealth -= 100;
@@ -195,7 +193,51 @@ if (!obj_monsterTimer.noMonster){
 				}
 			}
 			break;	
-		case 10:
+		case 13:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternLeft){
+						patternLeft = true;
+						patternRight = true;
+						monsterHealth -= 100;
+					}
+					else if (g == "RIGHT" && patternRight){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;	
+		#endregion
+		#region Right
+		case 14:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "RIGHT" && !patternRight){
+						patternRight = true;
+						patternUp = true;
+						monsterHealth -= 100;
+					}
+					else if (g == "UP" && patternUp){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;			
+		case 15:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "RIGHT" && !patternRight){
+						patternRight = true;
+						patternDown = true;
+						monsterHealth -= 100;
+					}
+					else if (g == "DOWN" && patternDown){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;	
+		case 16:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
 					if (g == "RIGHT" && !patternRight){
@@ -208,22 +250,10 @@ if (!obj_monsterTimer.noMonster){
 					}
 				}
 			}
-			break;	
+			break;
 		#endregion
-		case 11:
-			if (tSec >= 4 && tSec <= 15){
-				if(dev0Up){ 
-					if (g == "UP" && !patternUp){
-						patternUp = true;
-						patternDown = true;
-						monsterHealth -= 100;
-					}
-					else if (g == "Down" && patternDown){
-						monsterHealth -= 100;
-					}
-				}
-			}
-			break;	
+		#endregion
+
 	}
 	#endregion
 	

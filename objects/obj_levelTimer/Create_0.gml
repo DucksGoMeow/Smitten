@@ -1,4 +1,4 @@
-tMin = 2;
+tMin = 59;
 tSec = 30;
 tMil = 0; //tenth of a second
 

@@ -8,14 +8,8 @@ patternChosen = false;
 //What type is the monster
 randNumType = 2;
 
-//How Many Arrows Will Spawn?
+//Arrow Pattern
 randNumArrow = 1;
-
-//Direction of the arrows
-randNumArrow1 = 1;
-randNumArrow2 = 1;
-randNumArrow3 = 1;
-randNumArrow4 = 1;
 
 Arrow1 = 1;
 
