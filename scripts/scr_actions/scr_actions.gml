@@ -1,5 +1,4 @@
 //DO NOT EDIT
-
 #macro TEXT new TextAction
 #macro GOTO new GotoAction
 #macro CHOICE new ChoiceAction

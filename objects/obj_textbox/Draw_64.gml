@@ -70,6 +70,8 @@ __type(draw_x + text_x + 190, draw_y + text_y, text, text_progress, draw_width);
 
 //Options
 if (finished && option_count > 0) {
+	obj_countDatePortrait.countX = 49.4; 
+	obj_countDatePortrait.countY = 39.8;
 	draw_set_valign(fa_middle);
 	draw_set_color(option_color);
 	for (var i = 0; i < option_count; i++) {

@@ -15,7 +15,7 @@ if (!obj_monsterTimer.noMonster){
 				patternChosen = true;
 			}
 			if (!tutorial && global.whatlevel = 1 && !patternChosen){
-				randNumArrow = irandom(28);
+				randNumArrow = 34;
 				patternChosen = true;
 			}
 		numChosen = true;
@@ -253,7 +253,7 @@ if (!obj_monsterTimer.noMonster){
 			break;
 		#endregion
 		#endregion
-		#region 2 Arrow
+		#region 3 Arrow
 		#region Up
 		case 17:
 			if (tSec >= 4 && tSec <= 15){
@@ -500,7 +500,7 @@ if (!obj_monsterTimer.noMonster){
 						patternDown = true;
 						monsterHealth -= 50;
 					}
-					else if (g == "DOWN" && patternLeft){
+					else if (g == "DOWN" && patternDown){
 						monsterHealth -= 100;
 					}
 				}
@@ -520,6 +520,82 @@ if (!obj_monsterTimer.noMonster){
 						monsterHealth -= 50;
 					}
 					else if (g == "RIGHT" && patternRight){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 31:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternLeft){
+						patternLeft = true;
+						patternDown = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternDown){
+						patternDown = false;
+						patternUp = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternUp){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 32:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternLeft){
+						patternLeft = true;
+						patternDown = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternDown){
+						patternDown = false;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 33:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternLeft){
+						patternLeft = true;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						patternRight = false;
+						patternUp = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternUp){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 34:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternLeft){
+						patternLeft = true;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						patternRight = false;
+						patternDown = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternDown){
 						monsterHealth -= 100;
 					}
 				}
