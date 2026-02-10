@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_green",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_countDatePortrait",
+  "eventList":[],
   "managed":true,
-  "name":"obj_green",
+  "name":"obj_countDatePortrait",
   "overriddenProperties":[],
   "parent":{
-    "name":"Diffrent Endings",
-    "path":"folders/Objects/Dialogue/Sample Dialogues/Diffrent Endings.yy",
+    "name":"Dialogue",
+    "path":"folders/Objects/Dialogue.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_portrait_green",
-    "path":"sprites/spr_portrait_green/spr_portrait_green.yy",
+    "name":"spr_countsDatePortrait",
+    "path":"sprites/spr_countsDatePortrait/spr_countsDatePortrait.yy",
   },
   "spriteMaskId":null,
   "visible":true,

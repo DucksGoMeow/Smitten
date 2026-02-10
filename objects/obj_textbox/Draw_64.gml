@@ -44,12 +44,12 @@ if (sprite_exists(portrait_sprite)) {
 		subimg = (text_progress / text_speed) * (sprite_get_speed(portrait_sprite) / game_get_speed(gamespeed_fps));
 		
 	draw_sprite_ext(portrait_sprite, subimg,
-		draw_portrait_x + portrait_width + 10, draw_y + portrait_y + portrait_height - 145,
+		90, 384,
 		portrait_side == PORTRAIT_SIDE.LEFT ? 1 : -1, 1, 0, c_white, 1);
 }
 
 //Speaker/Nameplate
-if (speaker_name != "") {
+/*if (speaker_name != "") {
 	//Expand the nameplate if the name is wider than the default width
 	var w = max(string_width(speaker_name), speaker_width);
 	draw_sprite_stretched(spr_name, 0, x + speaker_x, y + speaker_y - speaker_height / 2, w, speaker_height);
@@ -59,14 +59,14 @@ if (speaker_name != "") {
 	draw_set_font(speaker_font);
 	draw_set_color(speaker_color);
 	draw_text(x + speaker_x + w / 2, y + speaker_y, speaker_name);
-}
+}*/
 
 //Text
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_font(text_font);
 draw_set_color(text_color);
-__type(draw_x + text_x - 145, draw_y + text_y, text, text_progress, draw_width);
+__type(draw_x + text_x + 190, draw_y + text_y, text, text_progress, draw_width);
 
 //Options
 if (finished && option_count > 0) {

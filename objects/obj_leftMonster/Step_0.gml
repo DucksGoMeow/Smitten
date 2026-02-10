@@ -15,7 +15,7 @@ if (!obj_monsterTimer.noMonster){
 				patternChosen = true;
 			}
 			if (!tutorial && global.whatlevel = 1 && !patternChosen){
-				randNumArrow = 29;
+				randNumArrow = irandom(28);
 				patternChosen = true;
 			}
 		numChosen = true;
@@ -480,6 +480,46 @@ if (!obj_monsterTimer.noMonster){
 						monsterHealth -= 50;
 					}
 					else if (g == "LEFT" && patternLeft){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		#endregion
+		#region Left
+		case 29:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternLeft){
+						patternLeft = true;
+						patternUp = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternUp){
+						patternUp = false;
+						patternDown = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternLeft){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 30:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternLeft){
+						patternLeft = true;
+						patternUp = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternUp){
+						patternUp = false;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
 						monsterHealth -= 100;
 					}
 				}

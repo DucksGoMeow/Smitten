@@ -458,6 +458,43 @@ if (!obj_monsterTimer.noMonster){
 				}
 				break;	
 			#endregion
+			#region Left
+			case 29:
+				if (!patternDown){
+					draw_sprite(spr_down, 0, 425, 153);
+					draw_sprite(spr_up, 0, 361, 153);
+					draw_sprite(spr_left, 0, 297, 153);
+				}
+				
+				if (patternUp){
+					draw_sprite(spr_up, 0, 425, 153);
+					draw_sprite(spr_left, 0, 361, 153);
+				}
+				
+				if (patternLeft){
+					draw_sprite(spr_left, 0, 425, 153);
+				}
+				break;
+				
+			case 30:
+				if (!patternDown){
+					draw_sprite(spr_down, 0, 425, 153);
+					draw_sprite(spr_up, 0, 361, 153);
+					draw_sprite(spr_right, 0, 297, 153);
+				}
+				
+				if (patternUp){
+					draw_sprite(spr_up, 0, 425, 153);
+					draw_sprite(spr_right, 0, 361, 153);
+				}
+				
+				if (patternRight){
+					draw_sprite(spr_right, 0, 425, 153);
+				}
+				break;
+				
+
+			#endregion
 			#endregion
 		}
 	#endregion

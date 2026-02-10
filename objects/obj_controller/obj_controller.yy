@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Name Stuff",
-    "path":"folders/Objects/Dialogue Stuff/Name Stuff.yy",
+    "path":"folders/Objects/Dialogue/Name Stuff.yy",
   },
   "parentObjectId":null,
   "persistent":false,

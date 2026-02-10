@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Sample Dialogues",
-    "path":"folders/Objects/Dialogue Stuff/Sample Dialogues.yy",
+    "path":"folders/Objects/Dialogue/Sample Dialogues.yy",
   },
   "parentObjectId":null,
   "persistent":false,

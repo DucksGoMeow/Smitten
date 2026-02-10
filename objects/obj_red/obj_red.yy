@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Diffrent Endings",
-    "path":"folders/Objects/Dialogue Stuff/Sample Dialogues/Diffrent Endings.yy",
+    "path":"folders/Objects/Dialogue/Sample Dialogues/Diffrent Endings.yy",
   },
   "parentObjectId":null,
   "persistent":false,
