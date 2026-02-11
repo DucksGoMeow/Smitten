@@ -637,6 +637,178 @@ if (!obj_monsterTimer.noMonster){
 				break;
 			#endregion
 			#endregion
+			#region 4 Arrows
+			#region UP
+			case 41:
+				if (!patternUp){
+					draw_sprite(spr_up, 0, 425, 153);
+					draw_sprite(spr_down, 0, 361, 153);
+					draw_sprite(spr_left, 0, 297, 153);
+					draw_sprite(spr_right, 0, 233, 153);
+				}
+				
+				if (patternDown){
+					draw_sprite(spr_down, 0, 425, 153);
+					draw_sprite(spr_left, 0, 361, 153);
+					draw_sprite(spr_right, 0, 297, 153);
+				}
+				
+				if (patternLeft){
+					draw_sprite(spr_left, 0, 425, 153);
+					draw_sprite(spr_right, 0, 361, 153);
+				}
+				
+				if (patternRight){
+					draw_sprite(spr_right, 0, 425, 153);
+				}
+				break;
+
+			case 42:
+				if (!patternUp){
+					draw_sprite(spr_up, 0, 425, 153);
+					draw_sprite(spr_down, 0, 361, 153);
+					draw_sprite(spr_right, 0, 297, 153);
+					draw_sprite(spr_left, 0, 233, 153);
+				}
+				
+				if (patternDown){
+					draw_sprite(spr_down, 0, 425, 153);
+					draw_sprite(spr_right, 0, 361, 153);
+					draw_sprite(spr_left, 0, 297, 153);
+				}
+				
+				if (patternRight){
+					draw_sprite(spr_right, 0, 425, 153);
+					draw_sprite(spr_left, 0, 361, 153);
+				}
+				
+				if (patternLeft){
+					draw_sprite(spr_left, 0, 425, 153);
+				}
+				break;
+				
+			case 43:
+				if (!patternUp){
+					draw_sprite(spr_up, 0, 425, 153);
+					draw_sprite(spr_left, 0, 361, 153);
+					draw_sprite(spr_down, 0, 297, 153);
+					draw_sprite(spr_right, 0, 233, 153);
+				}
+				
+				if (patternLeft){
+					draw_sprite(spr_left, 0, 425, 153);
+					draw_sprite(spr_down, 0, 361, 153);
+					draw_sprite(spr_right, 0, 297, 153);
+				}
+				
+				if (patternDown){
+					draw_sprite(spr_down, 0, 425, 153);
+					draw_sprite(spr_right, 0, 361, 153);
+				}
+				
+				if (patternRight){
+					draw_sprite(spr_right, 0, 425, 153);
+				}
+				break;
+							
+			case 44:
+				if (!patternUp){
+					draw_sprite(spr_up, 0, 425, 153);
+					draw_sprite(spr_left, 0, 361, 153);
+					draw_sprite(spr_right, 0, 297, 153);
+					draw_sprite(spr_down, 0, 233, 153);
+				}
+				
+				if (patternLeft){
+					draw_sprite(spr_left, 0, 425, 153);
+					draw_sprite(spr_right, 0, 361, 153);
+					draw_sprite(spr_down, 0, 297, 153);
+				}
+				
+				if (patternRight){
+					draw_sprite(spr_right, 0, 425, 153);
+					draw_sprite(spr_down, 0, 361, 153);
+				}
+				
+				if (patternDown){
+					draw_sprite(spr_down, 0, 425, 153);
+				}
+				break;
+				
+			case 45:
+				if (!patternUp){
+					draw_sprite(spr_up, 0, 425, 153);
+					draw_sprite(spr_right, 0, 361, 153);
+					draw_sprite(spr_down, 0, 297, 153);
+					draw_sprite(spr_left, 0, 233, 153);
+				}
+				
+				if (patternRight){
+					draw_sprite(spr_right, 0, 425, 153);
+					draw_sprite(spr_down, 0, 361, 153);
+					draw_sprite(spr_left, 0, 297, 153);
+				}
+				
+				if (patternDown){
+					draw_sprite(spr_down, 0, 425, 153);
+					draw_sprite(spr_left, 0, 361, 153);
+				}
+				
+				if (patternLeft){
+					draw_sprite(spr_left, 0, 425, 153);
+				}
+				break;
+												
+			case 46:
+				if (!patternUp){
+					draw_sprite(spr_up, 0, 425, 153);
+					draw_sprite(spr_right, 0, 361, 153);
+					draw_sprite(spr_left, 0, 297, 153);
+					draw_sprite(spr_down, 0, 233, 153);
+				}
+				
+				if (patternRight){
+					draw_sprite(spr_right, 0, 425, 153);
+					draw_sprite(spr_left, 0, 361, 153);
+					draw_sprite(spr_down, 0, 297, 153);
+				}
+				
+				if (patternLeft){
+					draw_sprite(spr_left, 0, 425, 153);
+					draw_sprite(spr_down, 0, 361, 153);
+				}
+				
+				if (patternDown){
+					draw_sprite(spr_down, 0, 425, 153);
+				}
+				break;
+			#endregion
+			#region Down
+			case 47:
+				if (!patternUp){
+					draw_sprite(spr_up, 0, 425, 153);
+					draw_sprite(spr_right, 0, 361, 153);
+					draw_sprite(spr_left, 0, 297, 153);
+					draw_sprite(spr_down, 0, 233, 153);
+				}
+				
+				if (patternRight){
+					draw_sprite(spr_right, 0, 425, 153);
+					draw_sprite(spr_left, 0, 361, 153);
+					draw_sprite(spr_down, 0, 297, 153);
+				}
+				
+				if (patternLeft){
+					draw_sprite(spr_left, 0, 425, 153);
+					draw_sprite(spr_down, 0, 361, 153);
+				}
+				
+				if (patternDown){
+					draw_sprite(spr_down, 0, 425, 153);
+				}
+				break;
+			#endregion
+			#endregion
 		}
 	#endregion
 	}
