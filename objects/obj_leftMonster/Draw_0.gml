@@ -41,35 +41,7 @@ if (!obj_monsterTimer.noMonster){
 
 	}
 	draw_set_color(monsterHealthColor);
-	draw_rectangle(100, 111, 100 + (monsterHealth/monsterHealth)*barWidth, 111 + 10, false)
-
-	/*To show the arrows, but we don't need this anymore
-	//The arrows of the mouse direction
-	draw_set_color(c_white)
-	if(device_mouse_check_button_pressed(0,mb_left)) alarm[0] = -1;
-
-	if(dev0Up){ 
-		//how long the arrow sprite stays (from when you move the mouse)
-		alarm[0] = room_speed * 2;
-		last_valid_shape = TMCT_GetCurrentGesture(0);
-	}
-	if(alarm[0]){
-	  var r = 100;
-	  var midx = room_width*.5;
-	  var midy = room_height*.7;
-		if(last_valid_shape == "RIGHT"){
-			draw_arrow(midx-r,midy,midx+r,midy,20)
-		}
-		if(last_valid_shape == "LEFT"){
-			draw_arrow(midx+r,midy,midx-r,midy,20)
-		}
-		if(last_valid_shape == "UP"){
-			draw_arrow(midx,midy+r,midx,midy-r,20)
-	    }
-		if(last_valid_shape == "DOWN"){
-			draw_arrow(midx,midy-r,midx,midy+r,20)
-		}
-	}*/
+	draw_rectangle(100, 111, 100 + (monsterHealth/monsterHealth)*barWidth, 111 + 10, false);
 
 	//sprite animations
 	if (tSec == 20){
@@ -560,6 +532,109 @@ if (!obj_monsterTimer.noMonster){
 					draw_sprite(spr_down, 0, 425, 153);
 				}
 				break;	
+			#endregion
+			#region Right
+			case 35:
+				if (!patternRight){
+					draw_sprite(spr_right, 0, 425, 153);
+					draw_sprite(spr_up, 0, 361, 153);
+					draw_sprite(spr_down, 0, 297, 153);
+				}
+				
+				if (patternUp){
+					draw_sprite(spr_up, 0, 425, 153);
+					draw_sprite(spr_down, 0, 361, 153);
+				}
+				
+				if (patternDown){
+					draw_sprite(spr_down, 0, 425, 153);
+				}
+				break;
+
+			case 36:
+				if (!patternRight){
+					draw_sprite(spr_right, 0, 425, 153);
+					draw_sprite(spr_up, 0, 361, 153);
+					draw_sprite(spr_left, 0, 297, 153);
+				}
+				
+				if (patternUp){
+					draw_sprite(spr_up, 0, 425, 153);
+					draw_sprite(spr_left, 0, 361, 153);
+				}
+				
+				if (patternLeft){
+					draw_sprite(spr_left, 0, 425, 153);
+				}
+				break;
+
+			case 37:
+				if (!patternRight){
+					draw_sprite(spr_right, 0, 425, 153);
+					draw_sprite(spr_down, 0, 361, 153);
+					draw_sprite(spr_up, 0, 297, 153);
+				}
+				
+				if (patternDown){
+					draw_sprite(spr_down, 0, 425, 153);
+					draw_sprite(spr_up, 0, 361, 153);
+				}
+				
+				if (patternUp){
+					draw_sprite(spr_up, 0, 425, 153);
+				}
+				break;
+				
+			case 38:
+				if (!patternRight){
+					draw_sprite(spr_right, 0, 425, 153);
+					draw_sprite(spr_down, 0, 361, 153);
+					draw_sprite(spr_left, 0, 297, 153);
+				}
+				
+				if (patternDown){
+					draw_sprite(spr_down, 0, 425, 153);
+					draw_sprite(spr_left, 0, 361, 153);
+				}
+				
+				if (patternLeft){
+					draw_sprite(spr_left, 0, 425, 153);
+				}
+				break;
+
+			case 39:
+				if (!patternRight){
+					draw_sprite(spr_right, 0, 425, 153);
+					draw_sprite(spr_left, 0, 361, 153);
+					draw_sprite(spr_up, 0, 297, 153);
+				}
+				
+				if (patternLeft){
+					draw_sprite(spr_left, 0, 425, 153);
+					draw_sprite(spr_up, 0, 361, 153);
+				}
+				
+				if (patternUp){
+					draw_sprite(spr_up, 0, 425, 153);
+				}
+				break;
+
+			case 40:
+				if (!patternRight){
+					draw_sprite(spr_right, 0, 425, 153);
+					draw_sprite(spr_left, 0, 361, 153);
+					draw_sprite(spr_down, 0, 297, 153);
+				}
+				
+				if (patternLeft){
+					draw_sprite(spr_left, 0, 425, 153);
+					draw_sprite(spr_down, 0, 361, 153);
+				}
+				
+				if (patternDown){
+					draw_sprite(spr_down, 0, 425, 153);
+				}
+				break;
 			#endregion
 			#endregion
 		}

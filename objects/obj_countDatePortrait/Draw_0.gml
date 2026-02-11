@@ -1,1 +1,1 @@
-draw_sprite(sprite_index, 0, countX, countY);
+draw_sprite(sprCountDatePortrait, 0, countX, countY);
