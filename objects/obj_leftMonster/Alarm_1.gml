@@ -1,4 +1,4 @@
-if (!obj_monsterTimer.noMonster){
+if (!obj_monsterTimer.noLeftMonster){
 tMil -= 1;
 
 if (tMil = -1){ //reduce seconds by 1

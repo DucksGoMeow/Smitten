@@ -1,7 +1,8 @@
 if (noMonster){
 	if (tMin == 0 && tSec == 0 && tMil == 0){
     //Spawn monster
-    noMonster = false;
+	noMonster = false;
+    noRightMonster = false;
 	numChosen = false;
 	}
 }

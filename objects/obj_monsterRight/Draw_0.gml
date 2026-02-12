@@ -1,4 +1,4 @@
-if (!obj_monsterTimer.noMonster){
+if (!obj_monsterTimer.noRightMonster){
 	//Monster Sprite
 	draw_sprite(sprite_index, image_index, 1153, 442);
 
@@ -21,7 +21,7 @@ if (!obj_monsterTimer.noMonster){
 	draw_text(100, 90, t);
 
 	//Health Bar (this is only temporary)
-	var barWidth;
+	var barWidth; 
 	barWidth = 200;
 
 	var monsterHealthColor = c_green;
@@ -223,7 +223,7 @@ if (!obj_monsterTimer.noMonster){
 				break;
 			#endregion
 			#endregion
-			#region 3 Ar row
+			#region 3 Arrow
 			#region Up
 			case 17:
 				if (!patternUp){

@@ -6,7 +6,7 @@ if(device_mouse_check_button_released(0,mb_any)) dev0Up = 1
 
 g = TMCT_GetCurrentGesture(0);
 
-if (!obj_monsterTimer.noMonster){
+if (!obj_monsterTimer.noRightMonster){
 	#region Monster Randomization
 	if (!numChosen){
 		randNumType = irandom(3);
@@ -1351,4 +1351,5 @@ if (!obj_monsterTimer.noMonster){
 	}
 	
 	obj_monsterTimer.noMonster = true;
+	obj_monsterTimer.noRightMonster = true;
 }

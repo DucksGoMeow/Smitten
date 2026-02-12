@@ -2,7 +2,9 @@ randomTime = 3;
 numChosen = false;
 randomNum = irandom(2);
 
-noMonster = false;
+noMonster = true;
+noLeftMonster = true;
+noRightMonster = true;
 monsterFinished = false;
  
 restartTimer = function(){
@@ -11,6 +13,7 @@ restartTimer = function(){
 	event_perform(ev_step, 0);
 	
 	instance_create_layer(212, 442, "Instances", obj_leftMonster);
+	instance_create_layer(1153, 442, "Instances", obj_monsterRight);
 }
 
 switch (randomNum){
