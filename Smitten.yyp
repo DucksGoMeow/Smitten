@@ -81,6 +81,7 @@
     {"id":{"name":"obj_playerHealthLv1","path":"objects/obj_playerHealthLv1/obj_playerHealthLv1.yy",},},
     {"id":{"name":"obj_red","path":"objects/obj_red/obj_red.yy",},},
     {"id":{"name":"obj_resetLevel","path":"objects/obj_resetLevel/obj_resetLevel.yy",},},
+    {"id":{"name":"obj_rightMonster","path":"objects/obj_rightMonster/obj_rightMonster.yy",},},
     {"id":{"name":"obj_settings","path":"objects/obj_settings/obj_settings.yy",},},
     {"id":{"name":"obj_start","path":"objects/obj_start/obj_start.yy",},},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},},

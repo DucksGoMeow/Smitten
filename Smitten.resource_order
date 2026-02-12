@@ -46,6 +46,7 @@
     {"name":"obj_playerHealth","order":2,"path":"objects/obj_playerHealth/obj_playerHealth.yy",},
     {"name":"obj_red","order":1,"path":"objects/obj_red/obj_red.yy",},
     {"name":"obj_resetLevel","order":3,"path":"objects/obj_resetLevel/obj_resetLevel.yy",},
+    {"name":"obj_rightMonster","order":2,"path":"objects/obj_rightMonster/obj_rightMonster.yy",},
     {"name":"obj_settings","order":1,"path":"objects/obj_settings/obj_settings.yy",},
     {"name":"obj_textbox","order":4,"path":"objects/obj_textbox/obj_textbox.yy",},
     {"name":"obj_white","order":4,"path":"objects/obj_white/obj_white.yy",},
