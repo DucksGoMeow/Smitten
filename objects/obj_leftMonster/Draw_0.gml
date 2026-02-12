@@ -60,7 +60,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 	if (tSec >= 6 && tSec <= 15){
 	#region Draw Arrow Pattern
 		switch (randNumArrow){
-			#region 1 Arrow
+ 			#region 1 Arrow
 			case 1:
 				if (!patternUp){
 					draw_sprite(spr_up, 0, 425, 153);
