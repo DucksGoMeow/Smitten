@@ -125,5 +125,7 @@
     {"name":"spr_up","order":5,"path":"sprites/spr_up/spr_up.yy",},
     {"name":"Sprite25","order":7,"path":"sprites/Sprite25/Sprite25.yy",},
     {"name":"Sprite34","order":16,"path":"sprites/Sprite34/Sprite34.yy",},
+    {"name":"Sprite42","order":20,"path":"sprites/Sprite42/Sprite42.yy",},
+    {"name":"Sprite43","order":10,"path":"sprites/Sprite43/Sprite43.yy",},
   ],
 }

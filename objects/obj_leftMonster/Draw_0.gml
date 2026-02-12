@@ -1,4 +1,4 @@
-if (!obj_monsterTimer.noLeftMonster){
+if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monsterTimer.noRightMonster){
 	//Monster Sprite
 	draw_sprite(sprite_index, image_index, 212, 442);
 

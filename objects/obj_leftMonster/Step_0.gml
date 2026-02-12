@@ -6,20 +6,8 @@ if(device_mouse_check_button_released(0,mb_any)) dev0Up = 1
 
 g = TMCT_GetCurrentGesture(0);
 
-if (!obj_monsterTimer.noLeftMonster){
+if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monsterTimer.noRightMonster){
 	#region Monster Randomization
-	if (!numChosen){
-		randNumType = irandom(3);
-			if (!patternChosen && tutorial){
-				randNumArrow = irandom(4);
-				patternChosen = true;
-			}
-			if (!tutorial && global.whatlevel = 1 && !patternChosen){
-				randNumArrow = irandom(64);
-				patternChosen = true;
-			}
-		numChosen = true;
-	}
 	
 	//Monster Type and Sprite
 	switch (randNumType){

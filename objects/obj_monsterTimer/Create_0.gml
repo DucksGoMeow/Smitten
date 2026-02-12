@@ -1,6 +1,7 @@
 randomTime = 3;
 numChosen = false;
-randomNum = irandom(2);
+randomNum = choose(1, 2);
+randomNumSide = choose(1, 2);
 
 noMonster = true;
 noLeftMonster = true;
@@ -11,9 +12,15 @@ restartTimer = function(){
 	event_perform(ev_create, 0);
 	event_perform(ev_alarm, 0);
 	event_perform(ev_step, 0);
-	
-	instance_create_layer(212, 442, "Instances", obj_leftMonster);
-	instance_create_layer(1153, 442, "Instances", obj_monsterRight);
+}
+
+switch (randomNumSide){
+	case 1:
+		instance_create_layer(212, 442, "Instances", obj_leftMonster);
+		break;
+	case 2:
+		instance_create_layer(1153, 442, "Instances", obj_monsterRight);
+		break;
 }
 
 switch (randomNum){
