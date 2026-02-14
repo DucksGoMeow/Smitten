@@ -21,5 +21,5 @@ if(dev0Up){
 }
 
 if (tSec == 0 && tMil == 0){
-	hunterSprite = Sprite42;
+	hunterSprite = spr_hunterWalking;
 }
