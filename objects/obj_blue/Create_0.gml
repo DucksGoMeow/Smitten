@@ -1,1 +1,0 @@
-firsttimeblue = false;

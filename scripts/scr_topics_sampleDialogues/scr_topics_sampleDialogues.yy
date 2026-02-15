@@ -6,7 +6,7 @@
   "name":"scr_topics_sampleDialogues",
   "parent":{
     "name":"Sample Dialogue",
-    "path":"folders/Scripts/Dialogue Stuff/Sample Dialogue.yy",
+    "path":"folders/Scripts/Dialogue/Sample Dialogue.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"TMCT_GetSegment",
   "parent":{
-    "name":"TMC_TOUCH",
-    "path":"folders/Scripts/TMC_TOUCH.yy",
+    "name":"Arrow Dirrection",
+    "path":"folders/Scripts/Arrow Dirrection.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

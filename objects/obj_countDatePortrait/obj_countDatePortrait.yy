@@ -9,8 +9,8 @@
   "name":"obj_countDatePortrait",
   "overriddenProperties":[],
   "parent":{
-    "name":"Dialogue",
-    "path":"folders/Objects/Dialogue.yy",
+    "name":"!Delete when finished",
+    "path":"folders/Objects/!Delete when finished.yy",
   },
   "parentObjectId":null,
   "persistent":false,

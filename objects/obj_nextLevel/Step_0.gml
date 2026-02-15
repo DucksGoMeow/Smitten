@@ -17,6 +17,6 @@ if (point_in_rectangle(mouse_x, mouse_y,
 	
 	global.whatLevel += 1;
     save_game();
-	room_goto(rm_test_1)
+	room_goto(rm_levelDate)
 	}
 }

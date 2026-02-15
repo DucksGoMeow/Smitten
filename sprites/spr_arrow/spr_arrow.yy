@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Textbox",
-    "path":"folders/Sprites/Dialogue Stuff/Textbox.yy",
+    "name":"Dialogue UI",
+    "path":"folders/Sprites/Dialogue/Dialogue UI.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

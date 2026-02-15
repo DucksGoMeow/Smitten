@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_green",
+  "%Name":"obj_testDialogue",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_green",
+  "name":"obj_testDialogue",
   "overriddenProperties":[],
   "parent":{
-    "name":"Diffrent Endings",
-    "path":"folders/Objects/Dialogue/Sample Dialogues/Diffrent Endings.yy",
+    "name":"Dialogue",
+    "path":"folders/Objects/Dialogue.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_portrait_green",
-    "path":"sprites/spr_portrait_green/spr_portrait_green.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
