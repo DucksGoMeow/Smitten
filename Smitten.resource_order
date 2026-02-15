@@ -42,6 +42,7 @@
     {"name":"scr_nameholding","order":7,"path":"scripts/scr_nameholding/scr_nameholding.yy",},
     {"name":"scr_savingandloading","order":1,"path":"scripts/scr_savingandloading/scr_savingandloading.yy",},
     {"name":"scr_stringbackspace","order":6,"path":"scripts/scr_stringbackspace/scr_stringbackspace.yy",},
+    {"name":"scr_test","order":8,"path":"scripts/scr_test/scr_test.yy",},
     {"name":"scr_text","order":2,"path":"scripts/scr_text/scr_text.yy",},
     {"name":"scr_topics_sampleDialogues","order":1,"path":"scripts/scr_topics_sampleDialogues/scr_topics_sampleDialogues.yy",},
     {"name":"scr_topics","order":5,"path":"scripts/scr_topics/scr_topics.yy",},
