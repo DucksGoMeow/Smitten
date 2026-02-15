@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_topics_sampleDialogues",
   "parent":{
-    "name":"Sample Dialogue",
-    "path":"folders/Scripts/Dialogue/Sample Dialogue.yy",
+    "name":"Dialogue Topics",
+    "path":"folders/Scripts/Dialogue/Dialogue Topics.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

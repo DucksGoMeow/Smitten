@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_test",
   "parent":{
-    "name":"Smitten",
-    "path":"Smitten.yyp",
+    "name":"Dialogue Topics",
+    "path":"folders/Scripts/Dialogue/Dialogue Topics.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
