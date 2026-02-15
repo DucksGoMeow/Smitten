@@ -94,6 +94,7 @@
     {"id":{"name":"scr_saving","path":"scripts/scr_saving/scr_saving.yy",},},
     {"id":{"name":"scr_savingandloading","path":"scripts/scr_savingandloading/scr_savingandloading.yy",},},
     {"id":{"name":"scr_stringbackspace","path":"scripts/scr_stringbackspace/scr_stringbackspace.yy",},},
+    {"id":{"name":"scr_test","path":"scripts/scr_test/scr_test.yy",},},
     {"id":{"name":"scr_text","path":"scripts/scr_text/scr_text.yy",},},
     {"id":{"name":"scr_topics_sampleDialogues","path":"scripts/scr_topics_sampleDialogues/scr_topics_sampleDialogues.yy",},},
     {"id":{"name":"scr_topics","path":"scripts/scr_topics/scr_topics.yy",},},
