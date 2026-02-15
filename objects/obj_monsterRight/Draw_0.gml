@@ -1,6 +1,6 @@
 if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monsterTimer.noLeftMonster){
 	//Monster Sprite
-	draw_sprite(sprite_index, image_index, 1153, 442);
+	draw_sprite(sprite_index, image_index, monsterX, monsterY);
 
 	//Timer Text (this is temporary)
 	var t = "";

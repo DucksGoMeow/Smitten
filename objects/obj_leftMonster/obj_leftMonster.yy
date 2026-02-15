@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_testMonster",
-    "path":"sprites/spr_testMonster/spr_testMonster.yy",
+    "name":"spr_blankMonster",
+    "path":"sprites/spr_blankMonster/spr_blankMonster.yy",
   },
   "spriteMaskId":null,
   "visible":true,

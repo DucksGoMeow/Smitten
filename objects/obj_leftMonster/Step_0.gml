@@ -12,13 +12,19 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 	//Monster Type and Sprite
 	switch (randNumType){
 		case 1:
-			monsterComingSpr = spr_testMonsterComing;
+			monsterComingSpr = spr_mantisEnteringLeft;
+			monsterX = 0; 
+			monsterY = 250;
 			break;
 		case 2:
-			monsterComingSpr = spr_testMonsterComing2;
+			monsterComingSpr = spr_mantisEnteringLeft;
+			monsterX = 0; 
+			monsterY = 250;
 			break;
 		case 3:
-			monsterComingSpr = spr_testMonsterComing3;
+			monsterComingSpr = spr_mantisEnteringLeft;
+			monsterX = 0; 
+			monsterY = 250;
 			break;
 	}
 

@@ -11,7 +11,7 @@
   "option_windows_description_info":"FUNCOM2 Game by Lovebug Studios || Go on a date with a vampire while cutting through both hordes of his toxic monster loved ones and intimate conversations with your sword.",
   "option_windows_disable_sandbox":false,
   "option_windows_display_cursor":true,
-  "option_windows_display_name":"Smitted",
+  "option_windows_display_name":"Smitten",
   "option_windows_enable_steam":false,
   "option_windows_executable_name":"${project_name}.exe",
   "option_windows_icon":"${base_options_dir}/windows/icons/icon.ico",
