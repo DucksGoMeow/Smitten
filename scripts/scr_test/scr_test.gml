@@ -262,8 +262,126 @@ topics[$ "No." ] = [
   
   SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
   TEXT("So… how are you feeling?"),
-  
-  //will add the 0, 1, 2 ,3 heart dialogues soon - racks
   ];
+  
+  topics[$ "0_Heart"] = [
+  SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
+  TEXT("…Hm… not well, I’ll be frank."),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("Oh… I’m… sorry to hear."),
+  
+  SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
+  TEXT("…Maybe I was naive, thinking this could ever work. Call me a hopeless romantic."),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("Did I do something wrong…?"),
+  
+  SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
+  TEXT("Ah… no, I don’t believe so. But I don’t think we would work well together, even if we weren’t man and monster."),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("(Crap…)"),
+  
+  SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
+  TEXT("I wish you a good day. But don’t expect to see me again."),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("(...I really should’ve stuck to monster-hunting. I’m not cut out for this.)"),
+  ]; // GAME OVER SCREEN
+  
+  topics[$ "1_Heart"] = [
+  SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
+  TEXT("Hah, very refreshed. This was quite nice, despite some hiccups."),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("I really donked up, huh?"),
+  
+  SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
+  TEXT("I… believe we both did. However– I can tell you’re simply new to this. Or unsure of yourself. Or, maybe injured in some way undetected by both of us."),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("Wow… yeah, no kidding."),
+  
+  SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
+  TEXT("But I can tell there’s something about you, fair Hunter. Something I like. Something I’d like to see <italic>more</italic> of, if you’d like."),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("(I’m surprisingly really happy to hear that.)"),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("Me too. You’re really cool."),
+  
+  SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
+  TEXT("I have the body temperature of a corpse!"),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("Makes sense. I’ll call you when I’m free."),
+  
+  SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
+  TEXT("Farewell! I’d be happy to see you again and know you."),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("(...He’s giving me another chance. Here’s to hoping I can do better next time.)"),
+  ];
+  
+  topics[$ "2_Hearts"] = [
+  SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
+  TEXT("Oh, great. It’s been far too long since I’ve had such a good time alone with someone!"),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("(Woah. I really hit it off so well with him…)"),
+  
+  SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
+  TEXT("I’d never expected to hit it off so well with a monster hunter, but I’m certainly not complaining."),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("Seems I finished my bounty, then. But would you… wanna do this again sometime?"),
+  
+  SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
+  TEXT("I’d love to! Especially since it’ll be off-the-clock for you, so to speak. I’ll be sure to send a message."),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("Awesome. Good night, Count."),
+  
+  SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
+  TEXT("Good night, fair Hunter!"),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("(That went really well. Maybe I have a knack for this… or, I just can’t help myself around him. Either way… can’t wait to see him again.)"),
+  ];
+  
+  topics[$ "3_Hearts"] = [
+  SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
+  TEXT("I had an incredible time, fair Hunter. Had I a living, working heart, it would have been racing!"),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("(My working one already is… wait– can he sense that? Calm down.)"),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("Ditto. On the incredible time part, I mean."),
+  
+  SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
+  TEXT("Oh– really? Wonderful! That’s– wow, I’ve frankly been worrying if I made a good impression this whole time."),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("(Don’t smile, Hunter. Or. Do. Smile? What should I do here?)"),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("Trust me, you did. And if you feel the same, maybe you’d wanna see each other again sometime?"),
+  
+  SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
+  TEXT("I’d be delighted to! I’ll be sure to get in touch as soon as I can. Have a wonderful evening."),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("You too. I’ll be sure to keep an eye out for you."),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("(Off he goes… and here I am trying not to explode.)"),
+  
+  SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+  TEXT("(I’m not gonna be able to wait that long. I'm so hyped. Can’t have seen that going any better than it did! Man, I’m so glad I took this contract…!)"),
+  ]; 
+  
   
 }
