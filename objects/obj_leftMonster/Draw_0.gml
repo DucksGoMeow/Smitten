@@ -3,6 +3,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 	draw_sprite(sprite_index, image_index, monsterX, monsterY);
 
 	//Timer Text (this is temporary)
+	draw_set_color(c_fuchsia);
 	var t = "";
 	t += string(tMin);
 	t += ":";
@@ -19,43 +20,73 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 	t += string(tMil)
 
 	draw_text(100, 90, t);
-
+	
+	//sprite animations
+	if (tSec == 20){
+		sprite_index = monsterComingSpr;
+	}
+	
+	if (tSec == 15){
+		sprite_index = monsterAttackingSpr;
+	}
+	
 	//Health Bar (this is only temporary)
 	var barWidth;
 	barWidth = 200;
 
 	var monsterHealthColor = c_green;
-	if (monsterHealth <= 199){
+	if (monsterHealth == 150){
 		monsterHealthColor = c_yellow;
 		barWidth = 150;
+		if (!doneMonsterDamage){
+			sprite_index = monsterDamageSpr;
+			if (tMil == 9){
+				sprite_index = monsterAttackingSpr;
+				doneMonsterDamage = true;
+			}
+		}
+		else if (doneMonsterDamage){
+			sprite_index = monsterAttackingSpr;
+		}
 	}
 
-	if (monsterHealth <= 149){
+	if (monsterHealth == 100){
 		monsterHealthColor = c_orange;
 		barWidth = 100;
+		if (doneMonsterDamage){
+			sprite_index = monsterDamageSpr;
+			if (tMil == 9){
+				sprite_index = monsterAttackingSpr;
+				doneMonsterDamage = false;
+			}
+		}
+		else if (!doneMonsterDamage){
+			sprite_index = monsterAttackingSpr;
+		}
 	}
 
-	if (monsterHealth <= 50){
+	if (monsterHealth == 50){
 		monsterHealthColor = c_red;
 		barWidth = 50;
-
+		if (!doneMonsterDamage){
+			sprite_index = monsterDamageSpr;
+			if (tMil == 9){
+				sprite_index = monsterAttackingSpr;
+				doneMonsterDamage = true;
+			}
+		}
+		else if (doneMonsterDamage){
+			sprite_index = monsterAttackingSpr;
+		}
 	}
+	
+	if (tSec == 5){
+		sprite_index = monsterLeavingSpr;
+	}
+	
 	draw_set_color(monsterHealthColor);
 	draw_rectangle(100, 111, 100 + (monsterHealth/monsterHealth)*barWidth, 111 + 10, false);
-
-	//sprite animations
-	if (tSec == 20){
-		sprite_index = monsterComingSpr;
-	}
-
-	else if (tSec == 15){
-		sprite_index = spr_testMonsterAttacking;
-	}
-
-	else if (tSec == 5){
-		sprite_index = spr_testMonsterLeaving;
-	}
-
+	
 	//Has to be drawn last so it is ontop of everything
 	if (tSec >= 6 && tSec <= 15){
 	#region Draw Arrow Pattern

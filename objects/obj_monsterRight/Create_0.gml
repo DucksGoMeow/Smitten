@@ -8,6 +8,9 @@ patternChosen = false;
 monsterX = 1366; 
 monsterY = 442;
 
+doneDamage = false;
+doneMonsterDamage = false;
+
 //What type is the monster
 randNumType = irandom(3);
 
@@ -18,9 +21,11 @@ if (global.tutorial){
 	randNumArrow = irandom(16);
 } 
 if (global.tutorial){
+	doneMonsterDamage = true;
 	randNumArrow = choose(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
 }
 else if (!global.tutorial && global.whatlevel = 1){
+	doneMonsterDamage = true;
 	randNumArrow = choose(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
  }
 else if (!global.tutorial && global.whatlevel = 2){
@@ -38,6 +43,9 @@ else if (!global.tutorial && global.whatlevel = 5){
  
 //Default Spites
 monsterComingSpr = spr_blankMonster;
+monsterDamageSpr = spr_blankMonster;
+monsterAttackingSpr = spr_blankMonster;
+monsterLeavingSpr = spr_blankMonster;
 
 tMin = 0;
 tSec = 20;
@@ -49,8 +57,6 @@ patternUp = false;
 patternDown = false;
 patternRight = false;
 patternLeft = false;
-
-doneDamage = false;
 
 leavingAnimation = function(){
 	event_perform(ev_create, 0);

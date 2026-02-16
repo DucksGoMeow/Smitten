@@ -13,16 +13,22 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 	switch (randNumType){
 		case 1:
 			monsterComingSpr = spr_mantisEnteringLeft;
+			monsterDamageSpr = spr_mantisDamageLeft;
+			monsterAttackingSpr = spr_mantisIdelLeft;
 			monsterX = 0; 
 			monsterY = 250;
 			break;
 		case 2:
 			monsterComingSpr = spr_mantisEnteringLeft;
+			monsterDamageSpr = spr_mantisDamageLeft;
+			monsterAttackingSpr = spr_mantisIdelLeft;
 			monsterX = 0; 
 			monsterY = 250;
 			break;
 		case 3:
 			monsterComingSpr = spr_mantisEnteringLeft;
+			monsterDamageSpr = spr_mantisDamageLeft;
+			monsterAttackingSpr = spr_mantisIdelLeft;
 			monsterX = 0; 
 			monsterY = 250;
 			break;
@@ -1337,7 +1343,11 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 	}
 
 	if (monsterHealth = 0){
-		leavingAnimation(); 
+		sprite_index = monsterDamageSpr;
+		if (tMil == 9){
+				leavingAnimation(); 
+		}
+		
 		if (tSec == 0){
 			instance_destroy();
 			obj_monsterTimer.monsterFinished = true;
