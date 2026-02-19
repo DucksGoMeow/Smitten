@@ -1,10 +1,9 @@
 if (playerHealth == 100){
-	heartThree = false;
+	LV1heartThree = false;
 }
 else if (playerHealth == 50){
-	heartTwo = false;
+	LV1heartTwo = false;
 }
 else if (playerHealth == 0){
-	heartOne = false;
-	obj_monsterTimer.monsterFinished = true;
+	LV1heartOne = false;
 }

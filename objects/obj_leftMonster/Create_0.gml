@@ -44,9 +44,10 @@ monsterDamageSpr = spr_blankMonster;
 monsterAttackingSpr = spr_blankMonster;
 monsterLeavingSpr = spr_blankMonster;
 
+//The Timer
 tMin = 0;
 tSec = 20;
-tMil = 0; //tenth of a second
+tMil = 0; 
 
 alarm[1] = 6; // 60 frames per second 
 

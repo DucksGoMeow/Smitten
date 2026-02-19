@@ -1,5 +1,5 @@
 playerHealth = 150;
 
-heartOne = true;
-heartTwo = true;
-heartThree = true;
+LV1heartOne = true;
+LV1heartTwo = true;
+LV1heartThree = true;

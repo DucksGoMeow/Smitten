@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Edit L8r",
-    "path":"folders/Sprites/Edit L8r.yy",
+    "name":"!Delete when finished",
+    "path":"folders/Sprites/!Delete when finished.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

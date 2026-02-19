@@ -1,11 +1,13 @@
-//DO NOT EDIT
+     //DO NOT EDIT
 #macro TEXT new TextAction
+#macro TEXTWAUDIO new TextAudioAction
 #macro GOTO new GotoAction
 #macro CHOICE new ChoiceAction
 #macro OPTION new OptionAction
 #macro SPEAKER new SpeakerAction
 #macro PORTRAIT new PortraitAction
 #macro CUSTOM new CustomAction
+#macro CUSTOMTEXT new CustomeTextAction
 
 function DialogueAction() constructor {
 	act = function() { };
@@ -17,6 +19,20 @@ function TextAction(_text) : DialogueAction() constructor {
 
 	act = function(textbox) {
 		textbox.setText(text);
+		return false;
+	}
+}
+
+function TextAudioAction( _text, _audio = undefined) : DialogueAction() constructor {
+	text = _text;
+	audio = _audio;
+
+	act = function(textbox) {
+		textbox.setText(text);
+		
+		if (!is_undefined(audio))
+		textbox.dialogue_audio = audio;
+		
 		return false;
 	}
 }
@@ -71,6 +87,7 @@ function SpeakerAction(_name, _sprite = undefined, _side = PORTRAIT_SIDE.SAME): 
 	sprite = _sprite;
 	side = _side;
 
+
 	act = function(textbox) {
 		textbox.speaker_name = name;
 
@@ -102,6 +119,16 @@ function CustomAction(_action): DialogueAction() constructor {
 	action = _action;
 	
 	act = function(textbox) {
+		return action(textbox);
+	}
+}
+
+function CustomeTextAction(_text, _action) : DialogueAction() constructor {
+	text = _text;
+	action = _action;
+
+	act = function(textbox) {
+		textbox.setText(text);
 		return action(textbox);
 	}
 }

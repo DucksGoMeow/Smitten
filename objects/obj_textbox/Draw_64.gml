@@ -2,7 +2,6 @@
 
 //Background 
 //If the dialogue portrait has a background, I just turned it off cause we don't need it
-
 //draw_sprite(spr_backgrounddialogue, 0, 1, 1)
 
 //Very important note: When drawing stuff whatever you want to be behind everything should be drawn first
@@ -40,14 +39,21 @@ if (sprite_exists(portrait_sprite)) {
 	
 	//Animate the portrait when typing
 	var subimg = 0;
-	if (!finished)
+	if (!finished){
 		subimg = (text_progress / text_speed) * (sprite_get_speed(portrait_sprite) / game_get_speed(gamespeed_fps));
+		draw_sprite_ext(portrait_sprite, subimg, 90, 384, portrait_side == PORTRAIT_SIDE.LEFT ? 1 : -1, 1, 0, c_white, 1);
 		
-	draw_sprite_ext(portrait_sprite, subimg,
-		90, 384,
-		portrait_side == PORTRAIT_SIDE.LEFT ? 1 : -1, 1, 0, c_white, 1);
+		if (!playingAudio){
+			audio_play_sound(dialogue_audio, 1, 1);
+			playingAudio = true;
+		}
+	}
+	else if (finished){
+		audio_pause_sound(dialogue_audio);
+		playingAudio = false;
+	}
 }
-
+       
 //Speaker/Nameplate
 /*if (speaker_name != "") {
 	//Expand the nameplate if the name is wider than the default width
@@ -66,7 +72,7 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_font(text_font);
 draw_set_color(text_color);
-__type(draw_x + text_x + 190, draw_y + text_y, text, text_progress, draw_width);
+__type(draw_x + text_x + 190, draw_y + text_y, text, text_progress, draw_width - 200);
 
 //Options
 if (finished && option_count > 0) {

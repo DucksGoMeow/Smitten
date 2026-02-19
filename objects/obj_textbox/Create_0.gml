@@ -83,6 +83,8 @@ enum PORTRAIT_SIDE {
 portrait_width = sprite_get_width(spr_portrait);
 portrait_height = sprite_get_height(spr_portrait);
 
+playingAudio = false;
+
 //Methods
 //*** Generally you never need to call these manually ***/
 

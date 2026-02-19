@@ -3,7 +3,6 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 	draw_sprite(sprite_index, image_index, monsterX, monsterY);
 
 	//Timer Text (this is temporary)
-	draw_set_color(c_fuchsia);
 	var t = "";
 	t += string(tMin);
 	t += ":";

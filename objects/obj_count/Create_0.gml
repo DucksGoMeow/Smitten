@@ -13,3 +13,10 @@ attackAnimation = function(){
 	countSprite = spr_countShocked;
 	event_perform(ev_alarm, 0);
 }
+
+damageSprite = function(){
+	event_perform(ev_create, 0);
+	tMil = 5;
+	countSprite = spr_countDamaged;
+	event_perform(ev_alarm, 0);
+}
