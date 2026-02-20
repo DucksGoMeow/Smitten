@@ -1,9 +1,9 @@
 if (playerHealth == 100){
-	LV1heartThree = false;
+	heartThree = false;
 }
 else if (playerHealth == 50){
-	LV1heartTwo = false;
+	heartTwo = false;
 }
 else if (playerHealth == 0){
-	LV1heartOne = false;
+	heartOne = false;
 }

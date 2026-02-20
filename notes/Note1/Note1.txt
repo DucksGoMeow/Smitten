@@ -1,1 +1,0 @@
-finish the arrow patterns and make sure they all work before adding to them

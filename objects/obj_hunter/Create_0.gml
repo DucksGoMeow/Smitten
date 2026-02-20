@@ -34,3 +34,10 @@ rightAnimation = function(){
 	hunterSprite = spr_hunterRight;
 	event_perform(ev_alarm, 0);
 }
+
+defendAnimation = function(){
+	event_perform(ev_create, 0);
+	tMil = 2;
+	hunterSprite = spr_hunterDefend;
+	event_perform(ev_alarm, 0);
+}

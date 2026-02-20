@@ -20,6 +20,6 @@ if(dev0Up){
 	}
 }
 
-if (tSec == 0 && tMil == 0){
+if (tMil == 0){
 	countSprite = spr_countWalking;
 }

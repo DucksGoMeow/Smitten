@@ -1337,7 +1337,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 	#endregion
 	
 	if(tSec == 5 && !doneDamage){
-		obj_playerHealthLv1.playerHealth -= 50;
+		obj_playerHealth.playerHealth -= 50;
 		doneDamage = true;
 	}
 

@@ -2,7 +2,6 @@
   "FolderOrderSettings":[
     {"name":"Extensions","order":6,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":3,"path":"folders/Fonts.yy",},
-    {"name":"Sound","order":8,"path":"folders/Sound.yy",},
     {"name":"Notes","order":7,"path":"folders/Notes.yy",},
     {"name":"Objects","order":4,"path":"folders/Objects.yy",},
     {"name":"!Delete when finished","order":7,"path":"folders/Objects/!Delete when finished.yy",},
@@ -17,6 +16,7 @@
     {"name":"Dialogue","order":5,"path":"folders/Scripts/Dialogue.yy",},
     {"name":"Dialogue Topics","order":4,"path":"folders/Scripts/Dialogue/Dialogue Topics.yy",},
     {"name":"Menus","order":10,"path":"folders/Scripts/Menus.yy",},
+    {"name":"Sound","order":8,"path":"folders/Sound.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"!Delete when finished","order":1,"path":"folders/Sprites/!Delete when finished.yy",},
     {"name":"Assets","order":13,"path":"folders/Sprites/Assets.yy",},
@@ -93,6 +93,7 @@
     {"name":"spr_customMouse","order":6,"path":"sprites/spr_customMouse/spr_customMouse.yy",},
     {"name":"spr_dialoguePortraitHunter","order":13,"path":"sprites/spr_dialoguePortraitHunter/spr_dialoguePortraitHunter.yy",},
     {"name":"spr_heart","order":8,"path":"sprites/spr_heart/spr_heart.yy",},
+    {"name":"spr_hunterDefend","order":5,"path":"sprites/spr_hunterDefend/spr_hunterDefend.yy",},
     {"name":"spr_hunterLeft","order":1,"path":"sprites/spr_hunterLeft/spr_hunterLeft.yy",},
     {"name":"spr_hunterRight","order":2,"path":"sprites/spr_hunterRight/spr_hunterRight.yy",},
     {"name":"spr_hunterUp","order":3,"path":"sprites/spr_hunterUp/spr_hunterUp.yy",},
