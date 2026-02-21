@@ -44,6 +44,34 @@ monsterDamageSpr = spr_blankMonster;
 monsterAttackingSpr = spr_blankMonster;
 monsterLeavingSpr = spr_blankMonster;
 
+//Monster Type and Sprite
+	switch (randNumType){
+		case 1:
+			monsterComingSpr = spr_mantisEnteringLeft;
+			monsterDamageSpr = spr_mantisDamageLeft;
+			monsterAttackingSpr = spr_mantisAttackLeft;
+			monsterLeavingSpr = spr_mantisLeavingLeft;
+			monsterX = 0; 
+			monsterY = 250;
+			break;
+		case 2:
+			monsterComingSpr = spr_mantisEnteringLeft;
+			monsterDamageSpr = spr_mantisDamageLeft;
+			monsterAttackingSpr = spr_mantisAttackLeft;
+			monsterLeavingSpr = spr_mantisLeavingLeft;
+			monsterX = 0; 
+			monsterY = 250;
+			break;
+		case 3:
+			monsterComingSpr = spr_mantisEnteringLeft;
+			monsterDamageSpr = spr_mantisDamageLeft;
+			monsterAttackingSpr = spr_mantisAttackLeft;
+			monsterLeavingSpr = spr_mantisLeavingLeft;
+			monsterX = 0; 
+			monsterY = 250;
+			break;
+	}
+
 //The Timer
 tMin = 0;
 tSec = 20;

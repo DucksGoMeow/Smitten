@@ -45,8 +45,8 @@ function scr_topics_sampleDialogues(topics){
 
 	topics[$ "Testing Audio"] = [
 		SPEAKER("Name", spr_name, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("Hello World! I am testing the audio to see if it works!", tst),
-		TEXTWAUDIO("The audio should play for long texts, like this one right here which actually needs me to type a lot", tst),
-		TEXTWAUDIO("And short texts", tst),
+		TEXTWAUDIO("Hello World! I am testing the audio to see if it works!", snd_hunter),
+		TEXTWAUDIO("The audio should play for long texts, like this one right here which actually needs me to type a lot", snd_hunter),
+		TEXTWAUDIO("And short texts", snd_hunter),
 	];
 }

@@ -14,7 +14,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 		case 1:
 			monsterComingSpr = spr_mantisEnteringRight;
 			monsterDamageSpr = spr_mantisDamageRight;
-			monsterAttackingSpr = spr_mantisIdelRight;
+			monsterAttackingSpr = spr_mantisAttackRight;
 			monsterLeavingSpr = spr_mantisLeavingRight;
 			monsterX = 941; 
 			monsterY = 250;
@@ -22,7 +22,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 		case 2:
 			monsterComingSpr = spr_mantisEnteringRight;
 			monsterDamageSpr = spr_mantisDamageRight;
-			monsterAttackingSpr = spr_mantisIdelRight;
+			monsterAttackingSpr = spr_mantisAttackRight;
 			monsterLeavingSpr = spr_mantisLeavingRight;
 			image_xscale = -1;
 			monsterX = 941; 
@@ -31,7 +31,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 		case 3:
 			monsterComingSpr = spr_mantisEnteringRight;
 			monsterDamageSpr = spr_mantisDamageRight;
-			monsterAttackingSpr = spr_mantisIdelRight;
+			monsterAttackingSpr = spr_mantisAttackRight;
 			monsterLeavingSpr = spr_mantisLeavingRight;
 			monsterX = 941; 
 			monsterY = 250;

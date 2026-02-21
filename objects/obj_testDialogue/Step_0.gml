@@ -1,6 +1,6 @@
 if (active) {
 	if (keyboard_check_pressed(vk_space)) {
 		active = false;
-		startDialogue("Testing Audio", activate);
+		startDialogue("L1_Dating", activate);
 	}
 }
