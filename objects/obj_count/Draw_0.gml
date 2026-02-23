@@ -1,7 +1,7 @@
 //Monster Sprite
 draw_sprite(countSprite, image_index, 573, 277);
 
-//Timer Text (this is temporary)
+/*//Timer Text (this is temporary)
 var t = "";
 t += string(tMin);
 t += ":";

@@ -2,7 +2,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 	//Monster Sprite
 	draw_sprite(sprite_index, image_index, monsterX, monsterY);
 
-	//Timer Text (this is temporary)
+	/*//Timer Text (this is temporary)
 	var t = "";
 	t += string(tMin);
 	t += ":";
@@ -18,7 +18,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 	t += ".";
 	t += string(tMil)
 
-	draw_text(100, 90, t);
+	draw_text(100, 90, t);*/
 	
 	//sprite animations
 	if (tSec == 20){
@@ -29,7 +29,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 		sprite_index = monsterAttackingSpr;
 	}
 
-	//Health Bar (this is only temporary)
+	/*//Health Bar (this is only temporary)
 	var barWidth; 
 	barWidth = 200;
 
@@ -81,7 +81,8 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 	
 	draw_set_color(monsterHealthColor);
 	draw_rectangle(100, 111, 100 + (monsterHealth/monsterHealth)*barWidth, 111 + 10, false);
-
+	*/
+	
 	if (tSec == 5){
 		sprite_index = monsterLeavingSpr;
 	}

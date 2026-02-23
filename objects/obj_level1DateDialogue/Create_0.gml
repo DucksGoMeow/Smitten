@@ -1,6 +1,6 @@
 tMin = 0;
-tSec = 0;
-tMil = 1; //tenth of a second
+tSec = 5;
+tMil = 0; //tenth of a second
 
 startDate = true;
 

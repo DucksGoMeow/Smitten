@@ -1,4 +1,4 @@
-//Timer Text (this is temporary)
+/*//Timer Text (this is temporary)
 draw_set_colour(c_white);
 
 var t = "";

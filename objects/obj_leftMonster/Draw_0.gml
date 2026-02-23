@@ -2,7 +2,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 	//Monster Sprite
 	draw_sprite(sprite_index, image_index, monsterX, monsterY);
 
-	//Timer Text (this is temporary)
+	/*//Timer Text (this is temporary)
 	var t = "";
 	t += string(tMin);
 	t += ":";
@@ -18,7 +18,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 	t += ".";
 	t += string(tMil)
 
-	draw_text(100, 90, t);
+	draw_text(100, 90, t);*/
 	
 	//sprite animations
 	if (tSec == 20){
@@ -29,7 +29,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 		sprite_index = monsterAttackingSpr;
 	}
 	
-	//Health Bar (this is only temporary)
+	/*//Health Bar (this is only temporary)
 	var barWidth;
 	barWidth = 200;
 
@@ -78,13 +78,13 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 			sprite_index = monsterAttackingSpr;
 		}
 	}
+	draw_set_color(monsterHealthColor);
+	draw_rectangle(100, 111, 100 + (monsterHealth/monsterHealth)*barWidth, 111 + 10, false);
+	*/
 	
 	if (tSec == 5){
 		sprite_index = monsterLeavingSpr;
 	}
-	
-	draw_set_color(monsterHealthColor);
-	draw_rectangle(100, 111, 100 + (monsterHealth/monsterHealth)*barWidth, 111 + 10, false);
 	
 	//Has to be drawn last so it is ontop of everything
 	if (tSec >= 6 && tSec <= 15){

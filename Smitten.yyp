@@ -179,8 +179,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_levelDate","path":"rooms/rm_levelDate/rm_levelDate.yy",},},
     {"roomId":{"name":"rm_levelBattle","path":"rooms/rm_levelBattle/rm_levelBattle.yy",},},
+    {"roomId":{"name":"rm_levelDate","path":"rooms/rm_levelDate/rm_levelDate.yy",},},
     {"roomId":{"name":"rm_mainMenu","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},},
     {"roomId":{"name":"rm_endScreen","path":"rooms/rm_endScreen/rm_endScreen.yy",},},
   ],
