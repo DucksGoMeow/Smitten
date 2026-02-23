@@ -36,6 +36,7 @@
     {"name":"obj_hunter","order":5,"path":"objects/obj_hunter/obj_hunter.yy",},
     {"name":"obj_leftMonster","order":1,"path":"objects/obj_leftMonster/obj_leftMonster.yy",},
     {"name":"obj_level1DateDialogue","order":2,"path":"objects/obj_level1DateDialogue/obj_level1DateDialogue.yy",},
+    {"name":"obj_level1HeartEvent","order":3,"path":"objects/obj_level1HeartEvent/obj_level1HeartEvent.yy",},
     {"name":"obj_levelCleared","order":1,"path":"objects/obj_levelCleared/obj_levelCleared.yy",},
     {"name":"obj_monsterRight","order":2,"path":"objects/obj_monsterRight/obj_monsterRight.yy",},
     {"name":"obj_monsterTimer","order":2,"path":"objects/obj_monsterTimer/obj_monsterTimer.yy",},
@@ -45,6 +46,7 @@
     {"name":"obj_resetLevel","order":3,"path":"objects/obj_resetLevel/obj_resetLevel.yy",},
     {"name":"obj_settings","order":1,"path":"objects/obj_settings/obj_settings.yy",},
     {"name":"obj_testDialogue","order":1,"path":"objects/obj_testDialogue/obj_testDialogue.yy",},
+    {"name":"rm_endScreen","order":3,"path":"rooms/rm_endScreen/rm_endScreen.yy",},
     {"name":"rm_levelDate","order":1,"path":"rooms/rm_levelDate/rm_levelDate.yy",},
     {"name":"rm_mainMenu","order":2,"path":"rooms/rm_mainMenu/rm_mainMenu.yy",},
     {"name":"scr_effects","order":1,"path":"scripts/scr_effects/scr_effects.yy",},
@@ -126,5 +128,7 @@
     {"name":"spr_wolfspiderIdelRight","order":7,"path":"sprites/spr_wolfspiderIdelRight/spr_wolfspiderIdelRight.yy",},
     {"name":"Sprite25","order":5,"path":"sprites/Sprite25/Sprite25.yy",},
     {"name":"Sprite34","order":11,"path":"sprites/Sprite34/Sprite34.yy",},
+    {"name":"Sprite51","order":14,"path":"sprites/Sprite51/Sprite51.yy",},
+    {"name":"Sprite52","order":15,"path":"sprites/Sprite52/Sprite52.yy",},
   ],
 }
