@@ -12,7 +12,7 @@ if (pausegame) { //draw frozen image to screen while paused
 	surface_reset_target();
 }
 
-if (timerDone == 0 && obj_levelTimer.tSec == 0 && obj_levelTimer.tMin == 0 && obj_levelTimer.tMil == 0){ //toggle pause (whatever trigger youd like)
+if (timerDone == 0){ //toggle pause (whatever trigger youd like)
 	if (!pausegame) { //pause now
 		pausegame = true;
 
@@ -20,7 +20,7 @@ if (timerDone == 0 && obj_levelTimer.tSec == 0 && obj_levelTimer.tMin == 0 && ob
 		instance_deactivate_all(true);
 		
 		//except these objs so they shows up
-		instance_activate_object(obj_playerHealthLv1);
+		instance_activate_object(obj_playerHealth);
 
 		//NOTE:
 		//if you need to pause anything like animating sprites, tiles, rooms background etc
@@ -43,8 +43,11 @@ if (timerDone == 0 && obj_levelTimer.tSec == 0 && obj_levelTimer.tMin == 0 && ob
 		
 		//instance_create_layer(0, 0, "Instances", Object21);
 		instance_create_layer(533, 516.4, "Instances", obj_resetLevel);
-		instance_create_layer(533, 400.9, "Instances", obj_nextLevel);
 		instance_create_layer(533, 448, "Instances", obj_levelTimer);
+		
+		if (levelCleared){
+			instance_create_layer(533, 400.9, "Instances", obj_nextLevel);
+		}
 
 	}
 	/*else { //unpause now

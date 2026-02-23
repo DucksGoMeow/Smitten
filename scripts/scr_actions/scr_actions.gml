@@ -1,13 +1,16 @@
-     //DO NOT EDIT
+//DO NOT EDIT
 #macro TEXT new TextAction
 #macro TEXTWAUDIO new TextAudioAction
 #macro GOTO new GotoAction
 #macro CHOICE new ChoiceAction
 #macro OPTION new OptionAction
 #macro SPEAKER new SpeakerAction
+#macro SPEAKERAUDIO new SpeakerWAudioAction
+#macro AUDIO new AudioAction
 #macro PORTRAIT new PortraitAction
 #macro CUSTOM new CustomAction
 #macro CUSTOMTEXT new CustomeTextAction
+#macro CUSTOMTEXTWAUDIO new CustomeTextWAudioAction
 
 function DialogueAction() constructor {
 	act = function() { };
@@ -46,7 +49,6 @@ function GotoAction(_topic): DialogueAction() constructor {
 		return false;
 	}
 }
-
 
 //Define a branch in the dialogue
 function ChoiceAction(_text) : DialogueAction() constructor {
@@ -101,6 +103,44 @@ function SpeakerAction(_name, _sprite = undefined, _side = PORTRAIT_SIDE.SAME): 
 	}
 }
 
+function SpeakerWAudioAction(_name, _sprite = undefined, _side = PORTRAIT_SIDE.SAME, _audio = undefined): DialogueAction() constructor {
+	name = _name;
+	sprite = _sprite;
+	side = _side;
+	audio = _audio;
+
+
+	act = function(textbox) {
+		textbox.speaker_name = name;
+
+		if (!is_undefined(sprite))
+			textbox.portrait_sprite = sprite;
+
+		if (side != PORTRAIT_SIDE.SAME)
+			textbox.portrait_side = side;
+			
+		if (!is_undefined(audio))
+		textbox.dialogue_audio = audio;
+
+		return false;
+	}
+}
+
+function AudioAction(_name, _audio = undefined): DialogueAction() constructor {
+	name = _name;
+	audio = _audio;
+
+
+	act = function(textbox) {
+		textbox.speaker_name = name;
+			
+		if (!is_undefined(audio))
+		textbox.dialogue_audio = audio;
+
+		return false;
+	}
+}
+
 //Set the current speaker portrait
 function PortraitAction(_sprite, _side = PORTRAIT_SIDE.SAME): DialogueAction() constructor {
 	sprite = _sprite;
@@ -110,7 +150,7 @@ function PortraitAction(_sprite, _side = PORTRAIT_SIDE.SAME): DialogueAction() c
 		textbox.portrait_sprite = sprite;
 		if (side != PORTRAIT_SIDE.SAME)
 			textbox.portrait_side = side;
-		return true;
+		return false;
 	}
 }
 
@@ -129,6 +169,21 @@ function CustomeTextAction(_text, _action) : DialogueAction() constructor {
 
 	act = function(textbox) {
 		textbox.setText(text);
+		return action(textbox);
+	}
+}
+
+		
+function CustomeTextWAudioAction(_text, _action, _audio = undefined) : DialogueAction() constructor {
+	text = _text;
+	action = _action;
+	audio = _audio;
+
+	act = function(textbox) {
+		textbox.setText(text);
+		
+		if (!is_undefined(audio))
+		textbox.dialogue_audio = audio;
 		return action(textbox);
 	}
 }

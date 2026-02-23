@@ -15,7 +15,7 @@ if (point_in_rectangle(mouse_x, mouse_y,
 	instance_destroy(obj_resetLevel);
 	instance_destroy(obj_nextLevel);
 	
-	global.whatLevel += 1;
+	
     save_game();
 	room_goto(rm_levelDate)
 	}

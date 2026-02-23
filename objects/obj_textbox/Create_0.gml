@@ -1,4 +1,8 @@
 /// CUSTOMIZABLE PROPERTIES
+restartDialogue = function(){
+	portrait_sprite = -1;
+	event_perform(ev_step, 0);
+}
 
 global.player_name = "No Name Yet"; //Only use if the player can change the main characters name
 
@@ -18,12 +22,12 @@ x = 76.8;
 y = 486.6;
 
 //Text
-text_font = fnt_text;
+text_font = fnt_main;
 text_color = c_white;
 text_speed = 0.6;
-text_x = padding;
+text_x = padding + 40;
 text_y = padding * 3;
-text_width = width - padding * 2;
+text_width = width - padding * 3;
 
 //Option
 option_color = c_white;
@@ -36,7 +40,7 @@ option_height = 40;
 option_text_x = 10;
 
 //Speaker
-speaker_font = fnt_text;
+speaker_font = fnt_main;
 speaker_color = c_white;
 speaker_x = padding; //Where relative to the textbox do nameplates spawn?
 speaker_y = 0;

@@ -1,0 +1,2 @@
+fix dialogue ui to have the text in diffrent placement 
+and then actually make sure it works ffs

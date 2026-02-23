@@ -1,4 +1,4 @@
-if (room == rm_levelBattle){
+if (room == rm_levelBattle || room == rm_levelDate){
 	if (heartOne){
 		draw_sprite(spr_heart, 0, 928, 32)
 	}

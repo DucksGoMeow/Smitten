@@ -10,7 +10,7 @@ global.text_styles = { };
 //note how it sets every single different type of parameter at least once
 create_style("standard", {
 	color: c_white,
-	font: fnt_text,
+	font: fnt_main,
 	speed: 0.6,
 	wavy: false
 });
@@ -26,6 +26,10 @@ create_style("wavy", {
 //colors can be made this way
 create_style("red", {
 	color: c_red,
+});
+
+create_style("freaky", {
+	font: fnt_freaky,
 });
 
 

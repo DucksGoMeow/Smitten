@@ -8,6 +8,10 @@ g = TMCT_GetCurrentGesture(0);
 
 if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monsterTimer.noLeftMonster){
 	#region Monster Randomization
+	if (!numChosen){
+		randNumType = choose(1, 2);
+		numChosen = true;
+	}
 	
 	//Monster Type and Sprite
 	switch (randNumType){
@@ -20,21 +24,12 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 			monsterY = 250;
 			break;
 		case 2:
-			monsterComingSpr = spr_mantisEnteringRight;
-			monsterDamageSpr = spr_mantisDamageRight;
-			monsterAttackingSpr = spr_mantisAttackRight;
-			monsterLeavingSpr = spr_mantisLeavingRight;
-			image_xscale = -1;
-			monsterX = 941; 
-			monsterY = 250;
-			break;
-		case 3:
-			monsterComingSpr = spr_mantisEnteringRight;
-			monsterDamageSpr = spr_mantisDamageRight;
-			monsterAttackingSpr = spr_mantisAttackRight;
-			monsterLeavingSpr = spr_mantisLeavingRight;
-			monsterX = 941; 
-			monsterY = 250;
+			monsterComingSpr = spr_wolfspiderEnteringRight;
+			monsterDamageSpr = spr_wolfspiderDamageRight;
+			monsterAttackingSpr = spr_wolfspiderIdelRight;
+			monsterLeavingSpr = spr_wolfspiderIdelRight;
+			monsterX = 939.5; 
+			monsterY = 231;
 			break;
 	}
 

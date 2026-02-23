@@ -20,7 +20,7 @@ if (keyboard_check_pressed(vk_escape)){ //toggle pause (whatever trigger youd li
 		instance_deactivate_all(true);
 		
 		//except these objs so they shows up
-		instance_activate_object(obj_playerHealthLv1);
+		instance_activate_object(obj_playerHealth);
 
 		//NOTE:
 		//if you need to pause anything like animating sprites, tiles, rooms background etc

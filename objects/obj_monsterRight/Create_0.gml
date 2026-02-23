@@ -11,14 +11,11 @@ monsterY = 442;
 doneDamage = false;
 doneMonsterDamage = false;
 
-//What type is the monster
-randNumType = irandom(3);
-
 //Arrow Pattern
 randNumArrow = 1;
 
 if (global.tutorial){
-	randNumArrow = irandom(16);
+	randNumArrow = choose(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
 } 
 if (global.tutorial){
 	doneMonsterDamage = true;
