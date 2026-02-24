@@ -20,6 +20,31 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 
 	draw_text(100, 90, t);*/
 	
+	if (!numChosen){
+		randNumType = choose(1, 2);
+		numChosen = true;
+	}
+	
+	//Monster Type and Sprite
+	switch (randNumType){
+		case 1:
+			monsterComingSpr = spr_mantisEnteringLeft;
+			monsterDamageSpr = spr_mantisDamageLeft;
+			monsterAttackingSpr = spr_mantisAttackLeft;
+			monsterLeavingSpr = spr_mantisLeavingLeft;
+			monsterX = 0; 
+			monsterY = 250;
+			break;
+		case 2:
+			monsterComingSpr = spr_wolfspiderEnteringLeft;
+			monsterDamageSpr = spr_wolfspiderDamageLeft;
+			monsterAttackingSpr = spr_wolfspiderIdelLeft;
+			monsterLeavingSpr = spr_wolfspiderIdelLeft;
+			monsterX = 0; 
+			monsterY = 231;
+			break;
+	}
+	
 	//sprite animations
 	if (tSec == 20){
 		sprite_index = monsterComingSpr;

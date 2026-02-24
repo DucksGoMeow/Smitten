@@ -122,7 +122,7 @@ function SpeakerWAudioAction(_name, _sprite = undefined, _side = PORTRAIT_SIDE.S
 		if (!is_undefined(audio))
 		textbox.dialogue_audio = audio;
 
-		return false;
+		return true;
 	}
 }
 

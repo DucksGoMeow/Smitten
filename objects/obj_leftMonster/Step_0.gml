@@ -9,32 +9,6 @@ g = TMCT_GetCurrentGesture(0);
 if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monsterTimer.noRightMonster){
 	#region Monster Randomization
 	
-	//What type is the monster
-	if (!numChosen){
-		randNumType = choose(1, 2);
-		numChosen = true;
-	}
-	
-	//Monster Type and Sprite
-	switch (randNumType){
-		case 1:
-			monsterComingSpr = spr_mantisEnteringLeft;
-			monsterDamageSpr = spr_mantisDamageLeft;
-			monsterAttackingSpr = spr_mantisAttackLeft;
-			monsterLeavingSpr = spr_mantisLeavingLeft;
-			monsterX = 0; 
-			monsterY = 250;
-			break;
-		case 2:
-			monsterComingSpr = spr_wolfspiderEnteringLeft;
-			monsterDamageSpr = spr_wolfspiderDamageLeft;
-			monsterAttackingSpr = spr_wolfspiderIdelLeft;
-			monsterLeavingSpr = spr_wolfspiderIdelLeft;
-			monsterX = 0; 
-			monsterY = 231;
-			break;
-	}
-
 	#region Arrow Pattern
 	//Theres probably an easier way to do this...
 	switch (randNumArrow){
