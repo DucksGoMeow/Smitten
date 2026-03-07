@@ -72,6 +72,7 @@
     {"id":{"name":"obj_nextLevel","path":"objects/obj_nextLevel/obj_nextLevel.yy",},},
     {"id":{"name":"obj_pauseMenu","path":"objects/obj_pauseMenu/obj_pauseMenu.yy",},},
     {"id":{"name":"obj_playerHealth","path":"objects/obj_playerHealth/obj_playerHealth.yy",},},
+    {"id":{"name":"obj_progressbar","path":"objects/obj_progressbar/obj_progressbar.yy",},},
     {"id":{"name":"obj_resetLevel","path":"objects/obj_resetLevel/obj_resetLevel.yy",},},
     {"id":{"name":"obj_settings","path":"objects/obj_settings/obj_settings.yy",},},
     {"id":{"name":"obj_start","path":"objects/obj_start/obj_start.yy",},},
