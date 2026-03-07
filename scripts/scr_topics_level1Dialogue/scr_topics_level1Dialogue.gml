@@ -33,7 +33,7 @@ function scr_topics_level1Dialogue(topics){
 		TEXTWAUDIO("I've been hired to... to take you out."),
   
 		SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("So you HAVE come to– wait. Like... On a date?"),
+		TEXTWAUDIO("So you HAVE come to, wait. Like... On a date?"),
   
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("Uh. Yeah...?"),
@@ -122,7 +122,7 @@ function scr_topics_level1Dialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("Our eloping under moonlight?", function() {obj_playerHealth.playerHealth -= 50}, snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("That's a bit, uh... I meant courting between man and monster– it's taboo.", function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("That's a bit, uh... I meant courting between man and monster, it's taboo.", function() {obj_textbox.restartDialogue();}, snd_count),
   
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("(Crap, was that too forward?!)", snd_hunter),
@@ -170,7 +170,7 @@ function scr_topics_level1Dialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("...a little bit nervous, honestly.", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Okay so it's NOT just me! Ahem– I mean... I appreciate your honesty.", function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Okay so it's NOT just me! Ahem, I mean... I appreciate your honesty.", function() {obj_textbox.restartDialogue();}, snd_count),
   
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("(...That was kinda cute.)", snd_hunter),
@@ -227,7 +227,7 @@ function scr_topics_level1Dialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("I like listening to your voice.", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("The point– uh– stands! I must extend you the same courtesy!", function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("The point, uh, stands! I must extend you the same courtesy!", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		GOTO("Cont_L1_Dating_3"),
 	];
@@ -236,7 +236,7 @@ function scr_topics_level1Dialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("Maybe you should be in love with mine, instead.", function() {obj_playerHealth.playerHealth -= 50}, snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Bro, what...? I mean– pardon?", function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Bro, what...? I mean, pardon?", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		GOTO("Cont_L1_Dating_3"),
 	];
@@ -304,7 +304,7 @@ function scr_topics_level1Dialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("I really donked up, huh?", snd_hunter),
   
-		TEXTWAUDIO("I... believe we both did. However– I can tell you're simply new to this. Or unsure of yourself. Or, maybe injured in some way undetected by both of us.", function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("I... believe we both did. However, I can tell you're simply new to this. Or unsure of yourself. Or, maybe injured in some way undetected by both of us.", function() {obj_textbox.restartDialogue();}, snd_count),
   
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("Wow... yeah, no kidding.", snd_hunter),
@@ -358,12 +358,12 @@ function scr_topics_level1Dialogue(topics){
 		CUSTOMTEXTWAUDIO("I had an incredible time, fair Hunter. Had I a living, working heart, it would have been racing!", function() {obj_textbox.restartDialogue();}, snd_count),
   
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("(My working one already is... wait– can he sense that? Calm down.)", snd_hunter),
+		TEXTWAUDIO("(My working one already is... wait, can he sense that? Calm down.)", snd_hunter),
   
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("Ditto. On the incredible time part, I mean.", snd_hunter),
   
-		CUSTOMTEXTWAUDIO("Oh– really? Wonderful! That's– wow, I've frankly been worrying if I made a good impression this whole time.", function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Oh, really? Wonderful! That's, wow, I've frankly been worrying if I made a good impression this whole time.", function() {obj_textbox.restartDialogue();}, snd_count),
   
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("(Don't smile, Hunter. Or. Do. Smile? What should I do here?)"),

@@ -1,2 +1,10 @@
-fix dialogue ui to have the text in diffrent placement 
-and then actually make sure it works ffs
+both the "major" bugs have been fixed please push again to github
+
+note for myself - put hunters attacking code in the monsters for their damages bc its not working
+
+for rack - a way to make the bar work properly (but its more lengthy and sir wouldnt approve)
+is by doing it for ever second or 5 seconds
+
+like
+
+if tSec = # bar lenthg blah blah blah ganon :33 up to you its a bad suggestion haha

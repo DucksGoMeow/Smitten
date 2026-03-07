@@ -20,11 +20,6 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 
 	draw_text(100, 90, t);*/
 	
-	if (!numChosen){
-		randNumType = choose(1, 2);
-		numChosen = true;
-	}
-	
 	//Monster Type and Sprite
 	switch (randNumType){
 		case 1:
