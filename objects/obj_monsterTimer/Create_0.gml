@@ -12,6 +12,8 @@ restartTimer = function(){
 	event_perform(ev_create, 0);
 	event_perform(ev_alarm, 0);
 	event_perform(ev_step, 0);
+	obj_leftMonsterSprite.numChosen = false;
+	obj_rightMonsterSprite.numChosen = false;
 }
 
 switch (randomNumSide){

@@ -1,7 +1,6 @@
 monsterHealth = 200;
 patternFinished = false;
 
-numChosen = false;
 ammountChosen = false;
 patternChosen = false;
 
@@ -19,11 +18,6 @@ monsterComingSpr = spr_blankMonster;
 monsterDamageSpr = spr_blankMonster;
 monsterAttackingSpr = spr_blankMonster;
 monsterLeavingSpr = spr_blankMonster;
-
-if (!numChosen){
-		randNumType = choose(1, 2);
-		numChosen = true;
-}
 
 if (global.tutorial){
 	randNumArrow = choose(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
@@ -61,7 +55,7 @@ patternRight = false;
 patternLeft = false;
 
 leavingAnimation = function(){
-	alarm[1] = 6; // 60 frames per second 
+	event_perform(ev_create, 0);
 	tSec = 5;
 	doneDamage = true;
 	event_perform(ev_alarm, 0);

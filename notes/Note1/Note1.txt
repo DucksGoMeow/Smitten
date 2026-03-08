@@ -1,7 +1,3 @@
-both the "major" bugs have been fixed please push again to github
-
-note for myself - put hunters attacking code in the monsters for their damages bc its not working
-
 for rack - a way to make the bar work properly (but its more lengthy and sir wouldnt approve)
 is by doing it for ever second or 5 seconds
 

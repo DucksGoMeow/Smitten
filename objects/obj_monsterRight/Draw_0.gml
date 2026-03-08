@@ -21,7 +21,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 	draw_text(100, 90, t);*/
 	
 	//Monster Type and Sprite
-	switch (randNumType){
+	switch (obj_rightMonsterSprite.randNumType){
 		case 1:
 			monsterComingSpr = spr_mantisEnteringRight;
 			monsterDamageSpr = spr_mantisDamageRight;
@@ -49,14 +49,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 		sprite_index = monsterAttackingSpr;
 	}
 
-	/*//Health Bar (this is only temporary)
-	var barWidth; 
-	barWidth = 200;
-
-	var monsterHealthColor = c_green;
 	if (monsterHealth == 150){
-		monsterHealthColor = c_yellow;
-		barWidth = 150;
 		if (!doneMonsterDamage){
 			sprite_index = monsterDamageSpr;
 			if (tMil == 9){
@@ -70,8 +63,6 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 	}
 
 	if (monsterHealth == 100){
-		monsterHealthColor = c_orange;
-		barWidth = 100;
 		if (doneMonsterDamage){
 			sprite_index = monsterDamageSpr;
 			if (tMil == 9){
@@ -85,8 +76,6 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 	}
 
 	if (monsterHealth == 50){
-		monsterHealthColor = c_red;
-		barWidth = 50;
 		if (!doneMonsterDamage){
 			sprite_index = monsterDamageSpr;
 			if (tMil == 9){
@@ -98,10 +87,6 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 			sprite_index = monsterAttackingSpr;
 		}
 	}
-	
-	draw_set_color(monsterHealthColor);
-	draw_rectangle(100, 111, 100 + (monsterHealth/monsterHealth)*barWidth, 111 + 10, false);
-	*/
 	
 	if (tSec == 5){
 		sprite_index = monsterLeavingSpr;
