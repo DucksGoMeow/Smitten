@@ -16,6 +16,9 @@ monsterDamageSpr = spr_blankMonster;
 monsterAttackingSpr = spr_blankMonster;
 monsterLeavingSpr = spr_blankMonster;
 
+//Default Sound
+monsterAttackingSound  = snd_mantisAttack;
+
 //Arrow Pattern
 randNumArrow = 1;
 

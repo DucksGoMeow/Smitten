@@ -2,8 +2,8 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 	//Monster Sprite
 	draw_sprite(sprite_index, image_index, monsterX, monsterY);
 
-	/*//Timer Text (this is temporary)
-	var t = "";
+	//Timer Text (this is temporary)
+	/*var t = "";
 	t += string(tMin);
 	t += ":";
 
@@ -27,6 +27,9 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 			monsterDamageSpr = spr_mantisDamageLeft;
 			monsterAttackingSpr = spr_mantisAttackLeft;
 			monsterLeavingSpr = spr_mantisLeavingLeft;
+			
+			monsterAttackingSound = snd_mantisAttack;
+			
 			monsterX = 0; 
 			monsterY = 250;
 			break;

@@ -8,15 +8,19 @@ g = TMCT_GetCurrentGesture(0);
 if(dev0Up){ 
 	if (g == "UP"){
 		upAnimation(); 
+		audio_play_sound(snd_swordSlashingV1, 1, 0);
 	}
 	if (g == "DOWN"){
 		downAnimation(); 
+		audio_play_sound(snd_swordSlashingV2, 1, 0);
 	}
 	if (g == "LEFT"){
 		leftAnimation(); 
+		audio_play_sound(snd_swordSlashingV3, 1, 0);
 	}
 	if (g == "RIGHT"){
 		rightAnimation(); 
+		audio_play_sound(snd_swordSlashingV4, 1, 0);
 	}
 }
 

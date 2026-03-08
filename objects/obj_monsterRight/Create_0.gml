@@ -19,6 +19,9 @@ monsterDamageSpr = spr_blankMonster;
 monsterAttackingSpr = spr_blankMonster;
 monsterLeavingSpr = spr_blankMonster;
 
+//Default Sound
+monsterAttackingSound  = snd_mantisAttack;
+
 if (global.tutorial){
 	randNumArrow = choose(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
 } 

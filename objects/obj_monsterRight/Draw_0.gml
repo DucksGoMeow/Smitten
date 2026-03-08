@@ -27,6 +27,9 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 			monsterDamageSpr = spr_mantisDamageRight;
 			monsterAttackingSpr = spr_mantisAttackRight;
 			monsterLeavingSpr = spr_mantisLeavingRight;
+			
+			monsterAttackingSound = snd_mantisAttack;
+			
 			monsterX = 941; 
 			monsterY = 250;
 			break;
@@ -35,6 +38,9 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 			monsterDamageSpr = spr_wolfspiderDamageRight;
 			monsterAttackingSpr = spr_wolfspiderIdelRight;
 			monsterLeavingSpr = spr_wolfspiderLeavingRight;
+			
+			monsterAttackingSound = snd_mantisAttack;
+			
 			monsterX = 939.5; 
 			monsterY = 231;
 			break;

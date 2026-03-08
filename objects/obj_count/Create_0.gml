@@ -18,5 +18,6 @@ damageSprite = function(){
 	event_perform(ev_create, 0);
 	tMil = 5;
 	countSprite = spr_countDamaged;
+	audio_play_sound(snd_countDamage, 1, 0);
 	event_perform(ev_alarm, 0);
 }
