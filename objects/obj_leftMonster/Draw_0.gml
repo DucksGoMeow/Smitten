@@ -34,7 +34,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 			monsterComingSpr = spr_wolfspiderEnteringLeft;
 			monsterDamageSpr = spr_wolfspiderDamageLeft;
 			monsterAttackingSpr = spr_wolfspiderIdelLeft;
-			monsterLeavingSpr = spr_wolfspiderIdelLeft;
+			monsterLeavingSpr = spr_wolfspiderLeavingLeft;
 			monsterX = 0; 
 			monsterY = 231;
 			break;

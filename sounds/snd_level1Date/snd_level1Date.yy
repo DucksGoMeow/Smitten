@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_hunter",
+  "%Name":"snd_level1Date",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.3061224,
+  "duration":29.088005,
   "exportDir":"",
-  "name":"snd_hunter",
+  "name":"snd_level1Date",
   "parent":{
-    "name":"Hunter",
-    "path":"folders/Sound/Dialogue Voices/Hunter.yy",
+    "name":"Date",
+    "path":"folders/Sound/Background Music/Date.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_hunter.mp3",
-  "volume":1.0,
+  "soundFile":"snd_level1Date.mp3",
+  "volume":0.5,
 }

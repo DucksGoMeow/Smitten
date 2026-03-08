@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_count",
   "parent":{
-    "name":"Sound",
-    "path":"folders/Sound.yy",
+    "name":"Count",
+    "path":"folders/Sound/Dialogue Voices/Count.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
