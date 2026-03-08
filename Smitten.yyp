@@ -85,6 +85,7 @@
     {"id":{"name":"obj_progressbar","path":"objects/obj_progressbar/obj_progressbar.yy",},},
     {"id":{"name":"obj_resetLevel","path":"objects/obj_resetLevel/obj_resetLevel.yy",},},
     {"id":{"name":"obj_rightMonsterSprite","path":"objects/obj_rightMonsterSprite/obj_rightMonsterSprite.yy",},},
+    {"id":{"name":"obj_rmonsbar","path":"objects/obj_rmonsbar/obj_rmonsbar.yy",},},
     {"id":{"name":"obj_settings","path":"objects/obj_settings/obj_settings.yy",},},
     {"id":{"name":"obj_start","path":"objects/obj_start/obj_start.yy",},},
     {"id":{"name":"obj_testDialogue","path":"objects/obj_testDialogue/obj_testDialogue.yy",},},
