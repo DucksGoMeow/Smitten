@@ -1,0 +1,13 @@
+tMil -= 1;
+
+if (tMil = -1){ //reduce seconds by 1
+	tMil = 9;
+	tSec -= 1;
+}
+
+//make sure timer doesn't tick if its at 0
+if !(tSec = 0 && tMin = 0 && tMil = 0){
+	alarm[0] = 6;
+}
+else {
+}

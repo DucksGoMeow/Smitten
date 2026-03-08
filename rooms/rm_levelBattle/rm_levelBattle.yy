@@ -18,6 +18,7 @@
     {"name":"inst_1777E01D","path":"rooms/rm_levelBattle/rm_levelBattle.yy",},
     {"name":"inst_4242A1AF","path":"rooms/rm_levelBattle/rm_levelBattle.yy",},
     {"name":"inst_2C89EB01","path":"rooms/rm_levelBattle/rm_levelBattle.yy",},
+    {"name":"inst_7B71BED2","path":"rooms/rm_levelBattle/rm_levelBattle.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -35,6 +36,7 @@
         {"$GMRInstance":"v4","%Name":"inst_1777E01D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1777E01D","objectId":{"name":"obj_leftMonsterSprite","path":"objects/obj_leftMonsterSprite/obj_leftMonsterSprite.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":0.0,},
         {"$GMRInstance":"v4","%Name":"inst_4242A1AF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4242A1AF","objectId":{"name":"obj_rightMonsterSprite","path":"objects/obj_rightMonsterSprite/obj_rightMonsterSprite.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":0.0,},
         {"$GMRInstance":"v4","%Name":"inst_2C89EB01","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2C89EB01","objectId":{"name":"obj_level1BattleMusic","path":"objects/obj_level1BattleMusic/obj_level1BattleMusic.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":0.0,},
+        {"$GMRInstance":"v4","%Name":"inst_7B71BED2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7B71BED2","objectId":{"name":"obj_rmonsbar","path":"objects/obj_rmonsbar/obj_rmonsbar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":0.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_62D0644","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_62D0644","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"Sprite25","path":"sprites/Sprite25/Sprite25.yy",},"x":0.0,"y":0.0,},
