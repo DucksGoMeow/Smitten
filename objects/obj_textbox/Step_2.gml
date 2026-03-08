@@ -1,9 +1,9 @@
 //You can edit
 
 // Get input
-var confirm = keyboard_check_pressed(confirm_key);
-var up = keyboard_check_pressed(up_key);
-var down = keyboard_check_pressed(down_key);
+var confirm = mouse_check_button_pressed(mb_left);
+var up = mouse_wheel_up();
+var down = mouse_wheel_down();
 
 //DO NOT EDIT
 
