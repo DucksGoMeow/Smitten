@@ -4,6 +4,8 @@ TMCT_SetDeviceGesture(0,TMCT_SegmentToGestureName( TMCT_GetSegment(0)));
 dev0Up = 0 
 if(device_mouse_check_button_released(0,mb_any)) dev0Up = 1
 
+
+
 g = TMCT_GetCurrentGesture(0);
 if(dev0Up){ 
 	if (g == "UP"){
@@ -21,5 +23,6 @@ if(dev0Up){
 }
 
 if (tMil == 0){
+	numChosen = true;
 	countSprite = spr_countWalking;
 }
