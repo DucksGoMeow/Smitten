@@ -56,6 +56,7 @@
     {"name":"obj_progressbar","order":9,"path":"objects/obj_progressbar/obj_progressbar.yy",},
     {"name":"obj_resetLevel","order":3,"path":"objects/obj_resetLevel/obj_resetLevel.yy",},
     {"name":"obj_rightMonsterSprite","order":4,"path":"objects/obj_rightMonsterSprite/obj_rightMonsterSprite.yy",},
+    {"name":"obj_rmonbar","order":9,"path":"objects/obj_rmonbar/obj_rmonbar.yy",},
     {"name":"obj_settings","order":1,"path":"objects/obj_settings/obj_settings.yy",},
     {"name":"obj_testDialogue","order":1,"path":"objects/obj_testDialogue/obj_testDialogue.yy",},
     {"name":"rm_endScreen","order":3,"path":"rooms/rm_endScreen/rm_endScreen.yy",},
