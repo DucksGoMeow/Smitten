@@ -4,3 +4,22 @@ is by doing it for ever second or 5 seconds
 like
 
 if tSec = # bar lenthg blah blah blah ganon :33 up to you its a bad suggestion haha
+
+//create
+secNumber = 20
+
+tMin = 0;
+tSec = 20;
+tMil = 0;
+
+alarm[0] = 6;
+
+//step
+
+secNumber = tSec;
+
+if (tSec <= secNumber){
+	bar size - 1;
+}
+
+smthing like that

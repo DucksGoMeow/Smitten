@@ -309,7 +309,7 @@ function scr_topics_level1Dialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("Wow... yeah, no kidding.", snd_hunter),
   
-		CUSTOMTEXTWAUDIO("But I can tell there's something about you, fair Hunter. Something I like. Something I'd like to see <italic>more</italic> of, if you'd like.", function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("But I can tell there's something about you, fair Hunter. Something I like. Something I'd like to see more of, if you'd like.", function() {obj_textbox.restartDialogue();}, snd_count),
   
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("(I'm surprisingly really happy to hear that.)", snd_hunter),

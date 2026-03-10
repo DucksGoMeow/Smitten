@@ -39,6 +39,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"fnt_freaky","order":2,"path":"fonts/fnt_freaky/fnt_freaky.yy",},
+    {"name":"Note1","order":10,"path":"notes/Note1/Note1.yy",},
     {"name":"obj_autosave","order":3,"path":"objects/obj_autosave/obj_autosave.yy",},
     {"name":"obj_count","order":7,"path":"objects/obj_count/obj_count.yy",},
     {"name":"obj_hunter","order":5,"path":"objects/obj_hunter/obj_hunter.yy",},
