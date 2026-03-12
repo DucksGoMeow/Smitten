@@ -1,5 +1,7 @@
 //Monster Sprite
-draw_sprite(hunterSprite, image_index, 484, 320);
+if (room == rm_levelBattle){
+	draw_sprite(hunterSprite, image_index, 484, 320);
+}
 
 /*//Timer Text (this is temporary)
 var t = "";

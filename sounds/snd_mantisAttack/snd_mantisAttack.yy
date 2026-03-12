@@ -2,8 +2,8 @@
   "$GMSound":"v2",
   "%Name":"snd_mantisAttack",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"soundEffects",
+    "path":"audiogroups/soundEffects",
   },
   "bitDepth":1,
   "channelFormat":0,

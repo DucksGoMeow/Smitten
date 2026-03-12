@@ -5,7 +5,12 @@ if (pausegame){
 	
 	draw_set_font(fnt_main);
 	draw_set_colour(c_black);
-	draw_text(533, 384, "Restart");
-	draw_text(533, 484, "Settings");
-	draw_text(533, 582, "Main Menu");
+	
+	if (!settingsOpened){
+		draw_text(533, 384, "Restart");
+		draw_text(533, 484, "Settings");
+		draw_text(533, 582, "Main Menu");
+	}
+}
+else {
 }

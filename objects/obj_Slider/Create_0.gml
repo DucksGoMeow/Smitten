@@ -11,4 +11,4 @@ switch(setting) {
 	break;
 }
 
-audio_group_load(audioground_sfx);
+audio_group_load(backgroundMusic);
