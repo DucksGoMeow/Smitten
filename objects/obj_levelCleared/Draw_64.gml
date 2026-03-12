@@ -26,10 +26,6 @@ if (pausegame){
 	
 	draw_set_colour(c_black)
 	draw_text(533, 96, "LEVEL CLEARED");
+	draw_text(533, 400.9, "Continue");
 	draw_text(533, 516.4, "Restart");
-	
-	if (levelCleared){
-			draw_text(533, 400.9, "Continue");
-		}
-	
 }

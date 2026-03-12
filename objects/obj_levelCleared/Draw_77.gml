@@ -42,29 +42,11 @@ if (timerDone == 0){ //toggle pause (whatever trigger youd like)
 		audio_pause_all();
 		
 		//instance_create_layer(0, 0, "Instances", Object21);
-		instance_create_layer(533, 516.4, "Instances", obj_resetLevel);
+		instance_create_layer(533, 516.4, "Instances", obj_completeResetLevel);
+		instance_create_layer(533, 400.9, "Instances", obj_completeNextLevel);
 		instance_create_layer(533, 448, "Instances", obj_levelTimer);
-		
-		if (levelCleared){
-			instance_create_layer(533, 400.9, "Instances", obj_nextLevel);
-		}
 
 	}
-	/*else { //unpause now
-		pausegame = false;
-		instance_activate_all();
-		if (surface_exists(pauseSurf)) surface_free(pauseSurf);
-		if (buffer_exists(pauseSurfBuffer)) buffer_delete(pauseSurfBuffer);
-		
-		//whatevers here go to obj_resumepause and put it there too
-		audio_resume_all();
-		
-		//instance_destroy(obj_restartpause);
-		instance_destroy(obj_resetLevel);
-		instance_destroy(obj_nextLevel);
-		}*/
-	}
+}
 
-
-//enable alpha blending again
 gpu_set_blendenable(true); 

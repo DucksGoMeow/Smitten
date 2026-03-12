@@ -20,7 +20,7 @@ if (keyboard_check_pressed(vk_escape)){ //toggle pause (whatever trigger youd li
 		instance_deactivate_all(true);
 		
 		//except these objs so they shows up
-		instance_activate_object(obj_playerHealth);
+		//instance_activate_object(obj_playerHealth);
 
 		//NOTE:
 		//if you need to pause anything like animating sprites, tiles, rooms background etc
@@ -41,7 +41,9 @@ if (keyboard_check_pressed(vk_escape)){ //toggle pause (whatever trigger youd li
 		//pause things		
 		audio_pause_all();
 		
-		//instance_create_layer(0, 0, "Instances", Object21);
+		instance_create_layer(533, 384, "Pause_Menu", obj_pauseRestartLevel);
+		instance_create_layer(533, 484, "Pause_Menu", obj_pauseSettings);
+		instance_create_layer(533, 582, "Pause_Menu", obj_pauseMainMenu);
 
 	}
 	else { //unpause now
@@ -53,7 +55,7 @@ if (keyboard_check_pressed(vk_escape)){ //toggle pause (whatever trigger youd li
 		//whatevers here go to obj_resumepause and put it there too
 		audio_resume_all();
 		
-		//instance_destroy(obj_restartpause);
+		instance_destroy(obj_pauseRestartLevel);
 		}
 	}
 

@@ -6,7 +6,7 @@ if(device_mouse_check_button_released(0,mb_any)) dev0Up = 1
 
 g = TMCT_GetCurrentGesture(0);
 
-if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monsterTimer.noLeftMonster){
+if (!obj_monsterTimer.noMonster){
 	#region Monster Randomization
 	#region Arrow Pattern
 	//Theres probably an easier way to do this...
@@ -1332,5 +1332,4 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 	}
 	
 	obj_monsterTimer.noMonster = true;
-	obj_monsterTimer.noRightMonster = true;
 }

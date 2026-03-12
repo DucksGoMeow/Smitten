@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_nextLevel",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_settingsControls",
+  "eventList":[],
   "managed":true,
-  "name":"obj_nextLevel",
+  "name":"obj_settingsControls",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu Buttons",
-    "path":"folders/Objects/Menu Buttons.yy",
+    "name":"Settings",
+    "path":"folders/Objects/Menus/Settings.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Sprite34",
-    "path":"sprites/Sprite34/Sprite34.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

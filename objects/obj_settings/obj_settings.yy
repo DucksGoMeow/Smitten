@@ -8,8 +8,8 @@
   "name":"obj_settings",
   "overriddenProperties":[],
   "parent":{
-    "name":"Main Menu",
-    "path":"folders/Objects/Menu Buttons/Main Menu.yy",
+    "name":"*Delete L8r",
+    "path":"folders/Objects/Menus/Settings/*Delete L8r.yy",
   },
   "parentObjectId":null,
   "persistent":false,

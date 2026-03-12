@@ -5,12 +5,12 @@ if (noMonster){
 	numChosen = false;
 	
 	switch (randomNumSide){
-			case 1:
-				noLeftMonster = false;
-				break;
-			case 2:
-				noRightMonster = false;
-				break;
+		case 1:
+			noLeftMonster = false;
+			break;
+		case 2:
+			noRightMonster = false;
+			break;
 		}
 	}
 }
