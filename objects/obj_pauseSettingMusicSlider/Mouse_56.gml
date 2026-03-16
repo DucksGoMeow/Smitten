@@ -1,5 +1,5 @@
 beingDragged = false;
 
-global.music_volume = amtCurrent;
+global.sound_volume = amtCurrent;
 		
-audio_group_set_gain(backgroundMusic, amtCurrent/100, 0);
+audio_group_set_gain(soundEffects, amtCurrent/100, 0);

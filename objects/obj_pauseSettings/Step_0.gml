@@ -6,11 +6,13 @@ if (point_in_rectangle(mouse_x, mouse_y,
 			openSettings = true;
 			
 			draw_sprite(Sprite60, 0, 148.5, 76.5);
-			instance_create_layer(240, 198, "Pause_Menu", obj_pauseSettingMusicSlider);
+			instance_create_layer(240, 200, "Pause_Menu", obj_pauseSettingMusicSlider);
+			instance_create_layer(240, 100, "Pause_Menu", obj_pauseSettingEffectSlider);
 		}
 	}
 }
 if (!obj_pauseMenu.pausegame){
 	openSettings = false;
 	instance_destroy(obj_pauseSettingMusicSlider);
+	instance_destroy(obj_pauseSettingEffectSlider);
 }
