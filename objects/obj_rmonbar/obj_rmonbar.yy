@@ -10,8 +10,8 @@
   "name":"obj_rmonbar",
   "overriddenProperties":[],
   "parent":{
-    "name":"Smitten",
-    "path":"Smitten.yyp",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

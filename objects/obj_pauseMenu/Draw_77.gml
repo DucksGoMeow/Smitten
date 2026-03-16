@@ -41,12 +41,10 @@ if (keyboard_check_pressed(vk_escape)){ //toggle pause (whatever trigger youd li
 		buffer_get_surface(pauseSurfBuffer, pauseSurf, 0);
 		
 		//pause things		
-		if (!settingsOpened){
+
 			instance_create_layer(533, 384, "Pause_Menu", obj_pauseRestartLevel);
 			instance_create_layer(533, 484, "Pause_Menu", obj_pauseSettings);
 			instance_create_layer(533, 582, "Pause_Menu", obj_pauseMainMenu);
-		}
-
 	}
 	else { //unpause now
 		pausegame = false;
@@ -57,10 +55,13 @@ if (keyboard_check_pressed(vk_escape)){ //toggle pause (whatever trigger youd li
 		//whatevers here go to obj_resumepause and put it there too
 		audio_resume_all();
 		
-		obj_pauseMenu.settingsOpened = false;
-		
+		settingsOpened = false;
 		instance_destroy(obj_pauseRestartLevel);
-
+		instance_destroy(obj_pauseSettings);
+		instance_destroy(obj_pauseSettingMusicSlider);
+		instance_destroy(obj_pauseSettingEffectSlider);
+		instance_destroy(obj_pauseSettingFullScreen);
+		instance_destroy(obj_pauseSettingBack);
 		instance_destroy(obj_pauseMainMenu);
 		}
 	}

@@ -9,8 +9,8 @@
   "name":"obj_pauseSettingFullScreen",
   "overriddenProperties":[],
   "parent":{
-    "name":"Pause Menu",
-    "path":"folders/Objects/Menus/Pause Menu.yy",
+    "name":"Settings",
+    "path":"folders/Objects/Menus/Pause Menu/Settings.yy",
   },
   "parentObjectId":null,
   "persistent":false,

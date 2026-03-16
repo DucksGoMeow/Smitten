@@ -1,0 +1,29 @@
+for rack - a way to make the bar work properly (but its more lengthy and sir wouldnt approve)
+is by doing it for ever second or 5 seconds
+
+like
+
+if tSec = # bar lenthg blah blah blah ganon :33 up to you its a bad suggestion haha
+
+//create
+secNumber = 20
+
+tMin = 0;
+tSec = 20;
+tMil = 0;
+
+alarm[0] = 6;
+
+//step
+
+secNumber = tSec;
+
+if (tSec <= secNumber){
+	bar size - 1;
+}
+
+smthing like that
+
+for nat
+- add setting in the main menu
+- add a buttont in the pause settings that goes back to the pause menu
