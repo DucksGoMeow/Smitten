@@ -101,6 +101,7 @@
     {"id":{"name":"obj_pauseMenu","path":"objects/obj_pauseMenu/obj_pauseMenu.yy",},},
     {"id":{"name":"obj_pauseRestartLevel","path":"objects/obj_pauseRestartLevel/obj_pauseRestartLevel.yy",},},
     {"id":{"name":"obj_pauseSettingEffectSlider","path":"objects/obj_pauseSettingEffectSlider/obj_pauseSettingEffectSlider.yy",},},
+    {"id":{"name":"obj_pauseSettingFullScreen","path":"objects/obj_pauseSettingFullScreen/obj_pauseSettingFullScreen.yy",},},
     {"id":{"name":"obj_pauseSettingMusicSlider","path":"objects/obj_pauseSettingMusicSlider/obj_pauseSettingMusicSlider.yy",},},
     {"id":{"name":"obj_pauseSettings","path":"objects/obj_pauseSettings/obj_pauseSettings.yy",},},
     {"id":{"name":"obj_pauseSettingsMain","path":"objects/obj_pauseSettingsMain/obj_pauseSettingsMain.yy",},},

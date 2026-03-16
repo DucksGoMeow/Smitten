@@ -1,1 +1,1 @@
-audio_pause_sound(snd_level1Battle);
+audio_stop_sound(snd_level1Battle);

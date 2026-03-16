@@ -4,4 +4,4 @@ beingDragged = false;
 
 amtCurrent = global.music_volume;
 
-audio_group_load(backgroundMusic);
+audio_group_load(soundEffects);

@@ -1,0 +1,1 @@
+fullscreenText = "Full Screen: On";

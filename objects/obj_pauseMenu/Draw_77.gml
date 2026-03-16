@@ -18,9 +18,11 @@ if (keyboard_check_pressed(vk_escape)){ //toggle pause (whatever trigger youd li
 
 		//deactivate everything other than this instance
 		instance_deactivate_all(true);
+		audio_pause_all();
 		
 		//except these objs so they shows up
 		instance_activate_object(obj_mouse);
+		audio_pause_sound(snd_level1Battle);
 
 		//NOTE:
 		//if you need to pause anything like animating sprites, tiles, rooms background etc
@@ -39,11 +41,11 @@ if (keyboard_check_pressed(vk_escape)){ //toggle pause (whatever trigger youd li
 		buffer_get_surface(pauseSurfBuffer, pauseSurf, 0);
 		
 		//pause things		
-		audio_pause_all();
-		
-		instance_create_layer(533, 384, "Pause_Menu", obj_pauseRestartLevel);
-		instance_create_layer(533, 484, "Pause_Menu", obj_pauseSettings);
-		instance_create_layer(533, 582, "Pause_Menu", obj_pauseMainMenu);
+		if (!settingsOpened){
+			instance_create_layer(533, 384, "Pause_Menu", obj_pauseRestartLevel);
+			instance_create_layer(533, 484, "Pause_Menu", obj_pauseSettings);
+			instance_create_layer(533, 582, "Pause_Menu", obj_pauseMainMenu);
+		}
 
 	}
 	else { //unpause now
@@ -55,7 +57,7 @@ if (keyboard_check_pressed(vk_escape)){ //toggle pause (whatever trigger youd li
 		//whatevers here go to obj_resumepause and put it there too
 		audio_resume_all();
 		
-		obj_pauseSettings.openSettings = false;
+		obj_pauseMenu.settingsOpened = false;
 		
 		instance_destroy(obj_pauseRestartLevel);
 

@@ -1,4 +1,4 @@
-if (pausegame){
+if (pausegame && !settingsOpened){
 	draw_sprite(Sprite34, 0, 533, 384);
 	draw_sprite(Sprite34, 0, 533, 484);
 	draw_sprite(Sprite34, 0, 533, 582);
@@ -12,5 +12,4 @@ if (pausegame){
 		draw_text(533, 582, "Main Menu");
 	}
 }
-else {
-}
+

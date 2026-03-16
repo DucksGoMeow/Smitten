@@ -15,6 +15,7 @@ if (point_in_rectangle(mouse_x, mouse_y,
 	instance_destroy(obj_pauseRestartLevel);
 	instance_destroy(obj_pauseMainMenu);
 	
+	
 	room_goto(rm_mainMenu);
 	}
 }
