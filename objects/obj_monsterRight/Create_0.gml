@@ -26,21 +26,21 @@ if (global.tutorial){
 	doneMonsterDamage = true;
 	randNumArrow = irandom_range(1, 16);
 }
-else if (!global.tutorial && global.whatlevel = 1){
+else if (!global.tutorial && global.whatLevel = 1){
 	doneMonsterDamage = true;
 	randNumArrow = irandom_range(1, 16);
  }
-else if (!global.tutorial && global.whatlevel = 2){
+else if (global.whatLevel = 3){
 	randNumArrow = irandom_range(5, 40);
 }
-else if (!global.tutorial && global.whatlevel = 3){
-	randNumArrow = irandom_range(5, 40);
+else if (global.whatLevel = 5){
+	randNumArrow = irandom_range(17, 40);
 }
-else if (!global.tutorial && global.whatlevel = 4){
-	randNumArrow = irandom_range(5, 64);
+else if (global.whatLevel = 7){
+	randNumArrow = irandom_range(17, 64);
 }
-else if (!global.tutorial && global.whatlevel = 5){
-	randNumArrow = irandom_range(5, 64);
+else if (global.whatLevel = 9){
+	randNumArrow = irandom_range(41, 64);
 }
 
 tMin = 0;

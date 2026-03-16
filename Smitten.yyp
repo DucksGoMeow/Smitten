@@ -90,6 +90,7 @@
     {"id":{"name":"obj_levelCleared","path":"objects/obj_levelCleared/obj_levelCleared.yy",},},
     {"id":{"name":"obj_levelFailed","path":"objects/obj_levelFailed/obj_levelFailed.yy",},},
     {"id":{"name":"obj_levelTimer","path":"objects/obj_levelTimer/obj_levelTimer.yy",},},
+    {"id":{"name":"obj_loadGame","path":"objects/obj_loadGame/obj_loadGame.yy",},},
     {"id":{"name":"obj_mainMenuQuit","path":"objects/obj_mainMenuQuit/obj_mainMenuQuit.yy",},},
     {"id":{"name":"obj_mainMenuSettingBack","path":"objects/obj_mainMenuSettingBack/obj_mainMenuSettingBack.yy",},},
     {"id":{"name":"obj_mainMenuSettingEffectSlider","path":"objects/obj_mainMenuSettingEffectSlider/obj_mainMenuSettingEffectSlider.yy",},},
@@ -117,7 +118,6 @@
     {"id":{"name":"rm_endScreen","path":"rooms/rm_endScreen/rm_endScreen.yy",},},
     {"id":{"name":"rm_levelBattle","path":"rooms/rm_levelBattle/rm_levelBattle.yy",},},
     {"id":{"name":"rm_levelDate","path":"rooms/rm_levelDate/rm_levelDate.yy",},},
-    {"id":{"name":"rm_Main","path":"rooms/rm_Main/rm_Main.yy",},},
     {"id":{"name":"rm_mainMenu","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},},
     {"id":{"name":"scr_actions","path":"scripts/scr_actions/scr_actions.yy",},},
     {"id":{"name":"scr_effects","path":"scripts/scr_effects/scr_effects.yy",},},
@@ -240,7 +240,6 @@
     {"roomId":{"name":"rm_levelBattle","path":"rooms/rm_levelBattle/rm_levelBattle.yy",},},
     {"roomId":{"name":"rm_levelDate","path":"rooms/rm_levelDate/rm_levelDate.yy",},},
     {"roomId":{"name":"rm_endScreen","path":"rooms/rm_endScreen/rm_endScreen.yy",},},
-    {"roomId":{"name":"rm_Main","path":"rooms/rm_Main/rm_Main.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

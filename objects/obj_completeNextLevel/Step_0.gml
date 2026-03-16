@@ -7,16 +7,10 @@ if (point_in_rectangle(mouse_x, mouse_y,
 	instance_activate_all();
 	if (surface_exists(obj_levelCleared.pauseSurf)) surface_free(obj_levelCleared.pauseSurf);
 	if (buffer_exists(obj_levelCleared.pauseSurfBuffer)) buffer_delete(obj_levelCleared.pauseSurfBuffer);
-		
-	//whatevers here go to obj_resumepause and put it there too
 	audio_resume_all();
-		
-	//instance_destroy(obj_restartpause);
-	instance_destroy(obj_completeResetLevel);
-	instance_destroy(obj_completeNextLevel);
 	
-	
-    save_game();
-	room_goto(rm_levelDate)
+	global.whatLevel = global.whatLevel + 1;
+	save_game();
+	room_goto(rm_levelDate);
 	}
 }

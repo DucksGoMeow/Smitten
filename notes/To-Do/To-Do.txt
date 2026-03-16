@@ -25,5 +25,4 @@ if (tSec <= secNumber){
 smthing like that
 
 for nat
-- add setting in the main menu
-- add a buttont in the pause settings that goes back to the pause menu
+- make a tutorial

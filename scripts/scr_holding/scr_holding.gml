@@ -1,4 +1,5 @@
-global.whatlevel = 1;
+global.whatLevel = 1;
+global.gameStarted = false;
 global.tutorial = false;
 
 audio_group_load(backgroundMusic);
