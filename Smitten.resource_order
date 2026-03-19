@@ -118,7 +118,6 @@
     {"name":"TMCT_SetDeviceGesture","order":26,"path":"scripts/TMCT_SetDeviceGesture/TMCT_SetDeviceGesture.yy",},
     {"name":"TMCT_SetNumAngleSegments","order":27,"path":"scripts/TMCT_SetNumAngleSegments/TMCT_SetNumAngleSegments.yy",},
     {"name":"seq_moveIn","order":1,"path":"sequences/seq_moveIn/seq_moveIn.yy",},
-    {"name":"Sequence3","order":1,"path":"sequences/Sequence3/Sequence3.yy",},
     {"name":"snd_countDamage","order":5,"path":"sounds/snd_countDamage/snd_countDamage.yy",},
     {"name":"snd_mantisAttack","order":6,"path":"sounds/snd_mantisAttack/snd_mantisAttack.yy",},
     {"name":"snd_swordSlashingV2","order":2,"path":"sounds/snd_swordSlashingV2/snd_swordSlashingV2.yy",},

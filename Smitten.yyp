@@ -163,7 +163,6 @@
     {"id":{"name":"TMCT_SetNumAngleSegments","path":"scripts/TMCT_SetNumAngleSegments/TMCT_SetNumAngleSegments.yy",},},
     {"id":{"name":"seq_moveIn","path":"sequences/seq_moveIn/seq_moveIn.yy",},},
     {"id":{"name":"seq_moveOut","path":"sequences/seq_moveOut/seq_moveOut.yy",},},
-    {"id":{"name":"Sequence3","path":"sequences/Sequence3/Sequence3.yy",},},
     {"id":{"name":"snd_count","path":"sounds/snd_count/snd_count.yy",},},
     {"id":{"name":"snd_countDamage","path":"sounds/snd_countDamage/snd_countDamage.yy",},},
     {"id":{"name":"snd_hunter","path":"sounds/snd_hunter/snd_hunter.yy",},},
@@ -241,8 +240,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_levelBattle","path":"rooms/rm_levelBattle/rm_levelBattle.yy",},},
     {"roomId":{"name":"rm_mainMenu","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},},
+    {"roomId":{"name":"rm_levelBattle","path":"rooms/rm_levelBattle/rm_levelBattle.yy",},},
     {"roomId":{"name":"rm_levelDate","path":"rooms/rm_levelDate/rm_levelDate.yy",},},
     {"roomId":{"name":"rm_endScreen","path":"rooms/rm_endScreen/rm_endScreen.yy",},},
   ],

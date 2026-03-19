@@ -7,3 +7,6 @@ if (global.gameStarted == false){
 else if (global.gameStarted == true){
 	buttonText = "Continue";
 }
+
+audio_group_load_progress(backgroundMusic);
+audio_group_load_progress(soundEffects);
