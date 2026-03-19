@@ -1,7 +1,7 @@
 //Default Spites
 countSprite = sprite_index;
 
-randNumType = choose(1, 2);
+randNumType = choose(1, 2, 3, 4);
 
 tMin = 0;
 tSec = 0;
@@ -26,6 +26,12 @@ damageSprite = function(){
 			break;
 		case 2:
 			countSprite = spr_countDamagedV2;
+			break;
+		case 3:
+			countSprite = spr_countDamagedV3;
+			break;
+		case 4:
+			countSprite = spr_countDamagedV4;
 			break;
 	}
 	

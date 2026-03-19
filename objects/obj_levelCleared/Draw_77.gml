@@ -21,6 +21,7 @@ if (timerDone == 0){ //toggle pause (whatever trigger youd like)
 		
 		//except these objs so they shows up
 		instance_activate_object(obj_playerHealth);
+		instance_activate_object(obj_levelTimer);
 
 		//NOTE:
 		//if you need to pause anything like animating sprites, tiles, rooms background etc
@@ -44,7 +45,6 @@ if (timerDone == 0){ //toggle pause (whatever trigger youd like)
 		//instance_create_layer(0, 0, "Instances", Object21);
 		instance_create_layer(533, 516.4, "Instances", obj_completeResetLevel);
 		instance_create_layer(533, 400.9, "Instances", obj_completeNextLevel);
-		instance_create_layer(533, 448, "Instances", obj_levelTimer);
 
 	}
 }

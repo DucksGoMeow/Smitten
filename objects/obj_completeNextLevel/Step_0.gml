@@ -12,12 +12,17 @@ if (point_in_rectangle(mouse_x, mouse_y,
 	
 	global.whatLevel = global.whatLevel + 1;
 	audio_stop_all();
-	
 	save_game();
 	
-	var target = rm_levelBattle;
-	
-	if (room == rm_levelBattle) target = rm_levelDate;
-	TransitionStart(target, seq_moveOut, seq_moveIn)
+	instance_create_layer(0, 0, "Pause_Menu", obj_roomTransition);
+	instance_destroy(obj_completeResetLevel);
+	instance_destroy(obj_completeNextLevel);
+	instance_destroy(obj_levelCleared);
+	instance_destroy(obj_levelTimer);
+	instance_destroy(obj_progressbar);
+	instance_destroy(obj_monsterTimer);
+	instance_destroy(obj_leftMonster);
+	instance_destroy(obj_monsterRight);
+	instance_destroy(obj_levelFailed);
 	}	
 }

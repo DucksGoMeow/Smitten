@@ -75,6 +75,7 @@
     {"name":"obj_progressbar","order":8,"path":"objects/obj_progressbar/obj_progressbar.yy",},
     {"name":"obj_rightMonsterSprite","order":4,"path":"objects/obj_rightMonsterSprite/obj_rightMonsterSprite.yy",},
     {"name":"obj_rmonbar","order":11,"path":"objects/obj_rmonbar/obj_rmonbar.yy",},
+    {"name":"obj_roomTransition","order":3,"path":"objects/obj_roomTransition/obj_roomTransition.yy",},
     {"name":"obj_testDialogue","order":1,"path":"objects/obj_testDialogue/obj_testDialogue.yy",},
     {"name":"rm_endScreen","order":3,"path":"rooms/rm_endScreen/rm_endScreen.yy",},
     {"name":"rm_levelDate","order":1,"path":"rooms/rm_levelDate/rm_levelDate.yy",},
@@ -128,6 +129,8 @@
     {"name":"spr_Bar","order":12,"path":"sprites/spr_Bar/spr_Bar.yy",},
     {"name":"spr_countDamaged","order":2,"path":"sprites/spr_countDamaged/spr_countDamaged.yy",},
     {"name":"spr_countDamagedV2","order":3,"path":"sprites/spr_countDamagedV2/spr_countDamagedV2.yy",},
+    {"name":"spr_countDamagedV3","order":4,"path":"sprites/spr_countDamagedV3/spr_countDamagedV3.yy",},
+    {"name":"spr_countDamagedV4","order":5,"path":"sprites/spr_countDamagedV4/spr_countDamagedV4.yy",},
     {"name":"spr_countsDatePortrait","order":5,"path":"sprites/spr_countsDatePortrait/spr_countsDatePortrait.yy",},
     {"name":"spr_countWalking","order":1,"path":"sprites/spr_countWalking/spr_countWalking.yy",},
     {"name":"spr_customMouse_leftClick","order":2,"path":"sprites/spr_customMouse_leftClick/spr_customMouse_leftClick.yy",},
@@ -174,5 +177,6 @@
     {"name":"Sprite53","order":9,"path":"sprites/Sprite53/Sprite53.yy",},
     {"name":"Sprite60","order":10,"path":"sprites/Sprite60/Sprite60.yy",},
     {"name":"Sprite61","order":11,"path":"sprites/Sprite61/Sprite61.yy",},
+    {"name":"Sprite63","order":14,"path":"sprites/Sprite63/Sprite63.yy",},
   ],
 }
