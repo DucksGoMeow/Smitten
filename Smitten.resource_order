@@ -2,7 +2,6 @@
   "FolderOrderSettings":[
     {"name":"Extensions","order":6,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":3,"path":"folders/Fonts.yy",},
-    {"name":"Sequences","order":13,"path":"folders/Sequences.yy",},
     {"name":"Notes","order":7,"path":"folders/Notes.yy",},
     {"name":"Objects","order":4,"path":"folders/Objects.yy",},
     {"name":"!Delete when finished","order":5,"path":"folders/Objects/!Delete when finished.yy",},
@@ -22,6 +21,7 @@
     {"name":"Dialogue","order":5,"path":"folders/Scripts/Dialogue.yy",},
     {"name":"Dialogue Topics","order":4,"path":"folders/Scripts/Dialogue/Dialogue Topics.yy",},
     {"name":"Menus","order":10,"path":"folders/Scripts/Menus.yy",},
+    {"name":"Sequences","order":13,"path":"folders/Sequences.yy",},
     {"name":"Sound","order":8,"path":"folders/Sound.yy",},
     {"name":"Background Music","order":4,"path":"folders/Sound/Background Music.yy",},
     {"name":"Battle","order":1,"path":"folders/Sound/Background Music/Battle.yy",},
@@ -117,6 +117,7 @@
     {"name":"TMCT_SetDeviceGesture","order":26,"path":"scripts/TMCT_SetDeviceGesture/TMCT_SetDeviceGesture.yy",},
     {"name":"TMCT_SetNumAngleSegments","order":27,"path":"scripts/TMCT_SetNumAngleSegments/TMCT_SetNumAngleSegments.yy",},
     {"name":"seq_moveIn","order":1,"path":"sequences/seq_moveIn/seq_moveIn.yy",},
+    {"name":"Sequence3","order":1,"path":"sequences/Sequence3/Sequence3.yy",},
     {"name":"snd_countDamage","order":5,"path":"sounds/snd_countDamage/snd_countDamage.yy",},
     {"name":"snd_mantisAttack","order":6,"path":"sounds/snd_mantisAttack/snd_mantisAttack.yy",},
     {"name":"snd_swordSlashingV2","order":2,"path":"sounds/snd_swordSlashingV2/snd_swordSlashingV2.yy",},

@@ -14,7 +14,6 @@
   "Folders":[
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Sequences","folderPath":"folders/Sequences.yy","name":"Sequences","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"!Delete when finished","folderPath":"folders/Objects/!Delete when finished.yy","name":"!Delete when finished","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -36,6 +35,7 @@
     {"$GMFolder":"","%Name":"Dialogue","folderPath":"folders/Scripts/Dialogue.yy","name":"Dialogue","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Dialogue Topics","folderPath":"folders/Scripts/Dialogue/Dialogue Topics.yy","name":"Dialogue Topics","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Menus","folderPath":"folders/Scripts/Menus.yy","name":"Menus","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sequences","folderPath":"folders/Sequences.yy","name":"Sequences","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sound","folderPath":"folders/Sound.yy","name":"Sound","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Background Music","folderPath":"folders/Sound/Background Music.yy","name":"Background Music","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Battle","folderPath":"folders/Sound/Background Music/Battle.yy","name":"Battle","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -162,6 +162,7 @@
     {"id":{"name":"TMCT_SetNumAngleSegments","path":"scripts/TMCT_SetNumAngleSegments/TMCT_SetNumAngleSegments.yy",},},
     {"id":{"name":"seq_moveIn","path":"sequences/seq_moveIn/seq_moveIn.yy",},},
     {"id":{"name":"seq_moveOut","path":"sequences/seq_moveOut/seq_moveOut.yy",},},
+    {"id":{"name":"Sequence3","path":"sequences/Sequence3/Sequence3.yy",},},
     {"id":{"name":"snd_count","path":"sounds/snd_count/snd_count.yy",},},
     {"id":{"name":"snd_countDamage","path":"sounds/snd_countDamage/snd_countDamage.yy",},},
     {"id":{"name":"snd_hunter","path":"sounds/snd_hunter/snd_hunter.yy",},},
@@ -236,8 +237,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_mainMenu","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},},
     {"roomId":{"name":"rm_levelBattle","path":"rooms/rm_levelBattle/rm_levelBattle.yy",},},
+    {"roomId":{"name":"rm_mainMenu","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},},
     {"roomId":{"name":"rm_levelDate","path":"rooms/rm_levelDate/rm_levelDate.yy",},},
     {"roomId":{"name":"rm_endScreen","path":"rooms/rm_endScreen/rm_endScreen.yy",},},
   ],
