@@ -7,10 +7,17 @@ if (point_in_rectangle(mouse_x, mouse_y,
 	instance_activate_all();
 	if (surface_exists(obj_levelCleared.pauseSurf)) surface_free(obj_levelCleared.pauseSurf);
 	if (buffer_exists(obj_levelCleared.pauseSurfBuffer)) buffer_delete(obj_levelCleared.pauseSurfBuffer);
+	
 	audio_resume_all();
 	
 	global.whatLevel = global.whatLevel + 1;
+	audio_stop_all();
+	
 	save_game();
-	room_goto(rm_levelDate);
-	}
+	
+	var target = rm_levelBattle;
+	
+	if (room == rm_levelBattle) target = rm_levelDate;
+	TransitionStart(target, seq_moveOut, seq_moveIn)
+	}	
 }

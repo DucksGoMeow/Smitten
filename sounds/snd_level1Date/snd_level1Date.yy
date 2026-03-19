@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":29.088005,
+  "duration":34.285736,
   "exportDir":"",
   "name":"snd_level1Date",
   "parent":{
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_level1Date.mp3",
-  "volume":0.5,
+  "soundFile":"snd_level1Date.ogg",
+  "volume":1.0,
 }

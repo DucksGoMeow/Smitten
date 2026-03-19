@@ -10,8 +10,8 @@
   "name":"obj_levelCleared",
   "overriddenProperties":[],
   "parent":{
-    "name":"Level Timers",
-    "path":"folders/Objects/Level Timers.yy",
+    "name":"Level Complete",
+    "path":"folders/Objects/Menus/Level Complete.yy",
   },
   "parentObjectId":null,
   "persistent":false,
