@@ -14,8 +14,8 @@ var finished = text_progress == text_length;
 // Portrait
 if (sprite_exists(portrait_sprite)) {
 	// Shrink text width by the width the portrait will take up
-	draw_x += 150;
-	draw_width -= portrait_width + portrait_x + padding * 4;
+	draw_x += 115;
+	draw_width -= portrait_width + portrait_x + padding * 13;
 	var draw_portrait_x = x + portrait_x;
 	
 	// What side is the portrait on?
@@ -37,7 +37,7 @@ if (sprite_exists(portrait_sprite)) {
 		subimg = (text_progress / text_speed) * (sprite_get_speed(portrait_sprite) / game_get_speed(gamespeed_fps));
 		
 	draw_sprite_ext(portrait_sprite, subimg,
-		draw_portrait_x + portrait_width - 130, draw_y + portrait_y + portrait_height - 300,
+		draw_portrait_x + portrait_width - 121, draw_y + portrait_y + portrait_height - 184,
 		portrait_side == PORTRAIT_SIDE.LEFT ? 1 : -1, 1, 0, c_white, 1);
 }
 

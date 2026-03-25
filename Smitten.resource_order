@@ -133,7 +133,6 @@
     {"name":"spr_countsDatePortrait","order":5,"path":"sprites/spr_countsDatePortrait/spr_countsDatePortrait.yy",},
     {"name":"spr_countWalking","order":1,"path":"sprites/spr_countWalking/spr_countWalking.yy",},
     {"name":"spr_customMouse_leftClick","order":2,"path":"sprites/spr_customMouse_leftClick/spr_customMouse_leftClick.yy",},
-    {"name":"spr_dialoguePortraitHunter","order":6,"path":"sprites/spr_dialoguePortraitHunter/spr_dialoguePortraitHunter.yy",},
     {"name":"spr_down","order":1,"path":"sprites/spr_down/spr_down.yy",},
     {"name":"spr_heart","order":2,"path":"sprites/spr_heart/spr_heart.yy",},
     {"name":"spr_hunterDefend","order":5,"path":"sprites/spr_hunterDefend/spr_hunterDefend.yy",},

@@ -19,6 +19,7 @@
   "height":255,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"7e986b54-d6cc-444e-b9a3-8c14c2c57453","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"7e986b54-d6cc-444e-b9a3-8c14c2c57453","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"d3001027-5a36-46d6-9a7d-7b585d86c4cb","blendMode":0,"displayName":"default","isLocked":false,"name":"d3001027-5a36-46d6-9a7d-7b585d86c4cb","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_textbox",

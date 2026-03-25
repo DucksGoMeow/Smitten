@@ -14,7 +14,7 @@ max_input_delay = 5; //How many frames to ignore input (helps prevent order issu
 input_delay = max_input_delay;
 
 //Position
-margin = 60 ; //How much space the textbox gets from the edges of the screen
+margin = 60; //How much space the textbox gets from the edges of the screen
 padding = 10; //How much space things inside the textbox get
 width = 1212;
 height = 255;
@@ -25,9 +25,9 @@ y = 486.6;
 text_font = fnt_main;
 text_color = c_white;
 text_speed = 0.6;
-text_x = padding + 40;
+text_x = padding + 20;
 text_y = padding * 3;
-text_width = width - padding * 3;
+text_width = width - padding * 6;
 
 //Option
 option_color = c_white;
