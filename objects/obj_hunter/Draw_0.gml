@@ -1,5 +1,5 @@
 //Monster Sprite
-if (room == rm_levelBattle){
+if (room != rm_mainMenu){
 	draw_sprite(hunterSprite, image_index, 484, 320);
 }
 

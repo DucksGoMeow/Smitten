@@ -16,6 +16,13 @@ attackAnimation = function(){
 	event_perform(ev_alarm, 0);
 }
 
+attackAnimationRight = function(){
+	event_perform(ev_create, 0);
+	tMil = 5;
+	countSprite = spr_countShockedRight;
+	event_perform(ev_alarm, 0);
+}
+
 damageSprite = function(){
 	event_perform(ev_create, 0);
 	tMil = 5;
@@ -32,6 +39,29 @@ damageSprite = function(){
 			break;
 		case 4:
 			countSprite = spr_countDamagedV4;
+			break;
+	}
+	
+	audio_play_sound(snd_countDamage, 1, 0);
+	event_perform(ev_alarm, 0);
+}
+
+damageSpriteRight = function(){
+	event_perform(ev_create, 0);
+	tMil = 5;
+	
+	switch (randNumType){
+		case 1:
+			countSprite = spr_countDamagedRight;
+			break;
+		case 2:
+			countSprite = spr_countDamagedV2Right;
+			break;
+		case 3:
+			countSprite = spr_countDamagedV3Right;
+			break;
+		case 4:
+			countSprite = spr_countDamagedV4Right;
 			break;
 	}
 	

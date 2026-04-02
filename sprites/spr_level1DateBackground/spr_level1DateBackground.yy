@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Background",
-    "path":"folders/Sprites/Background.yy",
+    "name":"Level 1",
+    "path":"folders/Sprites/Background/Level 1.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,0 +1,1 @@
+audio_play_sound(snd_level1Tutorial, 1, 1);

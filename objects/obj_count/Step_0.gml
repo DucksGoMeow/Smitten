@@ -9,20 +9,45 @@ if(device_mouse_check_button_released(0,mb_any)) dev0Up = 1
 g = TMCT_GetCurrentGesture(0);
 if(dev0Up){ 
 	if (g == "UP"){
-		attackAnimation(); 
+		if (room == rm_tutorial){
+			attackAnimationRight(); 
+		}
+		else{
+			attackAnimation(); 
+		}
 	}
 	if (g == "DOWN"){
-		attackAnimation(); 
+		if (room == rm_tutorial){
+			attackAnimationRight(); 
+		}
+		else{
+			attackAnimation(); 
+		}
 	}
 	if (g == "LEFT"){
-		attackAnimation(); 
+		if (room == rm_tutorial){
+			attackAnimationRight(); 
+		}
+		else{
+			attackAnimation(); 
+		}
 	}
 	if (g == "RIGHT"){
-		attackAnimation(); 
+		if (room == rm_tutorial){
+			attackAnimationRight(); 
+		}
+		else{
+			attackAnimation(); 
+		}
 	}
 }
 
 if (tMil == 0){
 	numChosen = true;
-	countSprite = spr_countWalking;
+	if (room == rm_tutorial){
+		countSprite = spr_countIdleRight;
+	}
+	else{
+		countSprite = spr_countWalking;
+	}
 }

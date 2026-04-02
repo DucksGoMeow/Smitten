@@ -2,6 +2,8 @@ global.whatLevel = 1;
 global.gameStarted = false;
 global.tutorial = false;
 
+global.roomReseted = false;
+
 audio_group_load(backgroundMusic);
 audio_group_load(soundEffects);
 

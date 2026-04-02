@@ -11,8 +11,8 @@
   "name":"obj_level1DateDialogue",
   "overriddenProperties":[],
   "parent":{
-    "name":"Dialogue",
-    "path":"folders/Objects/Dialogue.yy",
+    "name":"Level 1",
+    "path":"folders/Objects/Dialogue/Level 1.yy",
   },
   "parentObjectId":null,
   "persistent":false,

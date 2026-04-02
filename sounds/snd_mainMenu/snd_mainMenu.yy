@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_mainMenu",
+  "audioGroupId":{
+    "name":"backgroundMusic",
+    "path":"audiogroups/backgroundMusic",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":38.4,
+  "exportDir":"",
+  "name":"snd_mainMenu",
+  "parent":{
+    "name":"Background Music",
+    "path":"folders/Sound/Background Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_mainMenu.ogg",
+  "volume":1.0,
+}

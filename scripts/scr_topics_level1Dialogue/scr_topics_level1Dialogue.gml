@@ -1,6 +1,6 @@
 function scr_topics_level1Dialogue(topics){
-	#region Introduction
-	//??? Speaks more, Hunter is just doing gestures
+	
+	/*//??? Speaks more, Hunter is just doing gestures
 	topics[$ "Introduction"] = [
 		SPEAKER("???", spr_name, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("Your task is very important."),
@@ -9,91 +9,9 @@ function scr_topics_level1Dialogue(topics){
 		// Insert the sneaking out scene
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("(Hm... there he is. My next bounty. He... smells nice. Like... dried roses.)")
-	];
+	];*/
   
 	//Cont. Intro (C and H, still put their names but will change to '???' then once they're introduced, it will change to their names.)
-	topics[$ "Introduction 2"] = [
-		SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("Gah! It's JUST my luck that the most stunning man I've ever met is also a monster hunter."),
- 
-		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("No. I'm not here to   wait   what?"),
-  
-		SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("What?"),
-  
-		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("What?"),
-		TEXTWAUDIO("( W H A T ? )"),
-  
-		SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("Nevermind. What's this about not killing me?"),
-  
-		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("I've been hired to... to take you out."),
-  
-		SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("So you HAVE come to, wait. Like... On a date?"),
-  
-		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("Uh. Yeah...?"),
-  
-		SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("You were hired to take me... on a date?"),
-  
-		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("Mhm."),
-  
-		SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("You? And... me? Are you sure you didn't mishear?"),
-  
-		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("I mean, yeah, they were pretty clear."),
-  
-		SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("..."),
-		TEXTWAUDIO("A fantastic alternative to getting staked to death! Your name, fair Sir...?"),
-  
-		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("Hunter. Just Hunter."),
-  
-		SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("Fair Hunter... I, Count Lord, would be delighted to spend an evening with you!"),
-  
-		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("...Alright. Let's go, then."),
-		TEXTWAUDIO(" (This'll be my strangest hunt yet...) "),
-	];
-	#endregion
-	
-	#region Level 1   Tutorial
-	topics[$ "L1_Tutorial"] = [
-		SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("Strange! Allies of my coven, approaching rapidly in our general direction!"),
-  
-		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("Yeah... they don't look too happy."),
-  
-		SPEAKER("Count", spr_name, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("Really? Mayhaps they're just excited to see me."),
-  
-		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("(These monsters are probably after Count...I need to protect him!)"),
-		CHOICE("(Do I still remember how to hunt monsters...?)",
-			OPTION("Yes.", "Yes."), 
-			OPTION("No.", "No.")) 
-	];
-
-	topics[$ "Yes." ] = [
-		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("Of course I do. Can't lose my composure yet..."),
-	]; // skip to level 1
-
-	topics[$ "No." ] = [
-		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("(Hm... I'm rusty. I could use a warm up.)"),
-	]; // go to level 1 tutorial scene
-	#endregion
 
 	#region Level 1   Dating
 	#region Dating   Part 1

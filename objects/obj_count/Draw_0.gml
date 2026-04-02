@@ -1,5 +1,13 @@
-//Monster Sprite
-draw_sprite(countSprite, image_index, 573, 277);
+//Count Sprite
+
+if (room == rm_tutorial){
+	draw_sprite(countSprite, image_index, 683, 277);
+}
+else{
+	draw_sprite(countSprite, image_index, 573, 277);
+}
+
+
 
 /*//Timer Text (this is temporary)
 var t = "";
