@@ -1,5 +1,7 @@
 tMin = 2;
-tSec = 0;
+tSec = 30;
 tMil = 0; //tenth of a second
 
-alarm[0] = 6; // 60 frames per second 
+tRound = 70;
+
+alarm[0] = 6; // 60 frames per second z

@@ -1,6 +1,12 @@
 if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monsterTimer.noRightMonster){
 tMil -= 1;
 
+tRound -= 2;
+
+if (tRound = -1){ //reduce seconds by 1
+	tRound = 9;
+}
+
 if (tMil = -1){ //reduce seconds by 1
 	tMil = 9;
 	tSec -= 1;

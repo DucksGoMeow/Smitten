@@ -19,7 +19,7 @@ if (point_in_rectangle(mouse_x, mouse_y,
 	instance_destroy(obj_completeNextLevel);
 	instance_destroy(obj_levelCleared);
 	instance_destroy(obj_levelTimer);
-	instance_destroy(obj_progressbar);
+	instance_destroy(obj_progressBar);
 	instance_destroy(obj_monsterTimer);
 	instance_destroy(obj_leftMonster);
 	instance_destroy(obj_monsterRight);

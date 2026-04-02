@@ -49,6 +49,8 @@ tMin = 0;
 tSec = 20;
 tMil = 0; 
 
+tRound = 10;
+
 alarm[1] = 6; // 60 frames per second 
 
 patternUp = false;

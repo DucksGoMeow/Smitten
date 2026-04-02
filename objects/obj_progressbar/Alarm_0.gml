@@ -1,5 +1,7 @@
 tMil -= 1;
 
+tRound -= 0.65;
+
 if (tMil = -1){ //reduce seconds by 1
 	tMil = 9;
 	tSec -= 1;

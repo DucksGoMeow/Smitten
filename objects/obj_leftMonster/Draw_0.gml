@@ -88,8 +88,11 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 		sprite_index = monsterComingSpr;
 	}
 	
-	if (tSec == 15){
+	if (tSec <= 15 && tSec >= 6){
 		sprite_index = monsterAttackingSpr;
+		draw_set_colour(c_red);
+
+		draw_rectangle(20 - (tRound), 650, 290, 660, false);
 	}
 	
 	if (tSec == 5){
