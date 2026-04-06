@@ -14,10 +14,11 @@ function TextGroup(_text, styles) constructor {
 function __parse(text) {
 	var styles = [global.text_styles[$ "standard"]];
 	var groups = [];
+	var i;
 	
 	var start = 1;
 	var prev_char = "";
-	for (var i = 1; i <= string_length(text); i++) {
+	for (i = 1; i <= string_length(text); i++) {
 		var char = string_char_at(text, i);
 		if (char == "<" && prev_char != "\\") {
 			array_push(groups, new TextGroup(string_copy(text, start, i - start), styles));
