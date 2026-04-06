@@ -28,5 +28,10 @@ if (room != rm_mainMenu){
 }
 
 if (tSec == 0 && tMil == 0){
-	hunterSprite = spr_hunterWalking;
+	if (room == rm_tutorial){
+		hunterSprite = spr_hunterIdle;
+	}
+	else{
+		hunterSprite = spr_hunterWalking;
+	}
 }

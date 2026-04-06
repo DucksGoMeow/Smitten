@@ -11,6 +11,8 @@ if (room == rm_mainMenu){
 			instance_create_layer(240, 400, "Instances", obj_mainMenuSettingFullScreen);
 			instance_create_layer(533, 582, "Instances", obj_mainMenuSettingBack);
 			instance_destroy(obj_mainMenuStart);
+			visible = false;
+			
 		}
 	}
 	if (!settingsOpened){
@@ -19,5 +21,6 @@ if (room == rm_mainMenu){
 		instance_destroy(obj_mainMenuSettingFullScreen);
 		instance_destroy(obj_mainMenuSettingBack);
 		instance_create_layer(533, 384, "Instances", obj_mainMenuStart);
+		visible = true;
 	}
 }

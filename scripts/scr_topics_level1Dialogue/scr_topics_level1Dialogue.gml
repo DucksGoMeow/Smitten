@@ -12,7 +12,7 @@ function scr_topics_level1Dialogue(topics){
 	];*/
   
 	//Cont. Intro (C and H, still put their names but will change to '???' then once they're introduced, it will change to their names.)
-
+	
 	#region Level 1   Dating
 	#region Dating   Part 1
 	topics[$ "L1_Dating"] = [
@@ -295,4 +295,6 @@ function scr_topics_level1Dialogue(topics){
 		CUSTOMTEXTWAUDIO("(I'm not gonna be able to wait that long. I'm so hyped. Can't have seen that going any better than it did! Man, I'm so glad I took this contract...!)", function() {obj_level1HeartEvent.doneDate = true}, snd_hunter),
 	]; 
 	#endregion
+	
+
 }

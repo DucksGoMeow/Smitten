@@ -115,4 +115,13 @@ function scr_topics_tutorialDialogue(topics){
 	]; 
 	#endregion
 	
+	topics[$ "TEST"] = [
+		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+		TEXTWAUDIO("(These monsters are probably after Count...I need to protect him!)", snd_hunter),
+		CHOICE("(Do I still remember how to hunt monsters...?)",
+			OPTION("No.", "No."), //do the tutorial scene
+			OPTION("Maybe.", "No."), //do the tutorial scene
+			OPTION("Yes.", "Yes.")) // skip to level 1
+			
+	];
 }

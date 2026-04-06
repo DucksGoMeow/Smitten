@@ -1,1 +1,0 @@
-numChosen = false;

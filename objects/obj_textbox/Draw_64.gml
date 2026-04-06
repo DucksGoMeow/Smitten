@@ -37,7 +37,7 @@ if (sprite_exists(portrait_sprite)) {
 		subimg = (text_progress / text_speed) * (sprite_get_speed(portrait_sprite) / game_get_speed(gamespeed_fps));
 		
 	draw_sprite_ext(portrait_sprite, subimg,
-		draw_portrait_x + portrait_width - 121, draw_y + portrait_y + portrait_height - 184,
+		draw_portrait_x + portrait_width - 134, draw_y + portrait_y + portrait_height - 184,
 		portrait_side == PORTRAIT_SIDE.LEFT ? 1 : -1, 1, 0, c_white, 1);
 }
 
@@ -67,7 +67,7 @@ if (finished && option_count > 0) {
 	draw_set_color(option_color);
 	for (var i = 0; i < option_count; i++) {
 		var opt_x = x + option_x + 905;
-		var opt_y = y + option_y - (option_count - i - 1) * 50;
+		var opt_y = y + option_y - (option_count - i - 1) * 80;
 		
 		// Selected option is indented with an arrow
 		if (i == current_option) {

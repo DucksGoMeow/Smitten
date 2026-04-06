@@ -1,13 +1,14 @@
 if (pausegame){
-
+	draw_sprite(spr_levelFailBanner, 0, 384, 101);
+	
 	draw_sprite(Sprite34, 0, 533, 400.9);
 	draw_sprite(Sprite34, 0, 533, 516.4);
 	
 	if (obj_playerHealth.heartOne){
-		draw_sprite(spr_heart, 0, 537, 224)
+		draw_sprite(spr_heart, 0, 510, 224)
 	}
 	else if (!obj_playerHealth.heartOne){
-		draw_sprite(spr_brokenHeart, 0, 537, 224)
+		draw_sprite(spr_brokenHeart, 0, 510, 224)
 	}
 	
 	if (obj_playerHealth.heartTwo){
@@ -18,15 +19,15 @@ if (pausegame){
 	}
    
 	if (obj_playerHealth.heartThree){
-		draw_sprite(spr_heart, 0, 729, 224)
+		draw_sprite(spr_heart, 0, 760, 224)
 	}
 	else if (!obj_playerHealth.heartThree){
-		draw_sprite(spr_brokenHeart, 0, 729, 224)
+		draw_sprite(spr_brokenHeart, 0, 760, 224)
 	}
 	
 	draw_set_colour(c_black);
 	draw_set_font(fnt_main);
-	draw_text(533, 96, "LEVEL CLEARED");
+	
 	draw_text(533, 400.9, "Restart");
 	draw_text(533, 516.4, "Main Menu");
 }

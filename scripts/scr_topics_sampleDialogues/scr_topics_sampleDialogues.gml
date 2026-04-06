@@ -1,12 +1,12 @@
 function scr_topics_sampleDialogues(topics){
- /*//Dialogue w/o a character portrait
-	topics[$ "Example"] = [
+ //Dialogue w/o a character portrait
+	/*topics[$ "Example"] = [
 		TEXT("Hello World"),
 	];
 
 	//Dialogue w a character portrait
 	topics[$ "Example 2"] = [
-		SPEAKER("Name", spr_name, PORTRAIT_SIDE.LEFT, tst),
+		//SPEAKER("Name", spr_name, PORTRAIT_SIDE.LEFT, tst),
 		TEXT("Hello World!"),
 	];
 
@@ -16,8 +16,8 @@ function scr_topics_sampleDialogues(topics){
 	];
 
 	//Dialogue w a choice
-		topics[$ "Effects"] = [
-		CHOICE("Make a <wavy>choicee</wavy>",
+	topics[$ "Choice"] = [
+	CHOICE("Make a <wavy>choicee</wavy>",
 			OPTION("Choice one", "One"),
 			OPTION("Choice two", "Two"))
 	];
@@ -41,12 +41,12 @@ function scr_topics_sampleDialogues(topics){
 		TEXT("You need text after because it won't work w/o it"),
      
 	 //You can use this to give or remove hearts depending on choices made :33
-	];*/
+	];
 
 	topics[$ "Testing Audio"] = [
 		SPEAKER("Name", spr_name, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("Hello World! I am testing the audio to see if it works!", snd_hunter),
 		TEXTWAUDIO("The audio should play for long texts, like this one right here which actually needs me to type a lot", snd_hunter),
 		TEXTWAUDIO("And short texts", snd_hunter),
-	];
+	];*/
 }

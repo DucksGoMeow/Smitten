@@ -32,12 +32,12 @@ text_width = width - padding * 6;
 //Option
 option_color = c_white;
 option_x = padding;
-option_y = padding * - 6;
-option_spacing = 50;
-option_selection_indent = 24;
+option_y = padding * - 5;
+option_spacing = 100;
+option_selection_indent = 50; 
 option_width = 300;
-option_height = 40;
-option_text_x = 10;
+option_height = 80;
+option_text_x = 50;
 
 //Speaker
 speaker_font = fnt_main;
