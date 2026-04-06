@@ -2,7 +2,7 @@
   "FolderOrderSettings":[
     {"name":"Extensions","order":6,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":3,"path":"folders/Fonts.yy",},
-    {"name":"Hearts + Wall","order":17,"path":"folders/Hearts + Wall.yy",},
+    {"name":"Hearts + Wall","order":5,"path":"folders/Sequences/Hearts + Wall.yy",},
     {"name":"Notes","order":7,"path":"folders/Notes.yy",},
     {"name":"Objects","order":4,"path":"folders/Objects.yy",},
     {"name":"!Delete when finished","order":5,"path":"folders/Objects/!Delete when finished.yy",},
@@ -132,6 +132,8 @@
     {"name":"bigheartUp","order":7,"path":"sequences/bigheartUp/bigheartUp.yy",},
     {"name":"heartgoingUp","order":1,"path":"sequences/heartgoingUp/heartgoingUp.yy",},
     {"name":"heartWall","order":2,"path":"sequences/heartWall/heartWall.yy",},
+    {"name":"seq_heatWall_MoveIn","order":3,"path":"sequences/seq_heatWall_MoveIn/seq_heatWall_MoveIn.yy",},
+    {"name":"seq_heatWall_MoveOut","order":4,"path":"sequences/seq_heatWall_MoveOut/seq_heatWall_MoveOut.yy",},
     {"name":"seq_moveIn","order":1,"path":"sequences/seq_moveIn/seq_moveIn.yy",},
     {"name":"smallheartDown","order":4,"path":"sequences/smallheartDown/smallheartDown.yy",},
     {"name":"smallheartUp","order":5,"path":"sequences/smallheartUp/smallheartUp.yy",},

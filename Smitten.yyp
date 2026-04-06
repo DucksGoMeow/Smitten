@@ -14,7 +14,7 @@
   "Folders":[
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Hearts + Wall","folderPath":"folders/Hearts + Wall.yy","name":"Hearts + Wall","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Hearts + Wall","folderPath":"folders/Sequences/Hearts + Wall.yy","name":"Hearts + Wall","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"!Delete when finished","folderPath":"folders/Objects/!Delete when finished.yy","name":"!Delete when finished","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -69,7 +69,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.213",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"Smitten",
   "resources":[
@@ -180,6 +180,8 @@
     {"id":{"name":"heartgoingDown","path":"sequences/heartgoingDown/heartgoingDown.yy",},},
     {"id":{"name":"heartgoingUp","path":"sequences/heartgoingUp/heartgoingUp.yy",},},
     {"id":{"name":"heartWall","path":"sequences/heartWall/heartWall.yy",},},
+    {"id":{"name":"seq_heatWall_MoveIn","path":"sequences/seq_heatWall_MoveIn/seq_heatWall_MoveIn.yy",},},
+    {"id":{"name":"seq_heatWall_MoveOut","path":"sequences/seq_heatWall_MoveOut/seq_heatWall_MoveOut.yy",},},
     {"id":{"name":"seq_moveIn","path":"sequences/seq_moveIn/seq_moveIn.yy",},},
     {"id":{"name":"seq_moveOut","path":"sequences/seq_moveOut/seq_moveOut.yy",},},
     {"id":{"name":"smallheartDown","path":"sequences/smallheartDown/smallheartDown.yy",},},

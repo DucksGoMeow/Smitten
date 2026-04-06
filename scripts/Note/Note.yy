@@ -6,7 +6,7 @@
   "name":"Note",
   "parent":{
     "name":"Hearts + Wall",
-    "path":"folders/Hearts + Wall.yy",
+    "path":"folders/Sequences/Hearts + Wall.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
