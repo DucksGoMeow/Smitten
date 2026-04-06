@@ -101,7 +101,8 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 	
 	//Has to be drawn last so it is ontop of everything
 	if (tSec >= 6 && tSec <= 15){
-	#region Draw Arrow Pattern
+		draw_sprite(spr_arrowBox, 0, 417, 157);
+		#region Draw Arrow Pattern
 		switch (randNumArrow){
  			#region 1 Arrow
 			case 1:
