@@ -81,7 +81,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 			sprite_index = monsterAttackingSpr;
 		}
 	}
-
+	
 	else if (monsterHealth == 50){
 		if (!doneMonsterDamage){
 			sprite_index = monsterDamageSpr;
@@ -1493,7 +1493,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 				if (!patternLeft){
 					draw_sprite(spr_left, 0, 475, 155);
 					draw_sprite(spr_upReversed, 0, 350.5, 197);
-					draw_sprite(spr_right, 0, 247.5, 197);
+					draw_sprite(spr_rightReversed, 0, 247.5, 197);
 				}
 				
 				if (patternUpReversed){
@@ -1515,7 +1515,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 				
 				if (patternDown){
 					draw_sprite(spr_down, 0, 475, 155);
-					draw_sprite(spr_up, 0, 350.5, 197);
+					draw_sprite(spr_upReversed, 0, 350.5, 197);
 				}
 				
 				if (patternUpReversed){
@@ -1561,7 +1561,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 				if (!patternLeftReversed){
 					draw_sprite(spr_leftReversed, 0, 475, 155);
 					draw_sprite(spr_right, 0, 350.5, 197);
-					draw_sprite(spr_down, 0, 247.5, 197);
+					draw_sprite(spr_downReversed, 0, 247.5, 197);
 				}
 				
 				if (patternRight){
@@ -1656,7 +1656,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 				}
 				
 				if (patternUpReversed){
-					draw_sprite(spr_up, 0, 475, 155);
+					draw_sprite(spr_upReversed, 0, 475, 155);
 				}
 				break;
 
@@ -1712,7 +1712,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 					draw_sprite(spr_left, 0, 144.5, 197);
 				}
 				
-				if (patternDown){
+				if (patternDownReversed){
 					draw_sprite(spr_downReversed, 0, 475, 155);
 					draw_sprite(spr_right, 0, 350.5, 197);
 					draw_sprite(spr_left, 0, 247.5, 197);
@@ -1916,7 +1916,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 					draw_sprite(spr_upReversed, 0, 350.5, 197);
 				}
 				
-				if (patternUp){
+				if (patternUpReversed){
 					draw_sprite(spr_upReversed, 0, 475, 155);
 				}
 				break;
@@ -2074,7 +2074,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noLeftMonster && obj_monste
 					draw_sprite(spr_down, 0, 144.5, 197);
 				}
 				
-				if (patternRighReversedt){
+				if (patternRightReversed){
 					draw_sprite(spr_rightReversed, 0, 475, 155);
 					draw_sprite(spr_upReversed, 0, 350.5, 197);
 					draw_sprite(spr_down, 0, 247.5, 197);

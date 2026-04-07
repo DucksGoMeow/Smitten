@@ -1739,7 +1739,7 @@ if (!obj_monsterTimer.noMonster){
 					}
 					else if (g == "RIGHT" && patternLeftReversed){
 						patternLeftReversed = false;
-						patternUp = true;
+						patternUpReversed = true;
 						monsterHealth -= 50;
 					}
 					else if (g == "DOWN" && patternUpReversed){
@@ -1774,7 +1774,7 @@ if (!obj_monsterTimer.noMonster){
 		case 89:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "UP" && !patternUpReversed){
+					if (g == "DOWN" && !patternUpReversed){
 						patternUpReversed = true;
 						patternDown = true;
 						monsterHealth -= 50;
@@ -1873,7 +1873,7 @@ if (!obj_monsterTimer.noMonster){
 		case 93:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "UP" && !patternUpReversed){
+					if (g == "DOWN" && !patternUpReversed){
 						patternUpReversed = true;
 						patternRight = true;
 						monsterHealth -= 50;
@@ -1925,7 +1925,7 @@ if (!obj_monsterTimer.noMonster){
 		case 95:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "DOWN" && !patternDownReversed){
+					if (g == "UP" && !patternDownReversed){
 						patternDownReversed = true;
 						patternUpReversed = true;
 						monsterHealth -= 50;
@@ -1952,7 +1952,7 @@ if (!obj_monsterTimer.noMonster){
 				if(dev0Up){ 
 					if (g == "DOWN" && !patternDown){
 						patternDown = true;
-						patternUp = true;
+						patternUpReversed = true;
 						monsterHealth -= 50;
 					}
 					else if (g == "DOWN" && patternUpReversed){
@@ -2000,7 +2000,7 @@ if (!obj_monsterTimer.noMonster){
 		case 98:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "DOWN" && !patternDownReversed){
+					if (g == "UP" && !patternDownReversed){
 						patternDownReversed = true;
 						patternLeft = true;
 						monsterHealth -= 50;
@@ -2077,7 +2077,7 @@ if (!obj_monsterTimer.noMonster){
 		case 101:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "LEFT" && !patternLeftReversed){
+					if (g == "RIGHT" && !patternLeftReversed){
 						patternLeftReversed = true;
 						patternUpReversed = true;
 						monsterHealth -= 50;
@@ -2127,7 +2127,7 @@ if (!obj_monsterTimer.noMonster){
 		case 103:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "LEFT" && !patternLeftReversed){
+					if (g == "RIGHT" && !patternLeftReversed){
 						patternLeftReversed = true;
 						patternDown = true;
 						monsterHealth -= 50;
@@ -2152,7 +2152,7 @@ if (!obj_monsterTimer.noMonster){
 		case 104:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "LEFT" && !patternLeftReversed){
+					if (g == "RIGHT" && !patternLeftReversed){
 						patternLeftReversed = true;
 						patternDownReversed = true;
 						monsterHealth -= 50;
@@ -2177,7 +2177,7 @@ if (!obj_monsterTimer.noMonster){
 		case 105:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "LEFT" && !patternLeftReversed){
+					if (g == "RIGHT" && !patternLeftReversed){
 						patternLeftReversed = true;
 						patternRightReversed = true;
 						monsterHealth -= 50;
@@ -2229,7 +2229,7 @@ if (!obj_monsterTimer.noMonster){
 		case 107:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "RIGHT" && !patternRightReversed ){
+					if (g == "LEFT" && !patternRightReversed ){
 						patternRightReversed  = true;
 						patternUpReversed  = true;
 						monsterHealth -= 50;
@@ -2254,7 +2254,7 @@ if (!obj_monsterTimer.noMonster){
 		case 108:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "RIGHT" && !patternRightReversed ){
+					if (g == "LEFT" && !patternRightReversed ){
 						patternRightReversed  = true;
 						patternUpReversed  = true;
 						monsterHealth -= 50;
@@ -2279,7 +2279,7 @@ if (!obj_monsterTimer.noMonster){
 		case 109:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "RIGHT" && !patternRightReversed ){
+					if (g == "LEFT" && !patternRightReversed ){
 						patternRightReversed  = true;
 						patternDownReversed  = true;
 						monsterHealth -= 50;
@@ -2304,7 +2304,7 @@ if (!obj_monsterTimer.noMonster){
 		case 110:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "RIGHT" && !patternRightReversed ){
+					if (g == "LEFT" && !patternRightReversed ){
 						patternRightReversed  = true;
 						patternDownReversed  = true;
 						monsterHealth -= 50;
@@ -2329,7 +2329,7 @@ if (!obj_monsterTimer.noMonster){
 		case 111:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "RIGHT" && !patternRightReversed ){
+					if (g == "LEFT" && !patternRightReversed ){
 						patternRightReversed  = true;
 						patternLeftReversed  = true;
 						monsterHealth -= 50;
@@ -2354,7 +2354,7 @@ if (!obj_monsterTimer.noMonster){
 		case 112:
 			if (tSec >= 4 && tSec <= 15){
 				if(dev0Up){ 
-					if (g == "RIGHT" && !patternRightReversed ){
+					if (g == "LEFT" && !patternRightReversed ){
 						patternRightReversed  = true;
 						patternLeftReversed  = true;
 						monsterHealth -= 50;

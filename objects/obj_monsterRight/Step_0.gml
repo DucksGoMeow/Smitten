@@ -1303,7 +1303,1081 @@ if (!obj_monsterTimer.noMonster){
 		#endregion
 		#endregion
 		//Reversed
+		#region 3 Arrow
+		#region Up
+		case 65:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "DOWN" && !patternUpReversed){
+						patternUpReversed = true;
+						patternDown = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternDown){
+						patternDown = false;
+						patternLeft = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternLeft){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 66:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "UP" && !patternUp){
+						patternUp = true;
+						patternDownReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed){
+						patternDownReversed = false;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 67:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "UP" && !patternUp){
+						patternUp = true;
+						patternLeft = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternLeft){
+						patternLeft = false;
+						patternDownReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 68:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "DOWN" && !patternUpReversed){
+						patternUpReversed = true;
+						patternLeft = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternLeft){
+						patternLeft = false;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 69:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "UP" && !patternUp){
+						patternUp = true;
+						patternRightReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternRightReversed){
+						patternRightReversed = false;
+						patternDown = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternDown){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 70:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "UP" && !patternUp){
+						patternUp = true;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						patternRight = false;
+						patternLeftReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternLeftReversed){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		#endregion
+		#region Down
+		case 71:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "UP" && !patternDownReversed){
+						patternDownReversed = true;
+						patternUp = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternUp){
+						patternUp = false;
+						patternLeft = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternLeft){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 72:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "DOWN" && !patternDown){
+						patternDown = true;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						patternUpReversed = false;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 73:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "DOWN" && !patternDown){
+						patternDown = true;
+						patternLeft = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternLeft){
+						patternLeft = false;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 74:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "UP" && !patternDownReversed){
+						patternDownReversed = true;
+						patternLeft = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternLeft){
+						patternLeft = false;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 75:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "DOWN" && !patternDown){
+						patternDown = true;
+						patternRightReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternRightReversed){
+						patternRightReversed = false;
+						patternUp = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternUp){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 76:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "DOWN" && !patternDown){
+						patternDown = true;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						patternRight = false;
+						patternLeftReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternLeftReversed){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		#endregion
+		#region Left
+		case 77:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "RIGHT" && !patternLeftReversed){
+						patternLeftReversed = true;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						patternUpReversed = false;
+						patternDown = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternDown){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 78:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternLeft){
+						patternLeft = true;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						patternUpReversed = false;
+						patternRightReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternRightReversed){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 79:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "RIGHT" && !patternLeftReversed){
+						patternLeftReversed = true;
+						patternDown = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternDown){
+						patternDown = false;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 80:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "RIGHT" && !patternLeftReversed){
+						patternLeftReversed = true;
+						patternDownReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed){
+						patternDownReversed = false;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 81:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternLeft){
+						patternLeft = true;
+						patternRightReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternRightReversed){
+						patternRightReversed = false;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 82:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "RIGHT" && !patternLeftReversed){
+						patternLeftReversed = true;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						patternRight = false;
+						patternDownReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		#endregion
+		#region Right
+		case 83:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternRightReversed){
+						patternRightReversed = true;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						patternUpReversed = false;
+						patternDownReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 84:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternRightReversed){
+						patternRightReversed = true;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						patternUpReversed = false;
+						patternLeftReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternLeftReversed){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 85:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternRightReversed){
+						patternRightReversed = true;
+						patternDownReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed){
+						patternDownReversed = false;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 86:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternRightReversed){
+						patternRightReversed = true;
+						patternDownReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed){
+						patternDownReversed = false;
+						patternLeftReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternLeftReversed){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 87:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternRightReversed){
+						patternRightReversed = true;
+						patternLeftReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternLeftReversed){
+						patternLeftReversed = false;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		case 88:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternRightReversed){
+						patternRightReversed = true;
+						patternLeftReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternLeftReversed){
+						patternLeftReversed = false;
+						patternDownReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed){
+						monsterHealth -= 100;
+					}
+				}
+			}
+			break;
+		#endregion`
+		#endregion
+		#region 4 Arrows
+		#region UP
+		case 89:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "DOWN" && !patternUpReversed){
+						patternUpReversed = true;
+						patternDown = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternDown){
+						patternDown = false;
+						patternLeft = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternLeft){
+						patternLeft = false;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						monsterHealth -= 50;
+					}
+				}
+			}
+			break;
+		case 90:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "UP" && !patternUp){
+						patternUp = true;
+						patternDownReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed){
+						patternDownReversed = false;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						patternRight = false;
+						patternLeft = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternLeft){
+						monsterHealth -= 50;
+					}
 
+				}
+			}
+			break;
+		case 91:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "UP" && !patternUp){
+						patternUp = true;
+						patternLeft = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternLeft){
+						patternLeft = false;
+						patternDownReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed){
+						patternDownReversed = false;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		case 92:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "UP" && !patternUp){
+						patternUp = true;
+						patternLeft = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternLeft){
+						patternLeft = false;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						patternRight = false;
+						patternDownReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		case 93:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "DOWN" && !patternUpReversed){
+						patternUpReversed = true;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						patternRight = false;
+						patternDown = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternDown){
+						patternDown = false;
+						patternLeft = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternLeft){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		case 94:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "UP" && !patternUp){
+						patternUp = true;
+						patternRightReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternRightReversed){
+						patternRightReversed = false;
+						patternLeft = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternLeft){
+						patternLeft = false;
+						patternDown = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternDown){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		#endregion
+		#region Down
+		case 95:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "UP" && !patternDownReversed){
+						patternDownReversed = true;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						patternUpReversed = false;
+						patternLeft = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternLeft){
+						patternLeft = false;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		case 96:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "DOWN" && !patternDown){
+						patternDown = true;
+						patternUpReversed= true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						patternUpReversed = false;
+						patternRightReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternRightReversed){
+						patternRightReversed = false;
+						patternLeft = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternLeft){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		case 97:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "DOWN" && !patternDown){
+						patternDown = true;
+						patternLeft = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternLeft){
+						patternLeft = false;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						patternUpReversed = false;
+						patternRightReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternRightReversed){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		case 98:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "UP" && !patternDownReversed){
+						patternDownReversed = true;
+						patternLeft = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternLeft){
+						patternLeft = false;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						patternRight = false;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		case 99:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "DOWN" && !patternDown){
+						patternDown = true;
+						patternRightReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternRightReversed){
+						patternRightReversed = false;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						patternUpReversed = false;
+						patternLeft = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternLeft){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		case 100:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "DOWN" && !patternDown){
+						patternDown = true;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						patternRight = false;
+						patternLeftReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternLeftReversed){
+						patternLeftReversed = false;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		#endregion
+		#region Left
+		case 101:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "RIGHT" && !patternLeftReversed){
+						patternLeftReversed = true;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						patternUpReversed = false;
+						patternDownReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed){
+						patternDownReversed = false;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		case 102:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternLeft){
+						patternLeft = true;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						patternUpReversed = false;
+						patternRightReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternRightReversed){
+						patternRightReversed = false;
+						patternDownReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		case 103:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "RIGHT" && !patternLeftReversed){
+						patternLeftReversed = true;
+						patternDown = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternDown){
+						patternDown = false;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						patternUpReversed = false;
+						patternRightReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternRightReversed){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		case 104:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "RIGHT" && !patternLeftReversed){
+						patternLeftReversed = true;
+						patternDownReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed){
+						patternDownReversed = false;
+						patternRight = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternRight){
+						patternRight = false;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		case 105:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "RIGHT" && !patternLeftReversed){
+						patternLeftReversed = true;
+						patternRightReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternRightReversed){
+						patternRightReversed = false;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						patternUpReversed = false;
+						patternDown = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternDown){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		case 106:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternLeft){
+						patternLeft = true;
+						patternRightReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "LEFT" && patternRightReversed){
+						patternRightReversed = false;
+						patternDownReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed){
+						patternDownReversed = false;
+						patternUpReversed = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		#endregion
+		#region Right
+		case 107:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternRightReversed ){
+						patternRightReversed  = true;
+						patternUpReversed  = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed ){
+						patternUpReversed  = false;
+						patternDownReversed  = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed ){
+						patternDownReversed  = false;
+						patternLeftReversed  = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternLeftReversed ){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		case 108:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternRightReversed ){
+						patternRightReversed  = true;
+						patternUpReversed  = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed ){
+						patternUpReversed  = false;
+						patternLeftReversed  = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternLeftReversed ){
+						patternLeftReversed  = false;
+						patternDownReversed  = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed ){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		case 109:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternRightReversed ){
+						patternRightReversed  = true;
+						patternDownReversed  = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed ){
+						patternDownReversed  = false;
+						patternUpReversed  = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed ){
+						patternUpReversed  = false;
+						patternLeftReversed  = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternLeftReversed ){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		case 110:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternRightReversed ){
+						patternRightReversed  = true;
+						patternDownReversed  = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed ){
+						patternDownReversed  = false;
+						patternLeftReversed  = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternLeftReversed ){
+						patternLeftReversed  = false;
+						patternUpReversed  = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed ){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		case 111:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternRightReversed ){
+						patternRightReversed  = true;
+						patternLeftReversed  = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternLeftReversed ){
+						patternLeftReversed  = false;
+						patternUpReversed  = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed ){
+						patternUpReversed  = false;
+						patternDownReversed  = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed ){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		case 112:
+			if (tSec >= 4 && tSec <= 15){
+				if(dev0Up){ 
+					if (g == "LEFT" && !patternRightReversed ){
+						patternRightReversed  = true;
+						patternLeftReversed  = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "RIGHT" && patternLeftReversed ){
+						patternLeftReversed  = false;
+						patternDownReversed  = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "UP" && patternDownReversed ){
+						patternDownReversed  = false;
+						patternUpReversed  = true;
+						monsterHealth -= 50;
+					}
+					else if (g == "DOWN" && patternUpReversed ){
+						monsterHealth -= 50;
+					}
+
+				}
+			}
+			break;
+		#endregion
+		#endregion
 	}
 	#endregion
 	

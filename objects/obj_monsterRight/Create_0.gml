@@ -22,26 +22,28 @@ monsterLeavingSpr = spr_blankMonster;
 //Default Sound
 monsterAttackingSound  = snd_mantisAttack;
 
-if (global.tutorial){
+//Level 1, 1-2 Arrows
+if (global.whatLevel = 1){
 	doneMonsterDamage = true;
 	randNumArrow = irandom_range(1, 16);
 }
-else if (!global.tutorial && global.whatLevel = 1){
-	doneMonsterDamage = true;
-	randNumArrow = irandom_range(1, 16);
- }
+//Level 2, 2-3 Arrows
 else if (global.whatLevel = 3){
 	randNumArrow = irandom_range(5, 40);
 }
+//Level 3, 3 Arrows
 else if (global.whatLevel = 5){
 	randNumArrow = irandom_range(17, 40);
 }
+//Level 4, 4 Arrows
 else if (global.whatLevel = 7){
-	randNumArrow = irandom_range(17, 64);
-}
-else if (global.whatLevel = 9){
 	randNumArrow = irandom_range(41, 64);
 }
+//Level 5, Boss Arrows
+else if (global.whatLevel = 9){
+	randNumArrow = irandom_range(65, 112);
+}
+
 
 tMin = 0;
 tSec = 20;
