@@ -27,8 +27,8 @@ if (global.tutorial){
 	randNumArrow = irandom_range(1, 16);
 }
 else if (!global.tutorial && global.whatLevel = 1){
-	doneMonsterDamage = true;
-	randNumArrow = irandom_range(1, 16);
+	
+	randNumArrow = 77;
  }
 else if (global.whatLevel = 3){
 	randNumArrow = irandom_range(5, 40);
@@ -53,10 +53,17 @@ tRound = 10;
 
 alarm[1] = 6; // 60 frames per second 
 
+//Arrow Bool
 patternUp = false;
 patternDown = false;
 patternRight = false;
 patternLeft = false;
+
+//Reversed Arrow Bool
+patternUpReversed = false;
+patternDownReversed = false;
+patternRightReversed = false;
+patternLeftReversed = false;
 
 leavingAnimation = function(){
 	event_perform(ev_create, 0);

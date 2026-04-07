@@ -49,10 +49,17 @@ tMil = 0; //tenth of a second
 
 alarm[1] = 6; // 60 frames per second 
 
+//Arrow Bool
 patternUp = false;
 patternDown = false;
 patternRight = false;
 patternLeft = false;
+
+//Reversed Arrow Bool
+patternUpReversed = false;
+patternDownReversed = false;
+patternRightReversed = false;
+patternLeftReversed = false;
 
 leavingAnimation = function(){
 	event_perform(ev_create, 0);
