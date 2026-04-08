@@ -44,10 +44,11 @@ else if (global.whatLevel = 9){
 	randNumArrow = irandom_range(65, 112);
 }
 
-
 tMin = 0;
 tSec = 20;
 tMil = 0; //tenth of a second
+
+tRound = 10;
 
 alarm[1] = 6; // 60 frames per second 
 

@@ -2,8 +2,8 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 	//Monster Sprite
 	draw_sprite(sprite_index, image_index, monsterX, monsterY);
 
-	/*//Timer Text (this is temporary)
-	var t = "";
+	//Timer Text (this is temporary)
+	/*var t = "";
 	t += string(tMin);
 	t += ":";
 
@@ -36,7 +36,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 		case 2:
 			monsterComingSpr = spr_wolfspiderEnteringRight;
 			monsterDamageSpr = spr_wolfspiderDamageRight;
-			monsterAttackingSpr = spr_wolfspiderIdelRight;
+			monsterAttackingSpr = spr_wolfspiderIdleRight;
 			monsterLeavingSpr = spr_wolfspiderLeavingRight;
 			
 			monsterAttackingSound = snd_mantisAttack;
@@ -51,8 +51,11 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 		sprite_index = monsterComingSpr;
 	}
 
-	if (tSec == 15){
+	if (tSec <= 15 && tSec >= 6){
 		sprite_index = monsterAttackingSpr;
+		draw_set_colour(c_red);
+
+		draw_rectangle(1000 - (tRound), 650, 1290, 660, false);
 	}
 
 	if (monsterHealth == 150){

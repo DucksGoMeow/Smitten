@@ -11,7 +11,7 @@ g = TMCT_GetCurrentGesture(0);
 switch (randNumArrow){
 	#region 1 Arrow
 		case 1:
-			if (obj_startingTutorialDialouge.startAttacking){
+			if (obj_tutorialDialouge.startAttacking){
 				if(dev0Up){ 
 					if (g == "UP" && !patternUp){
 					monsterHealth -= 200;
@@ -20,7 +20,7 @@ switch (randNumArrow){
 			}
 			break;
 		case 2:
-			if (obj_startingTutorialDialouge.startAttacking){
+			if (obj_tutorialDialouge.startAttacking){
 				if(dev0Up){ 
 					if (g == "DOWN" && !patternDown){
 					monsterHealth -= 200;
@@ -29,7 +29,7 @@ switch (randNumArrow){
 			}
 			break;
 		case 3:
-			if (obj_startingTutorialDialouge.startAttacking){
+			if (obj_tutorialDialouge.startAttacking){
 				if(dev0Up){ 
 					if (g == "LEFT" && !patternLeft){
 					monsterHealth -= 200;
@@ -38,7 +38,7 @@ switch (randNumArrow){
 			}
 			break;
 		case 4:
-			if (obj_startingTutorialDialouge.startAttacking){
+			if (obj_tutorialDialouge.startAttacking){
 				if(dev0Up){ 
 					if (g == "RIGHT" && !patternRight = true){
 					monsterHealth -= 200;
@@ -50,7 +50,7 @@ switch (randNumArrow){
 	#region 2 Arrow
 		#region Up
 		case 5:
-			if (obj_startingTutorialDialouge.startAttacking){
+			if (obj_tutorialDialouge.startAttacking){
 				if(dev0Up){ 
 					if (g == "UP" && !patternUp){
 						patternUp = true;
@@ -64,7 +64,7 @@ switch (randNumArrow){
 			}
 			break;
 		case 6:
-			if (obj_startingTutorialDialouge.startAttacking){
+			if (obj_tutorialDialouge.startAttacking){
 				if(dev0Up){ 
 					if (g == "UP" && !patternUp){
 						patternUp = true;
@@ -78,7 +78,7 @@ switch (randNumArrow){
 			}
 			break;
 		case 7:
-			if (obj_startingTutorialDialouge.startAttacking){
+			if (obj_tutorialDialouge.startAttacking){
 				if(dev0Up){ 
 					if (g == "UP" && !patternUp){
 						patternUp = true;
@@ -94,7 +94,7 @@ switch (randNumArrow){
 		#endregion
 		#region Down
 		case 8:
-			if (obj_startingTutorialDialouge.startAttacking){
+			if (obj_tutorialDialouge.startAttacking){
 				if(dev0Up){ 
 					if (g == "DOWN" && !patternDown){
 						patternDown = true;
@@ -108,7 +108,7 @@ switch (randNumArrow){
 			}
 			break;
 		case 9:
-			if (obj_startingTutorialDialouge.startAttacking){
+			if (obj_tutorialDialouge.startAttacking){
 				if(dev0Up){ 
 					if (g == "DOWN" && !patternDown){
 						patternDown = true;
@@ -122,7 +122,7 @@ switch (randNumArrow){
 			}
 			break;	
 		case 10:
-			if (obj_startingTutorialDialouge.startAttacking){
+			if (obj_tutorialDialouge.startAttacking){
 				if(dev0Up){ 
 					if (g == "DOWN" && !patternDown){
 						patternDown = true;
@@ -138,7 +138,7 @@ switch (randNumArrow){
 		#endregion
 		#region Left
 		case 11:
-			if (obj_startingTutorialDialouge.startAttacking){
+			if (obj_tutorialDialouge.startAttacking){
 				if(dev0Up){ 
 					if (g == "LEFT" && !patternLeft){
 						patternLeft = true;
@@ -152,7 +152,7 @@ switch (randNumArrow){
 			}
 			break;		
 		case 12:
-			if (obj_startingTutorialDialouge.startAttacking){
+			if (obj_tutorialDialouge.startAttacking){
 				if(dev0Up){ 
 					if (g == "LEFT" && !patternLeft){
 						patternLeft = true;
@@ -166,7 +166,7 @@ switch (randNumArrow){
 			}
 			break;	
 		case 13:
-			if (obj_startingTutorialDialouge.startAttacking){
+			if (obj_tutorialDialouge.startAttacking){
 				if(dev0Up){ 
 					if (g == "LEFT" && !patternLeft){
 						patternLeft = true;
@@ -182,7 +182,7 @@ switch (randNumArrow){
 		#endregion
 		#region Right
 		case 14:
-			if (obj_startingTutorialDialouge.startAttacking){
+			if (obj_tutorialDialouge.startAttacking){
 				if(dev0Up){ 
 					if (g == "RIGHT" && !patternRight){
 						patternRight = true;
@@ -196,7 +196,7 @@ switch (randNumArrow){
 			}
 			break;			
 		case 15:
-			if (obj_startingTutorialDialouge.startAttacking){
+			if (obj_tutorialDialouge.startAttacking){
 				if(dev0Up){ 
 					if (g == "RIGHT" && !patternRight){
 						patternRight = true;
@@ -210,7 +210,7 @@ switch (randNumArrow){
 			}
 			break;	
 		case 16:
-			if (obj_startingTutorialDialouge.startAttacking){
+			if (obj_tutorialDialouge.startAttacking){
 				if(dev0Up){ 
 					if (g == "RIGHT" && !patternRight){
 						patternRight = true;
@@ -233,17 +233,17 @@ if(tSec == 7 && !doneDamage){
 	obj_count.damageSprite();
 	obj_hunter.defendAnimation();
 	doneDamage = true;
-	obj_startingTutorialDialouge.startAttacking = false;
+	obj_tutorialDialouge.startAttacking = false;
 
 	if (tMil == 9){
-		sprite_index = spr_mantisIdleLeft;
-		startDialogue("Failed Tutorial");
+		sprite_index = spr_wolfspiderIdleRight;
+		startDialogue("Failed Tutorial 2");
 		doneDamage = false;
 	}
 }
 
 if (monsterHealth = 0){
-	obj_startingTutorialDialouge.startAttacking = false;
+	obj_tutorialDialouge.startAttacking = false;
 	sprite_index = monsterDamageSpr;
 	if (tMil == 9){
 		leavingAnimation(); 
@@ -252,11 +252,6 @@ if (monsterHealth = 0){
 }
 
 if (tSec == 0 && tMil == 0 && defeatedMonster){
-	instance_create_layer(0,0, "Instances", obj_tutorialDialouge);
-	instance_destroy();
-}
-
-if (tSec == 0 && tMil == 0 && skipTutorial){
-	room_goto(rm_levelBattle);
+	startDialogue("Completed Tutorial");
 	instance_destroy();
 }

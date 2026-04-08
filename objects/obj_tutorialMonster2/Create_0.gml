@@ -1,11 +1,13 @@
 monsterHealth = 200;
 patternFinished = false;
 
+show_debug_message(sprite_index);
+
 ammountChosen = false;
 patternChosen = false;
 
-monsterX = 0; 
-monsterY = 288;
+monsterX = 939.5; 
+monsterY = 231;
 
 doneDamage = false;
 doneMonsterDamage = false;
@@ -27,7 +29,7 @@ randNumArrow = 1;
 numChosen = false;	
 
 if (!numChosen){
-	randNumArrow = irandom_range(1, 4);
+	randNumArrow = irandom_range(5, 16);
 	numChosen = true;
 }
 
@@ -52,15 +54,7 @@ patternLeft = false;
 
 leavingAnimation = function(){
 	event_perform(ev_create, 0);
-	obj_startingTutorialDialouge.doneWMonster = true;
-	tSec = 5;
-	event_perform(ev_alarm, 0);
-}
-
-skipTutorialAnimation = function(){
-	event_perform(ev_create, 0);
-	obj_startingTutorialDialouge.doneWMonster = true;
-	skipTutorial = true;
+	obj_tutorialDialouge.doneWMonster = true;
 	tSec = 5;
 	event_perform(ev_alarm, 0);
 }
@@ -69,7 +63,7 @@ startBattleAnimation = function(){
 	event_perform(ev_create, 0);
 	tSec = 20;
 	event_perform(ev_alarm, 0);
-	obj_startingTutorialDialouge.startAttacking = true;
+	obj_tutorialDialouge.startAttacking = true;
 }
 
 
@@ -77,5 +71,5 @@ restartBattleAnimation = function(){
 	event_perform(ev_create, 0);
 	tSec = 30;
 	event_perform(ev_alarm, 0);
-	obj_startingTutorialDialouge.startAttacking = true;
+	obj_tutorialDialouge.startAttacking = true;
 }

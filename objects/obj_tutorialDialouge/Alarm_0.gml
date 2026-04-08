@@ -1,11 +1,5 @@
 tMil -= 1;
 
-tRound -= 2;
-
-if (tRound = -1){ //reduce seconds by 1
-	tRound = 9;
-}
-
 if (tMil = -1){ //reduce seconds by 1
 	tMil = 9;
 	tSec -= 1;
@@ -16,12 +10,9 @@ if (tSec = -1){ //reduce minutes by 1
 	tMin -= 1;
 }
 
-
 //make sure timer doesn't tick if its at 0
-if !(tSec = 0 && tMil = 0){
-	alarm[1] = 6;
+if !(tSec = 0 && tMin = 0 && tMil = 0){
+	alarm[0] = 6;
 }
 else {
-	//when the timer ends
-
 }

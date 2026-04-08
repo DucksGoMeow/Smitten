@@ -10,7 +10,7 @@ if (point_in_rectangle(mouse_x, mouse_y,
 	
 	audio_resume_all();
 	
-	global.whatLevel = global.whatLevel + 1;
+	global.whatLevel += 1;
 	audio_stop_all();
 	save_game();
 	

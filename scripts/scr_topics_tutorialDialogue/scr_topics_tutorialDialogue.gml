@@ -90,12 +90,12 @@ function scr_topics_tutorialDialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("(Hm...No not like that)", snd_hunter),
 		TEXTWAUDIO("(I don't want him getting hurt)", snd_hunter),
-		TEXTWAUDIO("(Move the MOUSE in the direction of the arrow while pressing LEFT CLICK)", snd_hunter),
+		CUSTOMTEXTWAUDIO("(Move the MOUSE in the direction of the arrow while pressing LEFT CLICK)", function() {obj_tutorialMonster.startBattleAnimation();}, snd_hunter),
 	]; 
 	
 	topics[$ "Defeated Monster" ] = [
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("(Another one is coming, lets try this again)", snd_hunter),
+		CUSTOMTEXTWAUDIO("(Another one is coming, lets try this again)", function() {obj_tutorialMonster2.startBattleAnimation();}, snd_hunter),
 		TEXTWAUDIO("(This monster has more than one arrow)", snd_hunter),
 		TEXTWAUDIO("(I need to follow the arrow closest to me)", snd_hunter),
 	]; 
@@ -105,6 +105,7 @@ function scr_topics_tutorialDialogue(topics){
 		TEXTWAUDIO("(Hm...No not like that)", snd_hunter),
 		TEXTWAUDIO("(I don't want him getting hurt)", snd_hunter),
 		TEXTWAUDIO("(I need to follow the arrow closest to me)", snd_hunter),
+		CUSTOMTEXTWAUDIO("(Move the MOUSE in the direction of the arrow while pressing LEFT CLICK)", function() {obj_tutorialMonster2.startBattleAnimation();}, snd_hunter),
 	]; 
 	
 	topics[$ "Completed Tutorial" ] = [
@@ -112,16 +113,7 @@ function scr_topics_tutorialDialogue(topics){
 		TEXTWAUDIO("(Still got it in me)", snd_hunter),
 		TEXTWAUDIO("(The monsters will get stronger as we keep going)", snd_hunter),
 		TEXTWAUDIO("(I need to be ready for anything)", snd_hunter),
+		CUSTOMTEXTWAUDIO("", function() {room_goto(rm_levelBattle)}, snd_hunter),
 	]; 
 	#endregion
-	
-	topics[$ "TEST"] = [
-		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("(These monsters are probably after Count...I need to protect him!)", snd_hunter),
-		CHOICE("(Do I still remember how to hunt monsters...?)",
-			OPTION("No.", "No."), //do the tutorial scene
-			OPTION("Maybe.", "No."), //do the tutorial scene
-			OPTION("Yes.", "Yes.")) // skip to level 1
-			
-	];
 }

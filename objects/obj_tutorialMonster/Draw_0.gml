@@ -1,23 +1,5 @@
 	//Monster Sprite
 	draw_sprite(sprite_index, image_index, monsterX, monsterY);
-
-	//Timer Text (this is temporary)
-	var t = "";
-	t += string(tMin);
-	t += ":";
-
-	if (tSec > 9){
-		t += ""+string(tSec);
-	}
-
-	if (tSec < 10){
-		t +="0"+string(tSec);
-	}
-
-	t += ".";
-	t += string(tMil)
-
-	draw_text(100, 90, t);
 	
 	//Damage Sprites
 	if (monsterHealth == 150){
@@ -65,11 +47,14 @@
 	}
 	
 	if (tSec == 45){
-		sprite_index = spr_mantisIdelLeft;
+		sprite_index = spr_mantisIdleLeft;
 	}
 	
 	if (obj_startingTutorialDialouge.startAttacking = true){
 		sprite_index = spr_mantisAttackLeft;
+		draw_set_colour(c_red);
+
+		draw_rectangle(20 - (tRound), 650, 290, 660, false);
 	}
 	
 	if (obj_startingTutorialDialouge.doneWMonster){
