@@ -1,6 +1,5 @@
 global.whatLevel = 1;
 global.gameStarted = false;
-global.tutorial = false;
 
 global.roomReseted = false;
 

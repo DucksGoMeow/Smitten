@@ -1,0 +1,1 @@
+settingsOpened = false;

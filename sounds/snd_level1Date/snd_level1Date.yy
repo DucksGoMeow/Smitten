@@ -6,11 +6,11 @@
     "path":"audiogroups/backgroundMusic",
   },
   "bitDepth":1,
-  "channelFormat":0,
+  "channelFormat":1,
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":34.285736,
+  "duration":34.28573,
   "exportDir":"",
   "name":"snd_level1Date",
   "parent":{
@@ -20,7 +20,7 @@
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
-  "sampleRate":44100,
+  "sampleRate":48000,
   "soundFile":"snd_level1Date.ogg",
   "volume":1.0,
 }

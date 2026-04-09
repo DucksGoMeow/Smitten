@@ -52,8 +52,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Bar",
-    "path":"sprites/spr_Bar/spr_Bar.yy",
+    "name":"spr_bar",
+    "path":"sprites/spr_bar/spr_bar.yy",
   },
   "spriteMaskId":null,
   "visible":true,

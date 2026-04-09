@@ -1,6 +1,6 @@
 if (global.gameStarted == false){
-	buttonText = "Start";
+	buttonSprite = spr_startButton;
 }
 else if (global.gameStarted == true){
-	buttonText = "Continue";
+	buttonSprite = spr_continueButton;
 }

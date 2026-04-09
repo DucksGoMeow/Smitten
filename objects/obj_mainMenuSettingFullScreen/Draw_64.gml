@@ -1,5 +1,5 @@
 if (room == rm_mainMenu){
 	if (obj_mainMenuSettings.settingsOpened){
-		draw_text(240, 400, fullscreenText);
+		draw_sprite(fullscreenSprite, 0, 603, 166);
 	}
 }	

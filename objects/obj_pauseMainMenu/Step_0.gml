@@ -9,7 +9,8 @@ if (point_in_rectangle(mouse_x, mouse_y,
 	if (buffer_exists(obj_pauseMenu.pauseSurfBuffer)) buffer_delete(obj_pauseMenu.pauseSurfBuffer);
 		
 	//whatevers here go to obj_resumepause and put it there too
-	audio_stop_sound(obj_textbox.dialogue_audio);
+	audio_stop_sound(snd_count);
+	audio_stop_sound(snd_hunter);
 	audio_resume_all();
 		
 	//instance_destroy(obj_restartpause);
