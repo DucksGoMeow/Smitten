@@ -48,7 +48,7 @@ function scr_topics_level2Dialogue(){
 		
 		CUSTOMTEXTWAUDIO("Oh my… Getting enthusiastic, are we? You truly know how to warm a vampire’s cold, dead heart.", function() {obj_textbox.restartDialogue();}, snd_count),
 		
-		GOTO("Cont_L2_Dating"),
+		GOTO("Cont_L2_Date"),
 		
 		];
 		
@@ -68,7 +68,7 @@ function scr_topics_level2Dialogue(){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("Nnnno thanks.", snd_hunter),
 		
-		GOTO("Cont_L2_Dating"),
+		GOTO("Cont_L2_Date"),
 		
 		];
 		
@@ -81,11 +81,11 @@ function scr_topics_level2Dialogue(){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("(…did I say something wrong?)", snd_hunter),
 		
-		GOTO("Cont_L2_Dating"),
+		GOTO("Cont_L2_Date"),
 		
 		];
 		
-	topics[$ "Cont_L2_Dating"] = [
+	topics[$ "Cont_L2_Date"] = [
 		CUSTOMTEXTWAUDIO("I’d rather be anywhere than home any day.", snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
@@ -126,7 +126,7 @@ function scr_topics_level2Dialogue(){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("(The air feels colder now…)", snd_hunter),
 		
-		GOTO("Cont_L2_Dating_2"),
+		GOTO("Cont_L2_Date_2"),
 	];
 	
 	topics[$ "(Yeah, you’re kinda hard to understand sometimes.)"] = [
@@ -149,7 +149,7 @@ function scr_topics_level2Dialogue(){
 		CUSTOMTEXTWAUDIO("(Phew… at least he found it funny…)", snd_hunter),
 
 		
-		GOTO("Cont_L2_Dating_2"),
+		GOTO("Cont_L2_Date_2"),
 	];
 	
 		topics[$ "They… they make you act like this?"] = [
@@ -163,10 +163,10 @@ function scr_topics_level2Dialogue(){
 		
 		CUSTOMTEXTWAUDIO("Hah, that makes you the first. I greatly appreciate it. Much as I empathize, this must be INSUFFERABLE.", snd_count),
 		
-		GOTO("Cont_L2_Dating_2"),
+		GOTO("Cont_L2_Date_2"),
 	];
 	
-		topics[$ "Cont_L2_Dating_2"] = [
+		topics[$ "Cont_L2_Date_2"] = [
 		CUSTOMTEXTWAUDIO("I do say, you really know how to pick a place to awe me.", snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
@@ -206,7 +206,7 @@ function scr_topics_level2Dialogue(){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("Gah… did he want me to be more sincere or something…?", snd_hunter),
 		
-		GOTO("Cont_L2_Dating_3"),
+		GOTO("Cont_L2_Date_3"),
 		
 		];
 		
@@ -229,7 +229,7 @@ function scr_topics_level2Dialogue(){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("Heh, don’t see any others up here, do you?", snd_hunter),
 		
-		GOTO("Cont_L2_Dating_3"),
+		GOTO("Cont_L2_Date_3"),
 		
 		];
 		
@@ -253,11 +253,11 @@ function scr_topics_level2Dialogue(){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("(Or… just honest enough.)", snd_hunter),
 		
-		GOTO("Cont_L2_Dating_3"),
+		GOTO("Cont_L2_Date_3"),
 		
 		];
 		
-		topics[$ "Cont_L2_Dating_3"] = [
+		topics[$ "Cont_L2_Date_3"] = [
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("You can really see the whole cityscape if you look in the distance. See those lights?", snd_hunter),
 		
@@ -356,7 +356,7 @@ function scr_topics_level2Dialogue(){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("(My heart… it’s beating so fast… oh, grub it all.)", snd_hunter),
 		
-		];
+		]; // LEVEL CLEAR!
 		
 		topics[$ "L2_3_Hearts"] = [
 		CUSTOMTEXTWAUDIO("Really?! You’d like that? I mean– yes, absolutely!", snd_count),
@@ -383,5 +383,5 @@ function scr_topics_level2Dialogue(){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("Yeah. Alright.", snd_hunter),
 		
-		];
+		]; // LEVEL CLEAR!
 } #endregion
