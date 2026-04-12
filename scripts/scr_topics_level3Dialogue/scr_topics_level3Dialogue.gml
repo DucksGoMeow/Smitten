@@ -1,4 +1,4 @@
-function scr_topicss_level3Dialogue(topicss){
+function scr_topics_level3Dialogue(topics){
 
 #region Level 3 Intro
 
@@ -247,7 +247,7 @@ topics[$ "L3_Date"] = [
 	GOTO("Cont_L3_Date_2"),
 	];
 	
-	topicss[$ "Cont_L3_Date_2"] = [
+	topics[$ "Cont_L3_Date_2"] = [
 	TEXTWAUDIO("In any case, I greatly appreciate you still bearing with me, after my coven’s already assaulted us countless times.", snd_count),
 	
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
@@ -273,7 +273,7 @@ topics[$ "L3_Date"] = [
 		
 	];
 	
-	topicss[$ "Honestly a really cool dude."] = [
+	topics[$ "Honestly a really cool dude."] = [
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("Honestly a really cool dude.", snd_hunter),
 	
@@ -296,7 +296,7 @@ topics[$ "L3_Date"] = [
 	GOTO("Cont_L3_Date_3"),
 	];
 	
-	topicss[$ "Someone I can leave my guard down with."] = [
+	topics[$ "Someone I can leave my guard down with."] = [
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("Someone I can leave my guard down with.", snd_hunter),
 	
@@ -324,7 +324,7 @@ topics[$ "L3_Date"] = [
 	GOTO("Cont_L3_Date_3"),
 	];
 	
-	topicss[$ "Good, for a vampire."] = [
+	topics[$ "Good, for a vampire."] = [
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 	CUSTOMTEXTWAUDIO("Good, for a vampire.", function() {obj_playerHealth.playerHealth -= 50}, snd_hunter),
 	
