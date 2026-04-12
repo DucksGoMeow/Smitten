@@ -3,7 +3,7 @@ global.gameStarted = false;
 
 global.roomReseted = false;
 
-audio_group_load(backgroundMusic);
+audio_group_load(audiogroup_default);
 audio_group_load(soundEffects);
 
 global.music_volume = 100;

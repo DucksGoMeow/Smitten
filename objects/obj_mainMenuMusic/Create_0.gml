@@ -1,1 +1,1 @@
-loadedMainMenu = false;
+musicPlaying = false;

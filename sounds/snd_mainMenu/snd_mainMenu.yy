@@ -2,8 +2,8 @@
   "$GMSound":"v2",
   "%Name":"snd_mainMenu",
   "audioGroupId":{
-    "name":"backgroundMusic",
-    "path":"audiogroups/backgroundMusic",
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
   "channelFormat":1,

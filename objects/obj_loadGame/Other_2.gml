@@ -1,4 +1,4 @@
-audio_group_load(backgroundMusic);
+audio_group_load(audiogroup_default);
 audio_group_load(soundEffects);
 
 load_game();

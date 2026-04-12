@@ -5,6 +5,9 @@ if (point_in_rectangle(mouse_x, mouse_y,
 		settingsOpened = true;
 		
 		instance_create_layer(148.5, 28, "Instances", obj_settingsBackground);
+		instance_create_layer(352, 28, "Instances", obj_settingPageButton);
+		instance_create_layer(719, 28, "Instances", obj_how2PlayPageButton);
+		
 		instance_create_layer(601, 347.5, "Pause_Menu", obj_pauseSettingMusicSlider);
 		instance_create_layer(601, 512, "Pause_Menu", obj_pauseSettingEffectSlider);
 		instance_create_layer(603, 166, "Pause_Menu", obj_pauseSettingFullScreen);
@@ -12,6 +15,7 @@ if (point_in_rectangle(mouse_x, mouse_y,
 	}
 }
 if (!settingsOpened){
+	
 	instance_destroy(obj_settingsBackground);
 	instance_destroy(obj_pauseSettingMusicSlider);
 	instance_destroy(obj_pauseSettingEffectSlider);

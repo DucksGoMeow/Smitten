@@ -7,5 +7,5 @@
 	scr_topics_level1Dialogue(global.topics);
 	scr_topics_level2Dialogue(global.topics);
 	scr_topics_level3Dialogue(global.topics);
-	scr_topics_level4Dialogue(global.topics);
+
 	scr_topics_level5Dialogue(global.topics);
