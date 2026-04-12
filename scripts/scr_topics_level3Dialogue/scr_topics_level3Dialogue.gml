@@ -1,8 +1,8 @@
-function scr_topics_level3Dialogue(topics){
+function scr_topicss_level3Dialogue(topicss){
 
 #region Level 3 Intro
 
-topic[$ "L3_Intro"] = [
+topics[$ "L3_Intro"] = [
 
 	TEXTWAUDIO("My dearest Hunter, fashionably late, I see. Welcome to the amusement park!", snd_count),
 		
@@ -32,7 +32,7 @@ topic[$ "L3_Intro"] = [
 
 #region Level 3 Date
 
-topic[$ "L3_Date"] = [
+topics[$ "L3_Date"] = [
 	TEXTWAUDIO("Hahaha! This place has been a blast! So many ways to get launched at extreme velocities, and-or, lose money!", snd_count),
 		
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
@@ -55,7 +55,7 @@ topic[$ "L3_Date"] = [
 
 	];
 	
-	topic[$ "I’d like to feel that grip elsewhere." ] = [
+	topics[$ "I’d like to feel that grip elsewhere." ] = [
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("I’d like to feel that grip elsewhere.", snd_hunter),
 	
@@ -82,7 +82,7 @@ topic[$ "L3_Date"] = [
 	];
 	
 	
-	topic[$ "Me too, that was terrifying." ] = [
+	topics[$ "Me too, that was terrifying." ] = [
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("Me too, that was terrifying.", snd_hunter),
 	
@@ -108,9 +108,9 @@ topic[$ "L3_Date"] = [
 	GOTO("Cont_L3_Date"),
 	];
 	
-	topic[$ "You screamed like a little girl." ] = [
+	topics[$ "You screamed like a little girl." ] = [
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-	TEXTWAUDIO("You screamed like a little girl.", function() {obj_playerHealth.playerHealth -= 50}, snd_hunter),
+	CUSTOMTEXTWAUDIO("You screamed like a little girl.", function() {obj_playerHealth.playerHealth -= 50}, snd_hunter),
 	
 	TEXTWAUDIO("Oh… I apologize.", snd_count),
 	
@@ -129,7 +129,7 @@ topic[$ "L3_Date"] = [
 	GOTO("Cont_L3_Date"),
 	];
 	
-	topic[$ "Cont_L3_Date"] = [
+	topics[$ "Cont_L3_Date"] = [
 	TEXTWAUDIO("If you don’t mind me asking– you don’t get out too much, right, Hunter?", snd_count),
 	
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
@@ -165,7 +165,7 @@ topic[$ "L3_Date"] = [
 	
 	];
 	
-	topic[$ "Bugs respect any member of the monster hunters."] = [
+	topics[$ "Bugs respect any member of the monster hunters."] = [
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("Bugs respect any member of the monster hunters.", snd_hunter),
 	
@@ -196,9 +196,9 @@ topic[$ "L3_Date"] = [
 	GOTO("Cont_L3_Date_2")
 	];
 	
-	topic[$ "Do they? I’m just doing my job, I wouldn’t know."] = [
+	topics[$ "Do they? I’m just doing my job, I wouldn’t know."] = [
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-	TEXTWAUDIO("Do they? I’m just doing my job, I wouldn’t know.", function() {obj_playerHealth.playerHealth -= 50}, snd_hunter),
+	CUSTOMTEXTWAUDIO("Do they? I’m just doing my job, I wouldn’t know.", function() {obj_playerHealth.playerHealth -= 50}, snd_hunter),
 	
 	TEXTWAUDIO("Never seen their reactions, I take it?", snd_count), 
 	
@@ -217,7 +217,7 @@ topic[$ "L3_Date"] = [
 	GOTO("Cont_L3_Date_2"),
 	];
 	
-	topic[$ "Huh… I never thought about it like that."] = [
+	topics[$ "Huh… I never thought about it like that."] = [
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("Huh… I never thought about it like that.", snd_hunter),
 	
@@ -247,7 +247,7 @@ topic[$ "L3_Date"] = [
 	GOTO("Cont_L3_Date_2"),
 	];
 	
-	topics[$ "Cont_L3_Date_2"] = [
+	topicss[$ "Cont_L3_Date_2"] = [
 	TEXTWAUDIO("In any case, I greatly appreciate you still bearing with me, after my coven’s already assaulted us countless times.", snd_count),
 	
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
@@ -273,7 +273,7 @@ topic[$ "L3_Date"] = [
 		
 	];
 	
-	topics[$ "Honestly a really cool dude."] = [
+	topicss[$ "Honestly a really cool dude."] = [
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("Honestly a really cool dude.", snd_hunter),
 	
@@ -296,7 +296,7 @@ topic[$ "L3_Date"] = [
 	GOTO("Cont_L3_Date_3"),
 	];
 	
-	topics[$ "Someone I can leave my guard down with."] = [
+	topicss[$ "Someone I can leave my guard down with."] = [
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("Someone I can leave my guard down with.", snd_hunter),
 	
@@ -324,9 +324,9 @@ topic[$ "L3_Date"] = [
 	GOTO("Cont_L3_Date_3"),
 	];
 	
-	topics[$ "Good, for a vampire."] = [
+	topicss[$ "Good, for a vampire."] = [
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-	TEXTWAUDIO("Good, for a vampire.", function() {obj_playerHealth.playerHealth -= 50}, snd_hunter),
+	CUSTOMTEXTWAUDIO("Good, for a vampire.", function() {obj_playerHealth.playerHealth -= 50}, snd_hunter),
 	
 	TEXTWAUDIO("...That’s a little offensive, I’ll be honest.", snd_count),
 	
@@ -343,7 +343,7 @@ topic[$ "L3_Date"] = [
 	GOTO("Cont_L3_Date_3"),
 	];
 	
-	topic[$ "Cont_L3_Date_3"] = [
+	topics[$ "Cont_L3_Date_3"] = [
 	TEXTWAUDIO("Ohohoho! Seems like I finally got you out of your workaholic tendencies! Look at you, such a talker!", snd_count),
 	
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
@@ -364,7 +364,7 @@ topic[$ "L3_Date"] = [
 	TEXTWAUDIO("Yeah… I… I feel the same way! Um… would you wanna go out some other time?", snd_hunter),
 	];
 	
-	topic[$ "L3_0_Hearts"] = [
+	topics[$ "L3_0_Hearts"] = [
 	TEXTWAUDIO("…Actually, I think I’d like to spend some time alone for a while.", snd_count),
 	
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
@@ -398,13 +398,13 @@ topic[$ "L3_Date"] = [
 	
 	]; // GAME OVER SCREEN
 	
-	topic[$ "L3_1_2_Hearts"] = [
+	topics[$ "L3_1_2_Hearts"] = [
 	TEXTWAUDIO("Hmm, good question! I didn’t really think that far ahead.", snd_count),
 	
 	TEXTWAUDIO("Do you have any suggestions?", snd_count),
 	
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-	TEXTWAUDIO("Well, we might’ve brought too much attention to ourselves at the park, so it’d probably be smart to go to more secluded areas for our next date.", function() {obj_textbox.restartDialogue();}, snd_hunter),
+	CUSTOMTEXTWAUDIO("Well, we might’ve brought too much attention to ourselves at the park, so it’d probably be smart to go to more secluded areas for our next date.", function() {obj_textbox.restartDialogue();}, snd_hunter),
 	
 	TEXTWAUDIO("Come on, you said you’d protect me wherever we went! I don’t see why it’s necessary.", snd_count),
 	
@@ -432,13 +432,13 @@ topic[$ "L3_Date"] = [
 	]; // LEVEL CLEAR!
 	
 	
-	topic[$ "L3_3_Hearts"] = [
+	topics[$ "L3_3_Hearts"] = [
 	TEXTWAUDIO("Hmm, good question! I didn’t really think that far ahead– I’ve had too much of a good time.", snd_count),
 	
 	TEXTWAUDIO("Do you have any suggestions?", snd_count),
 	
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-	TEXTWAUDIO("Well, we might’ve brought too much attention to ourselves at the park, so it’d probably be smart to go to more secluded areas for now. Somewhere in town.", function() {obj_textbox.restartDialogue();}, snd_hunter),
+	CUSTOMTEXTWAUDIO("Well, we might’ve brought too much attention to ourselves at the park, so it’d probably be smart to go to more secluded areas for now. Somewhere in town.", function() {obj_textbox.restartDialogue();}, snd_hunter),
 	
 	TEXTWAUDIO("What!? But come on, you’re practically unbeatable! Why the worry, all of a sudden?", snd_count),
 	
@@ -469,7 +469,7 @@ topic[$ "L3_Date"] = [
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("(Oh, I called her wretched out loud. I mean, I know I’m right. No dip. But will he get mad…?)", snd_hunter),
 	
-	TEXTWAUDIO("Ahahaha! I always had a feeling you were daring, but to call the oh-so powerful Countess a wretch!? HAH! You might have more screws loose than I thought!", function() {obj_textbox.restartDialogue();}, snd_count),
+	CUSTOMTEXTWAUDIO("Ahahaha! I always had a feeling you were daring, but to call the oh-so powerful Countess a wretch!? HAH! You might have more screws loose than I thought!", function() {obj_textbox.restartDialogue();}, snd_count),
 	
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("(Haha. Ha ha ha ha ha. Ha? Wha? Wha?)", snd_hunter),
