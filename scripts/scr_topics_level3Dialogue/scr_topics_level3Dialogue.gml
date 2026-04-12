@@ -404,7 +404,10 @@ topics[$ "L3_Date"] = [
 	CUSTOMTEXTWAUDIO("Do you have any suggestions?", function() {obj_textbox.restartDialogue();}, snd_count),
 	
 	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-	CUSTOMTEXTWAUDIO("Well, we might’ve brought too much attention to ourselves at the park, so it’d probably be smart to go to more secluded areas for our next date.", snd_hunter),
+	CUSTOMTEXTWAUDIO("Well, we might’ve brought too much attention to ourselves at the park,", snd_hunter),
+	
+	SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
+	CUSTOMTEXTWAUDIO("so it’d probably be smart to go to more secluded areas for our next date.", snd_hunter),
 	
 	CUSTOMTEXTWAUDIO("Come on, you said you’d protect me wherever we went! I don’t see why it’s necessary.", function() {obj_textbox.restartDialogue();}, snd_count),
 	

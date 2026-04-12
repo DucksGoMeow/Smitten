@@ -3,17 +3,17 @@ function scr_topics_level2Dialogue(topics){
 	#region Level 2 Intro
 	
 	topics[$ "L2_Intro"] = [
-		CUSTOMTEXTWAUDIO("We meet again, my dear Hunter!", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count), 
+		CUSTOMTEXTWAUDIO("We meet again, my dear Hunter!", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("Thank you for coming.", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Why of course! Pray tell, what other surprises do you have in store for me?", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Why of course! Pray tell, what other surprises do you have in store for me?", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("Well… I’ll show you the way.", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("hoho! A surprise? Let us make haste then! Especially on the count of my fellow monsters prowling around! Still weird.", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("hoho! A surprise? Let us make haste then! Especially on the count of my fellow monsters prowling around! Still weird.", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("(I clocked them earlier… I guess my employer’s got some connections to the supernatural. And she’s not happy.)", snd_hunter),
@@ -26,7 +26,7 @@ function scr_topics_level2Dialogue(topics){
 	
 	#region Level 2 Date
 	topics[$ "L2_Date"] = [
-	CUSTOMTEXTWAUDIO("Oh my dear Hunter! This… is a sight to behold!", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+	CUSTOMTEXTWAUDIO("Oh my dear Hunter! This… is a sight to behold!", function() {obj_textbox.restartDialogue();}, snd_count),
 	
 	SPEAKERAUDIO("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CHOICE("Well....", 
@@ -46,7 +46,7 @@ function scr_topics_level2Dialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("(Why did I say that outloud?!)", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Oh my… Getting enthusiastic, are we? You truly know how to warm a vampire’s cold, dead heart.", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Oh my… Getting enthusiastic, are we? You truly know how to warm a vampire’s cold, dead heart.", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		GOTO("Cont_L2_Date"),
 		
@@ -56,14 +56,14 @@ function scr_topics_level2Dialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("But I don’t really mind as long as you’re with me.", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Ohh?", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Ohh?", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("I-I mean-", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("HAH! No take-backsies, my sweet!?", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
-		CUSTOMTEXTWAUDIO("But really, I think I wouldn’t mind being anywhere with you too.", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
-		CUSTOMTEXTWAUDIO("Say, why won’t we go on a world tour? I know a guy who knows a guy who knows a guy who-", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("HAH! No take-backsies, my sweet!?", function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("But really, I think I wouldn’t mind being anywhere with you too.", function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Say, why won’t we go on a world tour? I know a guy who knows a guy who knows a guy who-", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("Nnnno thanks.", snd_hunter),
@@ -76,7 +76,7 @@ function scr_topics_level2Dialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("it looks great!", function() {obj_playerHealth.playerHealth -= 50}, snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Ah. Nervous, are we?", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Ah. Nervous, are we?", function() {obj_textbox.restartDialogue();}, snd_hunter),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("(…did I say something wrong?)", snd_hunter),
@@ -86,13 +86,13 @@ function scr_topics_level2Dialogue(topics){
 		];
 		
 	topics[$ "Cont_L2_Date"] = [
-		CUSTOMTEXTWAUDIO("I’d rather be anywhere than home any day.", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("I’d rather be anywhere than home any day.", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("...?", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Oh, don’t look at me like that. It’s… they’re usually manageable.", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
-		CUSTOMTEXTWAUDIO("My family has just been EGREGIOUSLY annoying recently, is all.", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Oh, don’t look at me like that. It’s… they’re usually manageable.", function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("My family has just been EGREGIOUSLY annoying recently, is all.", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("Tell me about it. I mean, they keep trying to kill me.", snd_hunter),
@@ -100,17 +100,17 @@ function scr_topics_level2Dialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("(Though… not just me, seems like…)", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("I am so sorry about them. Their utter vitriol for humanity aside...baseless vitriol, I might add–", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
-		CUSTOMTEXTWAUDIO("They try to dictate every aspect of my life! For one– my vocabulary!", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("I am so sorry about them. Their utter vitriol for humanity aside...baseless vitriol, I might add–", function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("They try to dictate every aspect of my life! For one– my vocabulary!", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("...The way you speak, huh? You are pretty verbose.", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Not by choice. My fellow beasts tell me that to speak the tongue of a lesser being is run filth through one’s own tongue and– ", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Not by choice. My fellow beasts tell me that to speak the tongue of a lesser being is run filth through one’s own tongue and– ", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		];
 		
-		CUSTOMTEXTWAUDIO("Gah– see? It’s a habit!", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count)
+		CUSTOMTEXTWAUDIO("Gah– see? It’s a habit!", function() {obj_textbox.restartDialogue();},  snd_count)
 			CHOICE("I think it's quite obvious...", 
 				OPTION("But it makes you sound more noble", "Isn’t that nice?"),
 				OPTION("(Yeah, you’re kinda hard to understand sometimes.)", "(Yeah, you’re kinda hard to understand sometimes.)"),
@@ -120,8 +120,8 @@ function scr_topics_level2Dialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("Isn’t that nice?", function() {obj_playerHealth.playerHealth -= 50}, snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("I sound pompous. I’m not above anybody else. I shouldn’t talk as if I am. Not like…", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
-		CUSTOMTEXTWAUDIO("Nevermind.", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("I sound pompous. I’m not above anybody else. I shouldn’t talk as if I am. Not like…", function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Nevermind.", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("(The air feels colder now…)", snd_hunter),
@@ -136,14 +136,14 @@ function scr_topics_level2Dialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("(Wait, should I have said that…)", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Haha! I’m afraid you got your thoughts and words mixed up!", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Haha! I’m afraid you got your thoughts and words mixed up!", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("(Words, Hunter. Filter.)", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Imagine it’s like– like the witching hour. And rather than stalking within the shadows, the ‘terror’ from meaningless jargon holds priority!", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
-		CUSTOMTEXTWAUDIO("Not that I care for violence… but it’s as if the grandstanding riffraff…", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
-		CUSTOMTEXTWAUDIO("Blahblahblah, you get the jist. It’s so goofy, I’m glad you said it!", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Imagine it’s like– like the witching hour. And rather than stalking within the shadows, the ‘terror’ from meaningless jargon holds priority!", function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Not that I care for violence… but it’s as if the grandstanding riffraff…", function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Blahblahblah, you get the jist. It’s so goofy, I’m glad you said it!", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("(Phew… at least he found it funny…)", snd_hunter),
@@ -156,18 +156,18 @@ function scr_topics_level2Dialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("They… they make you act like this?", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Yes! Can you believe that?! It’s ingrained into me! Blegh!", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Yes! Can you believe that?! It’s ingrained into me! Blegh!", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("That sounds hard, I’m sorry. I don’t mind it all that much, at least.", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Hah, that makes you the first. I greatly appreciate it. Much as I empathize, this must be INSUFFERABLE.", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Hah, that makes you the first. I greatly appreciate it. Much as I empathize, this must be INSUFFERABLE.", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		GOTO("Cont_L2_Date_2"),
 	];
 	
 		topics[$ "Cont_L2_Date_2"] = [
-		CUSTOMTEXTWAUDIO("I do say, you really know how to pick a place to awe me.", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("I do say, you really know how to pick a place to awe me.", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("Oh, it’s nothing. I go here when I just need fresh air.", snd_hunter),
@@ -177,12 +177,12 @@ function scr_topics_level2Dialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("(I’m… not good at conversations… hell do I say?)", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Thank you… I needed this, is my point. The company, too.", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Thank you… I needed this, is my point. The company, too.", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("Any time. It’s usually a pretty private place for me. But it seemed like we– you… could use it.", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Really, now? How so?", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Really, now? How so?", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKERAUDIO("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CHOICE("Uh…", 
@@ -196,12 +196,12 @@ function scr_topics_level2Dialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("I want you all to myself, of course.", function() {obj_playerHealth.playerHealth -= 50}, snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Ah. Is that all?", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Ah. Is that all?", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("Uh… totally. Yeah.", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Hm.", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Hm.", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("Gah… did he want me to be more sincere or something…?", snd_hunter),
@@ -214,17 +214,17 @@ function scr_topics_level2Dialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("You seemed down in the dumps, dude." , snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Haha! Seems I couldn’t fool you, then.", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Haha! Seems I couldn’t fool you, then.", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("Well, you did mention family troubles. I can empathize.", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("This is how you usually overcome them, then?", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("This is how you usually overcome them, then?", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("Helps me think. Monster hunters can be a lot, sometimes. Extroverts.", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("You’re quite the exception then, aren’t you?", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("You’re quite the exception then, aren’t you?", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("Heh, don’t see any others up here, do you?", snd_hunter),
@@ -240,7 +240,7 @@ function scr_topics_level2Dialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("We all could use some quiet, now and again. The wind's nice.”", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Hah, and you trust me– a vampire – with a place so important to you?", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Hah, and you trust me– a vampire – with a place so important to you?", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("Yeah. I’d think so. And if you were a threat, I would’ve just decapitated you by now.", snd_hunter),
@@ -288,7 +288,7 @@ function scr_topics_level2Dialogue(topics){
 		CUSTOMTEXTWAUDIO("But?", snd_hunter),
 		
 		CUSTOMTEXTWAUDIO("You don’t seem comfortable with me. Or… maybe you are? But you’re acting so withheld that it’s… hard to tell.", function() {obj_textbox.restartDialogue();}, snd_count),
-		CUSTOMTEXTWAUDIO("I don’t want to keep meeting like this only for neither of us to be direct, or be our whole selves. I’m sorry. I don’t think we should see each other. ", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("I don’t want to keep meeting like this only for neither of us to be direct, or be our whole selves. I’m sorry. I don’t think we should see each other. ", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		// [C starts to leave, with H standing there with stunned look]
 		
@@ -319,7 +319,7 @@ function scr_topics_level2Dialogue(topics){
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("I… I was. yeah…", snd_hunter),
 		
-		CUSTOMTEXTWAUDIO("Oh my sweet! It’s quite alright, I felt a bit nervous as well but you brought me somewhere beautiful that’s close to your heart and mind.", function() {obj_textbox.restartDialogue();}, function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Oh my sweet! It’s quite alright, I felt a bit nervous as well but you brought me somewhere beautiful that’s close to your heart and mind.", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		CUSTOMTEXTWAUDIO("So you wouldn’t mind if we meet again?", snd_hunter),
