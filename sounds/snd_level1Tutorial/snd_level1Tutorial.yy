@@ -2,8 +2,8 @@
   "$GMSound":"v2",
   "%Name":"snd_level1Tutorial",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"backgroundMusic",
+    "path":"audiogroups/backgroundMusic",
   },
   "bitDepth":1,
   "channelFormat":1,
