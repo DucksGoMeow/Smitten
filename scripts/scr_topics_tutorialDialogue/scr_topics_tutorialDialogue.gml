@@ -18,7 +18,7 @@ function scr_topics_tutorialDialogue(topics){
 		TEXTWAUDIO("Nevermind. What's this about not killing me?", snd_count),
   
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("I've been hired to... to take you out.", snd_hunter),
+		TEXTWAUDIO("I've been hired to... to take you out, vampire.", snd_hunter),
   
 		SPEAKER("Count", spr_dialoguePortraitCount, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("So you HAVE come to, wait. Like... On a date?", snd_count),
@@ -27,10 +27,10 @@ function scr_topics_tutorialDialogue(topics){
 		TEXTWAUDIO("Uh. Yeah...?", snd_hunter),
   
 		SPEAKER("Count", spr_dialoguePortraitCount, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("You were hired to take me... on a date?", snd_count),
+		TEXTWAUDIO("You were hired to take me... on a date? By who?", snd_count),
   
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("Mhm.", snd_hunter),
+		TEXTWAUDIO("Mysterious giant lady.", snd_hunter),
   
 		SPEAKER("Count", spr_dialoguePortraitCount, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("You? And... me? Are you sure you didn't mishear?", snd_count),
@@ -63,7 +63,7 @@ function scr_topics_tutorialDialogue(topics){
 		TEXTWAUDIO("Yeah... they don't look too happy.", snd_hunter),
   
 		SPEAKER("Count", spr_dialoguePortraitCount, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("Really? Mayhaps they're just excited to see me.", snd_count),
+		TEXTWAUDIO("Really? Mayhaps they're just excited to see me. Is that my uncle?", snd_count),
   
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("(These monsters are probably after Count...I need to protect him!)", snd_hunter),

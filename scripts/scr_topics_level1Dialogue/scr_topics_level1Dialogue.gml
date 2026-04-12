@@ -56,7 +56,7 @@ function scr_topics_level1Dialogue(topics){
 	];
   
 	topics[$ "Cont_L1_Dating"] = [
-		CUSTOMTEXTWAUDIO("Then again...monster, mortal, I've never really cared about all that. Unlike my coven.", function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Then again...monster, mortal, I've never really cared about all that. Unlike my fellow monsters.", function() {obj_textbox.restartDialogue();}, snd_count),
   
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("I get it. I don't discriminate on who I have to  dismember, either.", snd_hunter),
@@ -126,9 +126,9 @@ function scr_topics_level1Dialogue(topics){
 		TEXTWAUDIO("The uh... the coven can be quite loud. It's a nice change of pace, out here."),
   
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("I figured vampires kept it lowkey. Sorry to hear otherwise.", snd_hunter),
+		TEXTWAUDIO("I figured monsters kept it lowkey. Sorry to hear otherwise.", snd_hunter),
   
-		CUSTOMTEXTWAUDIO("Hardly! We may be organized, but... my kind seems to enjoy running their mouths to no end. Like we're madly in love with the sound of our own voices!", function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("Hardly! We may be organized, but... my kind seems to enjoy running their mouths to no end, like we're madly in love with the sound of our own voices!", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		GOTO("L1_Dating_3"),
 	];
@@ -220,9 +220,9 @@ function scr_topics_level1Dialogue(topics){
 		CUSTOMTEXTWAUDIO("Hah, very refreshed. This was quite nice, despite some hiccups.", function() {obj_textbox.restartDialogue();}, snd_count),
   
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("I really donked up, huh?", snd_hunter),
+		TEXTWAUDIO("I really messed up, huh?", snd_hunter),
   
-		CUSTOMTEXTWAUDIO("I... believe we both did. However, I can tell you're simply new to this. Or unsure of yourself. Or, maybe injured in some way undetected by both of us.", function() {obj_textbox.restartDialogue();}, snd_count),
+		CUSTOMTEXTWAUDIO("I... believe we both did. However, I can tell you're simply new to this. Or unsure of yourself. Or, maybe injured.", function() {obj_textbox.restartDialogue();}, snd_count),
   
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("Wow... yeah, no kidding.", snd_hunter),
@@ -284,7 +284,7 @@ function scr_topics_level1Dialogue(topics){
 		CUSTOMTEXTWAUDIO("Oh, really? Wonderful! That's, wow, I've frankly been worrying if I made a good impression this whole time.", function() {obj_textbox.restartDialogue();}, snd_count),
   
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
-		TEXTWAUDIO("(Don't smile, Hunter. Or. Do. Smile? What should I do here?)"),
+		TEXTWAUDIO("(Don't smile, Hunter. Or. Do. Smile? What do I do here?)"),
 		TEXTWAUDIO("Trust me, you did. And if you feel the same, maybe you'd wanna see each other again sometime?", snd_hunter),
   
 		CUSTOMTEXTWAUDIO("I'd be delighted to! I'll be sure to get in touch as soon as I can. Have a wonderful evening.", function() {obj_textbox.restartDialogue();}, snd_count),

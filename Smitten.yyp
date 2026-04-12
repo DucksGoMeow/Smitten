@@ -73,7 +73,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2024.14.2.213",
   },
   "name":"Smitten",
   "resources":[
@@ -153,6 +153,7 @@
     {"id":{"name":"scr_stringbackspace","path":"scripts/scr_stringbackspace/scr_stringbackspace.yy",},},
     {"id":{"name":"scr_text","path":"scripts/scr_text/scr_text.yy",},},
     {"id":{"name":"scr_topics_level1Dialogue","path":"scripts/scr_topics_level1Dialogue/scr_topics_level1Dialogue.yy",},},
+    {"id":{"name":"scr_topics_level2Dialogue","path":"scripts/scr_topics_level2Dialogue/scr_topics_level2Dialogue.yy",},},
     {"id":{"name":"scr_topics_sampleDialogues","path":"scripts/scr_topics_sampleDialogues/scr_topics_sampleDialogues.yy",},},
     {"id":{"name":"scr_topics_tutorialDialogue","path":"scripts/scr_topics_tutorialDialogue/scr_topics_tutorialDialogue.yy",},},
     {"id":{"name":"scr_topics","path":"scripts/scr_topics/scr_topics.yy",},},
