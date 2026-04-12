@@ -15,7 +15,6 @@ if (room == rm_mainMenu){
 			instance_destroy(obj_mainMenuStart);
 			instance_destroy(obj_mainMenuQuit);
 			visible = false;
-			
 		}
 	}
 	if (!settingsOpened){

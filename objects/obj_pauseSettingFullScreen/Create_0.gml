@@ -1,1 +1,2 @@
-fullscreenText = "Full Screen: On";
+fullscreen = false;
+fullscreenSprite = spr_fullscreenOff;

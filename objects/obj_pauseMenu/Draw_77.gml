@@ -55,7 +55,6 @@ if (keyboard_check_pressed(vk_escape)){ //toggle pause (whatever trigger youd li
 		//whatevers here go to obj_resumepause and put it there too
 		audio_resume_all();
 		
-		settingsOpened = false;
 		instance_destroy(obj_pauseRestartLevel);
 		instance_destroy(obj_pauseSettings);
 		instance_destroy(obj_pauseSettingMusicSlider);
