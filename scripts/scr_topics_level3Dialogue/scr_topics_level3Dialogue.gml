@@ -1,4 +1,4 @@
-function scr_topics_level3Dialogue(){
+function scr_topics_level3Dialogue(topics){
 
 #region Level 3 Intro
 
