@@ -1,4 +1,4 @@
-if (obj_pauseMenu.settingsOpened && obj_pauseMenu.pausegame){
+if (obj_pauseSettings.settingsOpened && obj_pauseMenu.pausegame){
 	draw_sprite(sprite_index, image_index, x, y);
 
 	var knob_amount = amtCurrent/amtMax;
