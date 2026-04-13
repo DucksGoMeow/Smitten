@@ -1,1 +1,0 @@
-draw_sprite(sprCountDatePortrait, 0, countX, countY);

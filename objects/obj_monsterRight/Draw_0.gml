@@ -44,6 +44,12 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 			monsterX = 939.5; 
 			monsterY = 231;
 			break;
+		case 3:
+			monsterComingSpr = spr_blankMonster;
+			monsterDamageSpr = spr_blankMonster;
+			monsterAttackingSpr = spr_blankMonster;
+			monsterLeavingSpr = spr_blankMonster;
+			break;
 	}
 	
 	//sprite animations

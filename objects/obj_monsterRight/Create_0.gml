@@ -40,8 +40,11 @@ else if (room == rm_level4Battle){
 	randNumArrow = irandom_range(41, 64);
 }
 //Level 5, Boss Arrows
-else if (room == rm_level5Battle || room == rm_level5Battle2){
+else if (room == rm_level5Battle){
 	randNumArrow = irandom_range(65, 112);
+}
+else if (room == rm_level5Battle2){
+	randNumArrow = irandom_range(95, 112);
 }
 
 tMin = 0;

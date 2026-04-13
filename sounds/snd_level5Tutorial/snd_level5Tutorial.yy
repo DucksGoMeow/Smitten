@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_level5Tutorial",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":18.285728,
+  "exportDir":"",
+  "name":"snd_level5Tutorial",
+  "parent":{
+    "name":"Background Music",
+    "path":"folders/Sound/Background Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"snd_level5Tutorial.ogg",
+  "volume":1.0,
+}
