@@ -45,7 +45,6 @@ if (timerDone == 0){ //toggle pause (whatever trigger youd like)
 		//instance_create_layer(0, 0, "Instances", Object21);
 		instance_create_layer(533, 516.4, "Instances", obj_completeResetLevel);
 		instance_create_layer(533, 400.9, "Instances", obj_completeNextLevel);
-
 	}
 }
 

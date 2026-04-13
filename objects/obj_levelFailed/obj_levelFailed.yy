@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Level Failed",
-    "path":"folders/Objects/Menus/Level Failed.yy",
+    "path":"folders/Objects/Menus/Battle/Level Failed.yy",
   },
   "parentObjectId":null,
   "persistent":false,

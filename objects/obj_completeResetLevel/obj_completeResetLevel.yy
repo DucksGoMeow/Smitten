@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Level Complete",
-    "path":"folders/Objects/Menus/Level Complete.yy",
+    "path":"folders/Objects/Menus/Battle/Level Complete.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite34",
-    "path":"sprites/Sprite34/Sprite34.yy",
+    "name":"spr_restartButton",
+    "path":"sprites/spr_restartButton/spr_restartButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,

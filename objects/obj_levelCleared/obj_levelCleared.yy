@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Level Complete",
-    "path":"folders/Objects/Menus/Level Complete.yy",
+    "path":"folders/Objects/Menus/Battle/Level Complete.yy",
   },
   "parentObjectId":null,
   "persistent":false,

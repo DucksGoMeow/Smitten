@@ -113,7 +113,7 @@ function scr_topics_tutorialDialogue(topics){
 		TEXTWAUDIO("(Still got it in me)", snd_hunter),
 		TEXTWAUDIO("(The monsters will get stronger as we keep going)", snd_hunter),
 		TEXTWAUDIO("(I need to be ready for anything)", snd_hunter),
-		CUSTOMTEXTWAUDIO("", function() {room_goto(rm_levelBattle)}, snd_hunter),
+		CUSTOMTEXTWAUDIO("", function() {room_goto(rm_level1Battle)}, snd_hunter),
 	]; 
 	#endregion
 }

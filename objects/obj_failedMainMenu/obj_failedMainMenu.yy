@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Level Failed",
-    "path":"folders/Objects/Menus/Level Failed.yy",
+    "path":"folders/Objects/Menus/Battle/Level Failed.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite34",
-    "path":"sprites/Sprite34/Sprite34.yy",
+    "name":"spr_menuButton",
+    "path":"sprites/spr_menuButton/spr_menuButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,

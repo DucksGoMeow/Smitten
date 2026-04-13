@@ -257,6 +257,6 @@ if (tSec == 0 && tMil == 0 && defeatedMonster){
 }
 
 if (tSec == 0 && tMil == 0 && skipTutorial){
-	room_goto(rm_levelBattle);
+	room_goto(rm_level1Battle);
 	instance_destroy();
 }

@@ -11,8 +11,8 @@
   "name":"obj_level1HeartEvent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Level 1",
-    "path":"folders/Objects/Dialogue/Level 1.yy",
+    "name":"Lvl 1",
+    "path":"folders/Objects/Dialogue/Lvl 1.yy",
   },
   "parentObjectId":null,
   "persistent":false,

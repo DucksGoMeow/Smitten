@@ -11,11 +11,11 @@ if (room == rm_mainMenu){
 				
 				switch(global.whatLevel){
 					case 1:
-						room_goto(rm_tutorial);
+						room_goto(rm_level1Battle);
 						show_debug_message(obj_loadGame.buttonText);
 						break;
-					case 2:
-						room_goto(rm_levelDate);
+					case 3:
+						room_goto(rm_level2Battle);
 						show_debug_message(obj_loadGame.buttonText);
 						break;
 				}

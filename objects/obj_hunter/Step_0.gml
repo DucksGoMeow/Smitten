@@ -6,7 +6,7 @@ if(device_mouse_check_button_released(0,mb_any)) dev0Up = 1
 
 g = TMCT_GetCurrentGesture(0);
 
-if (room != rm_mainMenu){
+if (room != rm_mainMenu && room != rm_level1Date){
 	if(dev0Up){ 
 		if (g == "UP"){
 			upAnimation(); 

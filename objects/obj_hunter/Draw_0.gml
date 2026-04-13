@@ -1,5 +1,5 @@
 //Monster Sprite
-if (room != rm_mainMenu){
+if (room != rm_mainMenu && room != rm_level1Date){
 	draw_sprite(hunterSprite, image_index, 484, 320);
 }
 
