@@ -12,11 +12,38 @@ if (room == rm_mainMenu){
 				switch(global.whatLevel){
 					case 1:
 						room_goto(rm_level1Battle);
-						show_debug_message(obj_loadGame.buttonText);
+						break;
+					case 2:
+						global.whatLevel -= 1;
+						room_goto(rm_level1Battle);
 						break;
 					case 3:
 						room_goto(rm_level2Battle);
-						show_debug_message(obj_loadGame.buttonText);
+						break;
+					case 4:
+						global.whatLevel -= 1;
+						room_goto(rm_level2Battle);
+						break;
+					case 5:
+						room_goto(rm_level3Battle);
+						break;
+					case 6:
+						global.whatLevel -= 1;
+						room_goto(rm_level3Battle);
+						break;
+					case 7:
+						room_goto(rm_level4Battle);
+						break;
+					case 8:
+						global.whatLevel -= 1;
+						room_goto(rm_level4Battle);
+						break;
+					case 9:
+						room_goto(rm_level5Battle);
+						break;
+					case 10:
+						global.whatLevel -= 1;
+						room_goto(rm_level5Battle);
 						break;
 				}
 			}

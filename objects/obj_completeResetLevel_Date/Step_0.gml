@@ -13,5 +13,8 @@ if (point_in_rectangle(mouse_x, mouse_y,
 		
 		global.whatLevel -= 1;
 		if (room == rm_level1Date) room_goto(rm_level1Battle);
+		if (room == rm_level2Date) room_goto(rm_level2Battle);
+		if (room == rm_level3Date) room_goto(rm_level3Battle);
+		if (room == rm_level4Date) room_goto(rm_level4Battle);
 	}
 }

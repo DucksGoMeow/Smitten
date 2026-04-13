@@ -1,4 +1,5 @@
-if mouse_check_button(mb_left) {
+if keyboard_check_pressed(mb_left){
+	
 }
 else {
 	cursor_sprite = spr_mouse;

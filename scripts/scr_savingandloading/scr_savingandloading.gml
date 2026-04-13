@@ -8,6 +8,8 @@ function save_game() {
 }
 
 function load_game() {
+	show_debug_message("Loaded!");
+	
 	if (file_exists("savefile.txt")) {
 		var _file = file_text_open_read("savefile.txt");
 		

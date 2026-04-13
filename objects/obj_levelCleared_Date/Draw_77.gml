@@ -1,4 +1,4 @@
-//disable alpha blending (we just want RGB from screen)
+/*//disable alpha blending (we just want RGB from screen)
 gpu_set_blendenable(false);
 
 if (pausegame) { //draw frozen image to screen while paused 

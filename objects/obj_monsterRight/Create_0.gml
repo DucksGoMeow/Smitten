@@ -23,24 +23,24 @@ monsterLeavingSpr = spr_blankMonster;
 monsterAttackingSound  = snd_mantisAttack;
 
 //Level 1, 1-2 Arrows
-if (global.whatLevel = 1){
+if (room == rm_level1Battle){
 	doneMonsterDamage = true;
 	randNumArrow = irandom_range(1, 16);
 }
 //Level 2, 2-3 Arrows
-else if (global.whatLevel = 3){
+else if (room == rm_level2Battle){
 	randNumArrow = irandom_range(5, 40);
 }
 //Level 3, 3 Arrows
-else if (global.whatLevel = 5){
+else if (room == rm_level3Battle){
 	randNumArrow = irandom_range(17, 40);
 }
 //Level 4, 4 Arrows
-else if (global.whatLevel = 7){
+else if (room == rm_level4Battle){
 	randNumArrow = irandom_range(41, 64);
 }
 //Level 5, Boss Arrows
-else if (global.whatLevel = 9){
+else if (room == rm_level5Battle || room == rm_level5Battle2){
 	randNumArrow = irandom_range(65, 112);
 }
 

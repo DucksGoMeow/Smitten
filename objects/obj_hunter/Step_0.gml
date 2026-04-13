@@ -6,7 +6,7 @@ if(device_mouse_check_button_released(0,mb_any)) dev0Up = 1
 
 g = TMCT_GetCurrentGesture(0);
 
-if (room != rm_mainMenu && room != rm_level1Date){
+if (room == rm_level1Battle || room == rm_level2Battle || room == rm_level3Battle || room == rm_level4Battle || room == rm_level5Battle2){
 	if(dev0Up){ 
 		if (g == "UP"){
 			upAnimation(); 
@@ -28,7 +28,7 @@ if (room != rm_mainMenu && room != rm_level1Date){
 }
 
 if (tSec == 0 && tMil == 0){
-	if (room == rm_tutorial){
+	if (room == rm_tutorial || room == rm_level5Battle){
 		hunterSprite = spr_hunterIdle;
 	}
 	else{

@@ -1,6 +1,6 @@
 //Count Sprite
 
-if (room == rm_tutorial){
+if (room == rm_tutorial || room == rm_level5Battle){
 	draw_sprite(countSprite, image_index, 683, 277);
 }
 else{

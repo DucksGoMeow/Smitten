@@ -10,8 +10,8 @@
   "name":"obj_level1BattleMusic",
   "overriddenProperties":[],
   "parent":{
-    "name":"Background Music",
-    "path":"folders/Objects/Background Music.yy",
+    "name":"Level 1",
+    "path":"folders/Objects/Background Music/Level 1.yy",
   },
   "parentObjectId":null,
   "persistent":false,
