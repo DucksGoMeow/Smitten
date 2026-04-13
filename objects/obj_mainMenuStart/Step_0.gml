@@ -4,7 +4,7 @@ if (room == rm_mainMenu){
 	    x - sprite_xoffset + sprite_width, y - sprite_yoffset + sprite_height)) {
 	    if (mouse_check_button_pressed(mb_left) && !obj_mainMenuSettings.settingsOpened) {	
 			if (global.gameStarted == false){
-				room_goto(rm_tutorial);
+				room_goto(rm_startingCutscene);
 				global.gameStarted = true;
 			}
 			else if (global.gameStarted == true){
