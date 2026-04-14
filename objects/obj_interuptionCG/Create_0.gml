@@ -1,0 +1,1 @@
+interuptionSprite = spr_dinnerCG;

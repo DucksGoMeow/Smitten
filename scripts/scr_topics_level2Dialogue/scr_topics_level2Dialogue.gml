@@ -283,7 +283,7 @@ function scr_topics_level2Dialogue(topics){
 		CUSTOMTEXTWAUDIO("Something tells me we should both be getting back to, by now. It's getting late. We should hike back down.", function() {obj_textbox.restartDialogue();}, snd_count),
 		
 		SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
-		CUSTOMTEXTWAUDIO("I mean... if you'd like, we could go together sometime.",  function() {instance_create_layer(0, 0, "Instances", obj_level1HeartEvent)}, snd_hunter),
+		CUSTOMTEXTWAUDIO("I mean... if you'd like, we could go together sometime.", function() {instance_create_layer(0, 0, "Instances", obj_level2HeartEvent)}, snd_hunter),
 		
 		];
 		
@@ -305,7 +305,7 @@ function scr_topics_level2Dialogue(topics){
 		// [C starts to leave, with H standing there with stunned look]
 		
 		SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
-		CUSTOMTEXTWAUDIO("(What did I do wrong?)", function() {obj_level1HeartEvent.doneDate = true}, snd_hunter),
+		CUSTOMTEXTWAUDIO("(What did I do wrong?)", function() {obj_level2HeartEvent.doneDate = true}, snd_hunter),
 		
 		]; 	// GAME OVER SCREEN
 		
@@ -339,7 +339,7 @@ function scr_topics_level2Dialogue(topics){
 		TEXTWAUDIO("I... yes! Yeah, I'd love to!", snd_hunter),
 		
 		SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
-		CUSTOMTEXTWAUDIO("(Oh man, I was too excited...)", function() {obj_level1HeartEvent.doneDate = true}, snd_hunter),
+		CUSTOMTEXTWAUDIO("(Oh man, I was too excited...)", function() {obj_level2HeartEvent.doneDate = true}, snd_hunter),
 		
 		];
 		
@@ -360,7 +360,7 @@ function scr_topics_level2Dialogue(topics){
 		TEXTWAUDIO("Let's start the trek down, shall we?", snd_count),
 		
 		SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
-		CUSTOMTEXTWAUDIO("(My heart... it's beating so fast... oh, grub it all.)", function() {obj_level1HeartEvent.doneDate = true},  snd_hunter),
+		CUSTOMTEXTWAUDIO("(My heart... it's beating so fast... oh, grub it all.)", function() {obj_level2HeartEvent.doneDate = true},  snd_hunter),
 		
 		]; // LEVEL CLEAR!
 		
@@ -387,7 +387,7 @@ function scr_topics_level2Dialogue(topics){
 		TEXTWAUDIO("(Wow... he likes me! He really likes me! Oh Scarab, I don't know if I can handle this.)", snd_hunter),
 		
 		SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
-		CUSTOMTEXTWAUDIO("Yeah. Alright.", function() {obj_level1HeartEvent.doneDate = true}, snd_hunter),
+		CUSTOMTEXTWAUDIO("Yeah. Alright.", function() {obj_level2HeartEvent.doneDate = true}, snd_hunter),
 		
 		]; // LEVEL CLEAR!
 } #endregion

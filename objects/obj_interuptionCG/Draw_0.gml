@@ -1,0 +1,1 @@
+draw_sprite(interuptionSprite, 0, 0, 0);

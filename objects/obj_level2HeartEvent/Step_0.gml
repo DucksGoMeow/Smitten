@@ -15,6 +15,7 @@ if (tSec == 0 && tMil == 0 && startDate){
 }
 
 if (doneDate){
+	instance_destroy(obj_countDate);
 	restartTimer();
 }
 
