@@ -13,7 +13,7 @@ if (point_in_rectangle(mouse_x, mouse_y,
 		save_game();
 		
 		if (room == rm_level1Date) room_goto(rm_level2Start);
-		if (room == rm_level2Date) room_goto(rm_level3Battle);
+		if (room == rm_level2Date) room_goto(rm_level3Start);
 		if (room == rm_level3Date) room_goto(rm_level4Battle);
 		if (room == rm_level4Date) room_goto(rm_level5Battle);
 	}	

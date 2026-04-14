@@ -24,6 +24,7 @@ if (tSec == 0 && tMil == 0 && !startDate && showMenu){
 		obj_levelFailed_Date.timerDone = 0;
 	}
 	else {
+		show_debug_message("JI")
 		instance_create_layer(0, 0, "Pause_Menu", obj_levelCleared_Date)
 		obj_levelCleared_Date.timerDone = 0;
 	}

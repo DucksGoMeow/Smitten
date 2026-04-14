@@ -12,7 +12,7 @@ if (pausegame) { //draw frozen image to screen while paused
 	surface_reset_target();
 }
 
-if (obj_monsterTimer.noMonster && obj_playerHealth.playerHealth == 0){ //toggle pause (whatever trigger youd like)
+if (obj_playerHealth.playerHealth == 0){ //toggle pause (whatever trigger youd like)
 	if (!pausegame) { //pause now
 		pausegame = true;
 
