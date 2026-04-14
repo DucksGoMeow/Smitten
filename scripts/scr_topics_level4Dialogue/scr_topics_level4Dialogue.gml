@@ -5,29 +5,34 @@ function scr_topics_level4Dialogue(topics){
 	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("Oh, there you are.", snd_hunter),
 	
-	CUSTOMTEXTWAUDIO("Aha! I managed to sneak up on you this time!", function() {obj_textbox.restartDialogue();}, snd_count),
+	SPEAKER("Count", spr_dPCount_Neutral, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("Aha! I managed to sneak up on you this time!", snd_count),
 	
 	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("Good job.", snd_hunter),
 	TEXTWAUDIO("(I could clock him from a block away.)", snd_hunter),
 	TEXTWAUDIO("Do you mind the lights? They're meant to disorient monsters.", snd_hunter),
 	
-	CUSTOMTEXTWAUDIO("I believe at this point... a little discomfort's worth the time with you.", function() {obj_textbox.restartDialogue();}, snd_count),
+	SPEAKER("Count", spr_dPCount_Neutral, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("I believe at this point... a little discomfort's worth the time with you.", snd_count),
 	
 	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("Damn, smooth.", snd_hunter),
 	
-	CUSTOMTEXTWAUDIO("Hehe!", function() {obj_textbox.restartDialogue();}, snd_count),
+	SPEAKER("Count", spr_dPCount_Neutral, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("Hehe!",  snd_count),
 	
 	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("Never gonna stop teasing me, huh?", snd_hunter),
 	
-	CUSTOMTEXTWAUDIO("Precisely!", function() {obj_textbox.restartDialogue();}, snd_count),
+	SPEAKER("Count", spr_dPCount_Neutral, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("Precisely!", snd_count),
 	
 	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("Anyway, we should get going. Come with me. And stay close.", snd_hunter),
 	
-	CUSTOMTEXTWAUDIO("Always and forever, my sweet! I know just the place!", function() {obj_textbox.restartDialogue();}, snd_count),
+	SPEAKER("Count", spr_dPCount_Neutral, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("Always and forever, my sweet! I know just the place!", snd_count),
 	
 	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("(Something's off tonight...)", snd_hunter),
@@ -304,7 +309,10 @@ function scr_topics_level4Dialogue(topics){
 	SPEAKER("Mommy", spr_dPMommy_Neutral, PORTRAIT_SIDE.LEFT), // don't mind, this is when she finally has a portrait dialogue
 	TEXTWAUDIO("Is that a way to greet me, my little insect?", snd_mommy),
 	TEXTWAUDIO("Tell me, bug... why haven't you taken him out?", snd_mommy),
-	CHOICE("(Wait! Is she talking to me...?)",
+	
+	SPEAKER("Hunter", spr_dPHunter_Unsure, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("(Wait!)", snd_hunter),
+	CHOICE("(Is she talking to me...?)",
 			OPTION("None of your business.", "It's none of your business."),
 			OPTION("I did.", "I did."),
 			OPTION("...", "...")),
@@ -517,7 +525,7 @@ function scr_topics_level4Dialogue(topics){
 	TEXTWAUDIO("...You never stopped caring!",  snd_count),
 	
 	SPEAKER("Hunter", spr_dPHunter_Unsure, PORTRAIT_SIDE.LEFT),
-	TEXTWAUDIO("You made it easier... easier to be me.”", snd_hunter),
+	TEXTWAUDIO("You made it easier... easier to be me.", snd_hunter),
 	
 	SPEAKER("Count", spr_dPCount_Unsure, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("And you, me...", snd_count),

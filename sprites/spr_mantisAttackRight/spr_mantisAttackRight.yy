@@ -3,7 +3,7 @@
   "%Name":"spr_mantisAttackRight",
   "bboxMode":0,
   "bbox_bottom":384,
-  "bbox_left":0,
+  "bbox_left":1,
   "bbox_right":349,
   "bbox_top":0,
   "collisionKind":1,
@@ -145,6 +145,7 @@
   "height":405,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"5f46396e-9fd8-4489-ad78-76aa418b32f4","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"5f46396e-9fd8-4489-ad78-76aa418b32f4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"00d16de8-d11d-49c7-9857-af66ba81ad3e","blendMode":0,"displayName":"default","isLocked":false,"name":"00d16de8-d11d-49c7-9857-af66ba81ad3e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_mantisAttackRight",

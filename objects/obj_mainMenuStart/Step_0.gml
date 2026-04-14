@@ -39,11 +39,11 @@ if (room == rm_mainMenu){
 						room_goto(rm_level4Start);
 						break;
 					case 9:
-						room_goto(rm_level5Battle);
+						room_goto(rm_level5Start);
 						break;
 					case 10:
 						global.whatLevel -= 1;
-						room_goto(rm_level5Battle);
+						room_goto(rm_level5Start);
 						break;
 				}
 			}

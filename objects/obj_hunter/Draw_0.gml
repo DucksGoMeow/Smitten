@@ -1,5 +1,5 @@
 //Monster Sprite
-if (room != rm_mainMenu && room != rm_level1Date && room != rm_level2Date && room != rm_level3Date && room != rm_level4Date && room != rm_level4Interuption && room != rm_final){
+if (room != rm_mainMenu && room != rm_startingCutscene && room != rm_level1Date && room != rm_level2Date && room != rm_level3Date && room != rm_level4Date && room != rm_level4Interuption && room != rm_final){
 	draw_sprite(hunterSprite, image_index, 484, 320);
 }
 

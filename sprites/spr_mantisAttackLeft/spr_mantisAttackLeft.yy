@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":384,
   "bbox_left":75,
-  "bbox_right":424,
+  "bbox_right":423,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -145,6 +145,7 @@
   "height":405,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"b23bef1d-a563-46ad-8bf9-f47735ade4d6","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"b23bef1d-a563-46ad-8bf9-f47735ade4d6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"00d16de8-d11d-49c7-9857-af66ba81ad3e","blendMode":0,"displayName":"default","isLocked":false,"name":"00d16de8-d11d-49c7-9857-af66ba81ad3e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_mantisAttackLeft",

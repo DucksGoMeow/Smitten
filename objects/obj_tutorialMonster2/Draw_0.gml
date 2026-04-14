@@ -58,7 +58,7 @@
 	}
 	
 	if (obj_tutorialDialouge.doneWMonster){
-		sprite_index = aa;
+		sprite_index = spr_doNotDelete;
 	}
 	
 	//Has to be drawn last so it is ontop of everything

@@ -7,7 +7,7 @@ if (tSec == 0 && tMil == 0 && startDate){
 		startDialogue("L2_2_Hearts");
 	}
 	else if (obj_playerHealth.playerHealth == 50){
-		startDialogue("L2_1_Heart");
+		startDialogue("L2_1_Hearts");
 	}
 	else if (obj_playerHealth.playerHealth == 0){
 		startDialogue("L2_0_Heart");
