@@ -1,4 +1,4 @@
-if (room != rm_mainMenu){
+ if (room != rm_mainMenu && room != rm_level2Start){
 	if (heartOne){
 		draw_sprite(spr_heart, 0, 928, 32)
 	}

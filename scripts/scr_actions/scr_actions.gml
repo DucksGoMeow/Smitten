@@ -9,8 +9,8 @@
 #macro AUDIO new AudioAction
 #macro PORTRAIT new PortraitAction
 #macro CUSTOM new CustomAction
-#macro CUSTOMTEXT new CustomeTextAction
-#macro CUSTOMTEXTWAUDIO new CustomeTextWAudioAction
+#macro CUSTOMTEXT new CustomTextAction
+#macro CUSTOMTEXTWAUDIO new CustomTextWAudioAction
 
 function DialogueAction() constructor {
 	act = function() { };
@@ -163,7 +163,7 @@ function CustomAction(_action): DialogueAction() constructor {
 	}
 }
 
-function CustomeTextAction(_text, _action) : DialogueAction() constructor {
+function CustomTextAction(_text, _action) : DialogueAction() constructor {
 	text = _text;
 	action = _action;
 
@@ -174,7 +174,7 @@ function CustomeTextAction(_text, _action) : DialogueAction() constructor {
 }
 
 		
-function CustomeTextWAudioAction(_text, _action, _audio = undefined) : DialogueAction() constructor {
+function CustomTextWAudioAction(_text, _action, _audio = undefined) : DialogueAction() constructor {
 	text = _text;
 	action = _action;
 	audio = _audio;

@@ -1,5 +1,5 @@
 //Monster Sprite
-if (room == rm_tutorial || room == rm_level1Battle || room == rm_level2Battle || room == rm_level3Battle || room == rm_level4Battle || room = rm_level5Battle || room == rm_level5Battle2){
+if (room != rm_mainMenu && room != rm_level1Date && room != rm_level2Date && room != rm_level3Date && room != rm_level4Date && room != rm_level4Interuption && room != rm_final){
 	draw_sprite(hunterSprite, image_index, 484, 320);
 }
 

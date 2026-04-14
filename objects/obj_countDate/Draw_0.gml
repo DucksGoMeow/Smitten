@@ -1,0 +1,1 @@
+draw_sprite(countEmotion, 0, 475.5, 9);

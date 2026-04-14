@@ -28,7 +28,7 @@ if (room == rm_level1Battle || room == rm_level2Battle || room == rm_level3Battl
 }
 
 if (tSec == 0 && tMil == 0){
-	if (room == rm_tutorial || room == rm_level5Battle){
+	if (room == rm_tutorial || room == rm_level2Start || room == rm_level5Battle){
 		hunterSprite = spr_hunterIdle;
 	}
 	else{

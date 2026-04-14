@@ -18,11 +18,11 @@ if (room == rm_mainMenu){
 						room_goto(rm_level1Battle);
 						break;
 					case 3:
-						room_goto(rm_level2Battle);
+						room_goto(rm_level2Start);
 						break;
 					case 4:
 						global.whatLevel -= 1;
-						room_goto(rm_level2Battle);
+						room_goto(rm_level2Start);
 						break;
 					case 5:
 						room_goto(rm_level3Battle);

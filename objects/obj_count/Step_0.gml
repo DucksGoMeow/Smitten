@@ -44,7 +44,7 @@ if(dev0Up){
 
 if (tMil == 0){
 	numChosen = true;
-	if (room == rm_tutorial || room == rm_level5Battle){
+	if (room == rm_tutorial || room == rm_level2Start ||room == rm_level5Battle){
 		countSprite = spr_countIdleRight;
 	}
 	else {
