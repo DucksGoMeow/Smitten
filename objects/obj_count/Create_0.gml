@@ -3,6 +3,8 @@ countSprite = sprite_index;
 
 randNumType = choose(1, 2, 3, 4);
 
+countSpriteLeft = false;
+
 tMin = 0;
 tSec = 0;
 tMil = 1; //tenth of a second

@@ -4,20 +4,13 @@ function scr_topics_level5Dialogue(topics){
 	
 	topics[$ "L5_Intro"] = [
 	
-	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
+	SPEAKER("Hunter", spr_dPHunter_Unsure, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("(Count... Please stay safe.)", snd_hunter),
-	
-	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("(Why'd this have to happen...)", snd_hunter),
-	
-	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("(Deep breaths. Deep breaths...)", snd_hunter),
-	
-	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("(Okay...)", snd_hunter),
-	
-	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("(I need to get there in time. Scarab knows what they're doing to him in that mansion.)", snd_hunter),
+	CUSTOMTEXTWAUDIO("",  function() {room_goto(rm_level5Tutorial)}, snd_hunter),
 	
 	// Transition to Battle
 	];
@@ -27,17 +20,24 @@ function scr_topics_level5Dialogue(topics){
 	#region Level 5 Arrow Gimmick 
 	topics[$ "L5_Arrow_Tut"] = [
 	
-	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
+	SPEAKER("Hunter", spr_dPHunter_Unsure, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("(Huh? What the Scarab...?)", snd_hunter),
-	
-	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
-	TEXTWAUDIO("(They're moving a lot more unpredictably... like they're faking me out.)", snd_hunter),
-	
-	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
+	CUSTOMTEXTWAUDIO("(They're moving a lot more unpredictably... like they're faking me out.)", function() {obj_tutorialMonster3.stopPlaying = false}, snd_hunter),
 	TEXTWAUDIO("(Seems like they're also trying to attack from the opposite direction to throw me off.)", snd_hunter),
-	
-	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("[When you see a suspicious-looking arrow, attack in the opposite direction of where it's pointing!]", snd_hunter),
+	CUSTOMTEXTWAUDIO("",  function() {obj_tutorialMonster3.startBattleAnimation();}, snd_hunter),
+	
+	// Continue Battle
+	];
+	
+	topics[$ "L5_No_Arrow_Tut"] = [
+	
+	SPEAKER("Hunter", spr_dPHunter_Unsure, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("(Of course!)", snd_hunter),
+	TEXTWAUDIO("(They're moving a lot more unpredictably... like they're faking me out!)", snd_hunter),
+	TEXTWAUDIO("(Seems like they're also trying to attack from the opposite direction to throw me off!)", snd_hunter),
+	TEXTWAUDIO("(But they're no match for me!)", snd_hunter),
+	CUSTOMTEXTWAUDIO("",  function() {room_goto(rm_level5Battle)}, snd_hunter),
 	
 	// Continue Battle
 	];
@@ -47,67 +47,69 @@ function scr_topics_level5Dialogue(topics){
 	
 	#region Level 5 Before Battle
 	topics[$ "L5_Before_Battle"] = [
-	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
+	SPEAKER("Hunter", spr_dPHunter_Unsure, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("Count!", snd_hunter),
 	
-	CUSTOMTEXTWAUDIO("Hunter...?", function() {obj_textbox.restartDialogue();}, snd_count),
+	SPEAKER("Count", spr_dPCount_Unsure, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("Hunter...?", snd_count),
 	
-	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
+	SPEAKER("Hunter", spr_dPHunter_Unsure, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("Yes? I'm here, let him go!", snd_hunter),
 	
-	CUSTOMTEXTWAUDIO("You... you really came for me!", function() {obj_textbox.restartDialogue();}, snd_count),
+	SPEAKER("Count", spr_dPCount_Unsure, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("You... you really came for me!",  snd_count),
 	
-	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
+	SPEAKER("Hunter", spr_dPHunter_Unsure, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("Of course...! I'm here to protect you, like always.", snd_hunter),
 	
-	SPEAKER("Mommy", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
-	TEXTWAUDIO("Oh? I'm afraid that won't happen. Son... you see why we must be rid of this pest?"),
+	SPEAKER("Mommy", spr_dPMommy_Neutral, PORTRAIT_SIDE.LEFT),
+	CUSTOMTEXTWAUDIO("Oh? I'm afraid that won't happen. Son... you see why we must be rid of this pest?", function() {instance_create_layer(0, 0, "Instances", obj_mommySprite)}, snd_mommy),
 	
-	CUSTOMTEXTWAUDIO("Mother, I...", function() {obj_textbox.restartDialogue();}, snd_count),
+	SPEAKER("Count", spr_dPCount_Unsure, PORTRAIT_SIDE.LEFT),
+	CUSTOMTEXTWAUDIO("Mother, I...", function() {obj_count.countSpriteLeft = true}, snd_count), 
 	
-	SPEAKER("Mommy", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
-	TEXTWAUDIO("Constantly, they infest our lives... wishing, begging, they could be like us."),
+	SPEAKER("Mommy", spr_dPMommy_Neutral, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("Constantly, they infest our lives... wishing, begging, they could be like us.", snd_mommy),
+	TEXTWAUDIO("You are the heir to monsters, beings above and all.", snd_mommy),
+	TEXTWAUDIO("You need not debase yourself just to follow a fleeting feeling with our prey...", snd_mommy),
 	
-	SPEAKER("Mommy", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
-	TEXTWAUDIO("You are the heir to monsters, beings above and all."),
+	SPEAKER("Count", spr_dPCount_Unsure, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("Yes... I've thought about what you've said...", snd_count),
 	
-	SPEAKER("Mommy", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
-	TEXTWAUDIO("You need not debase yourself just to follow a fleeting feeling with our prey...", snd_hunter),
-	
-	CUSTOMTEXTWAUDIO("Yes... I've thought about what you've said...", function() {obj_textbox.restartDialogue();}, snd_count),
-	
-	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
+	SPEAKER("Hunter", spr_dPHunter_Unsure, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("(Am I too late?)", snd_hunter),
 	
-	SPEAKER("Mommy", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
-	TEXTWAUDIO("This is your last chance, Count... take out this... insect, and you will have redeemed yourself."),
+	SPEAKER("Mommy", spr_dPMommy_Neutral, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("This is your last chance, Count... take out this... insect, and you will have redeemed yourself.", snd_mommy ),
 	
-	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
+	SPEAKER("Hunter", spr_dPHunter_Unsure, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("(No...)", snd_hunter),
 	
-	CUSTOMTEXTWAUDIO("...If you say so. If there is no other choice. Hunter...", function() {obj_textbox.restartDialogue();}, snd_count),
+	SPEAKER("Count", spr_dPCount_Neutral, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("...If you say so. If there is no other choice. Hunter...", snd_count),
 	
-	SPEAKER("Mommy", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
-	TEXTWAUDIO("...Wait-"),
+	SPEAKER("Mommy", spr_dPMommy_Neutral, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("...Wait-", snd_mommy),
 	
-	CUSTOMTEXTWAUDIO("I'd like to take you out...", function() {obj_textbox.restartDialogue();}, snd_count),
+	SPEAKER("Count", spr_dPCount_Neutral, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("I'd like to take you out...", snd_count),
 	
-	SPEAKER("Mommy", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
-	TEXTWAUDIO("You know DAMN well that's NOT WHAT I--"),
+	SPEAKER("Mommy", spr_dPMommy_Neutral, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("You know DAMN well that's NOT WHAT I--", snd_mommy),
 	
-	CUSTOMTEXTWAUDIO("-on a date!", function() {obj_textbox.restartDialogue();}, snd_count),
+	SPEAKER("Count", spr_dPCount_Neutral, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("-on a date!", snd_count),
 	
-	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
+	SPEAKER("Hunter", spr_dPHunter_Smile, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("..I'd love to.", snd_hunter),
-	
-	SPEAKER("Hunter", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
 	TEXTWAUDIO("How's a brawl at your place sound?", snd_hunter),
 	
-	CUSTOMTEXTWAUDIO("...You lead the way!", function() {obj_textbox.restartDialogue();}, snd_count),
+	SPEAKER("Count", spr_dPCount_Neutral, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("...You lead the way!", snd_count),
 	
-	SPEAKER("Mommy", spr_dPHunter_Neutral, PORTRAIT_SIDE.LEFT),
-	TEXTWAUDIO("...You really are a lost cause, you brat."),
-	
+	SPEAKER("Mommy", spr_dPMommy_Neutral, PORTRAIT_SIDE.LEFT),
+	TEXTWAUDIO("...You really are a lost cause, you brat.", snd_mommy),
+	CUSTOMTEXTWAUDIO("", function() {room_goto(rm_level5Battle2)}, snd_count),
 	];
 	
 	// Transition to Part 2 of Battle

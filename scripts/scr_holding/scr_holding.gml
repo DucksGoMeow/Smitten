@@ -3,6 +3,8 @@ global.gameStarted = false;
 
 global.roomReseted = false;
 
+global.understandBoss = false;
+
 audio_group_load(audiogroup_default);
 audio_group_load(soundEffects);
 

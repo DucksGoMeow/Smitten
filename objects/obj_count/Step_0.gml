@@ -44,9 +44,14 @@ if(dev0Up){
 
 if (tMil == 0){
 	numChosen = true;
-	if (room == rm_tutorial || room == rm_level2Start || room == rm_level3Start || room == rm_level4Start || room == rm_level5Battle){
-		countSprite = spr_countIdleRight;
-	}
+	if (room == rm_tutorial || room == rm_level2Start || room == rm_level3Start || room == rm_level4Start || room == rm_level5Start2){
+		if (!countSpriteLeft){
+			countSprite = spr_countIdleRight;
+		}
+		else if (countSpriteLeft){
+			countSprite = spr_countIdleLeft;
+		}
+	} 
 	else {
 		countSprite = spr_countWalking;
 	}
