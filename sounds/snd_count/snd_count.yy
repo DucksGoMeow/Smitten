@@ -6,11 +6,11 @@
     "path":"audiogroups/soundEffects",
   },
   "bitDepth":1,
-  "channelFormat":0,
+  "channelFormat":1,
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.1493877,
+  "duration":1.1493958,
   "exportDir":"",
   "name":"snd_count",
   "parent":{
@@ -20,7 +20,7 @@
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
-  "sampleRate":44100,
+  "sampleRate":48000,
   "soundFile":"snd_count.mp3",
   "volume":1.0,
 }

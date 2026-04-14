@@ -58,7 +58,7 @@
 	}
 	
 	if (obj_tutorialDialouge.doneWMonster){
-		sprite_index = spr_wolfspiderLeavingRight;
+		sprite_index = aa;
 	}
 	
 	//Has to be drawn last so it is ontop of everything

@@ -6,11 +6,11 @@
     "path":"audiogroups/soundEffects",
   },
   "bitDepth":1,
-  "channelFormat":0,
+  "channelFormat":1,
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.3061224,
+  "duration":1.306125,
   "exportDir":"",
   "name":"snd_hunter",
   "parent":{
@@ -20,7 +20,7 @@
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
-  "sampleRate":44100,
+  "sampleRate":48000,
   "soundFile":"snd_hunter.mp3",
   "volume":1.0,
 }

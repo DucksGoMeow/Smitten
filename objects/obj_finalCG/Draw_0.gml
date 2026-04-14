@@ -1,0 +1,1 @@
+draw_sprite(spr_finalCG, 0, 0, 0);

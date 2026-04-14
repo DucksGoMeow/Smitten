@@ -17,8 +17,6 @@ function scr_topics_level2Dialogue(topics){
 		
 		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("(I clocked them earlier… I guess my employer’s got some connections to the supernatural. And she’s not happy.)", snd_hunter),
-		
-		SPEAKER("Hunter", spr_dialoguePortraitHunter, PORTRAIT_SIDE.LEFT),
 		TEXTWAUDIO("(Count seems none the wiser that they’re here for him, though. Better get up to a higher vantage point.)", snd_hunter)
 		];
 	

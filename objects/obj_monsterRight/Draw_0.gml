@@ -37,7 +37,7 @@ if (!obj_monsterTimer.noMonster && !obj_monsterTimer.noRightMonster && obj_monst
 			monsterComingSpr = spr_wolfspiderEnteringRight;
 			monsterDamageSpr = spr_wolfspiderDamageRight;
 			monsterAttackingSpr = spr_wolfspiderIdleRight;
-			monsterLeavingSpr = spr_wolfspiderLeavingRight;
+			monsterLeavingSpr = aa;
 			
 			monsterAttackingSound = snd_mantisAttack;
 			
