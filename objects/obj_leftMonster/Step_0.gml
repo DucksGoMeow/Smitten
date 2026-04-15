@@ -2384,7 +2384,10 @@ if (!obj_monsterTimer.noMonster){
 	if(tSec == 6 && !doneDamage){
 		audio_play_sound(monsterAttackingSound, 1, 0);
 		obj_playerHealth.playerHealth -= 50;
-		obj_count.damageSprite();
+		if (room != rm_level5Battle){
+			obj_count.damageSprite();
+		}
+		
 		obj_hunter.defendAnimation();
 		doneDamage = true;
 	}

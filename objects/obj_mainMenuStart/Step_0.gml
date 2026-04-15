@@ -3,11 +3,11 @@ if (room == rm_mainMenu){
 		x - sprite_xoffset, y - sprite_yoffset, 
 	    x - sprite_xoffset + sprite_width, y - sprite_yoffset + sprite_height)) {
 	    if (mouse_check_button_pressed(mb_left) && !obj_mainMenuSettings.settingsOpened) {	
-			if (global.gameStarted == false){
+			//if (global.gameStarted == false){
 				room_goto(rm_startingCutscene);
-				global.gameStarted = true;
-			}
-			else if (global.gameStarted == true){
+				//global.gameStarted = true;
+			//}
+			/*else if (global.gameStarted == true){
 				
 				switch(global.whatLevel){
 					case 1:
@@ -46,7 +46,7 @@ if (room == rm_mainMenu){
 						room_goto(rm_level5Start);
 						break;
 				}
-			}
+			}*/
 		}
 	
 	}
