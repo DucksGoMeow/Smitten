@@ -6,7 +6,7 @@
 		if (!doneMonsterDamage){
 			sprite_index = spr_wolfspiderDamageRight;
 			if (tMil == 9){
-				sprite_index = a;
+				sprite_index = spr_wolfspiderIdleRight;
 				doneMonsterDamage = true;
 			}
 		}
@@ -19,7 +19,7 @@
 		if (doneMonsterDamage){
 			sprite_index = spr_wolfspiderDamageRight;
 			if (tMil == 9){
-				sprite_index = a;
+				sprite_index = spr_wolfspiderIdleRight;
 				doneMonsterDamage = false;
 			}
 		}
@@ -32,12 +32,12 @@
 		if (!doneMonsterDamage){
 			sprite_index = spr_wolfspiderDamageRight;
 			if (tMil == 9){
-				sprite_index = a;
+				sprite_index = spr_wolfspiderIdleRight;
 				doneMonsterDamage = true;
 			}
 		}
 		else if (doneMonsterDamage){
-			sprite_index = a;
+			sprite_index = spr_wolfspiderIdleRight;
 		}
 	}
 	
