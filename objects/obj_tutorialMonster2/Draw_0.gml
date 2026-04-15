@@ -11,7 +11,7 @@
 			}
 		}
 		else if (doneMonsterDamage){
-			sprite_index = a;
+			sprite_index = spr_wolfspiderIdleRight;
 		}
 	}
 
@@ -24,7 +24,7 @@
 			}
 		}
 		else if (!doneMonsterDamage){
-			sprite_index = a;
+			sprite_index = spr_wolfspiderIdleRight;
 		}
 	}
 
@@ -47,11 +47,11 @@
 	}
 	
 	if (tSec == 45){
-		sprite_index = a;
+		sprite_index = spr_wolfspiderIdleRight;
 	}
 	
 	if (obj_tutorialDialouge.startAttacking = true){
-		sprite_index = a;
+		sprite_index = spr_wolfspiderIdleRight;
 		draw_set_colour(c_red);
 
 		draw_rectangle(1000 - (tRound), 650, 1290, 660, false);
