@@ -236,7 +236,7 @@ if(tSec == 7 && !doneDamage){
 	obj_tutorialDialouge.startAttacking = false;
 
 	if (tMil == 9){
-		sprite_index = spr_wolfspiderIdleRight;
+		sprite_index = a;
 		startDialogue("Failed Tutorial 2");
 		doneDamage = false;
 	}

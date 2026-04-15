@@ -6,12 +6,12 @@
 		if (!doneMonsterDamage){
 			sprite_index = spr_wolfspiderDamageRight;
 			if (tMil == 9){
-				sprite_index = spr_wolfspiderIdleRight;
+				sprite_index = a;
 				doneMonsterDamage = true;
 			}
 		}
 		else if (doneMonsterDamage){
-			sprite_index = spr_wolfspiderIdleRight;
+			sprite_index = a;
 		}
 	}
 
@@ -19,12 +19,12 @@
 		if (doneMonsterDamage){
 			sprite_index = spr_wolfspiderDamageRight;
 			if (tMil == 9){
-				sprite_index = spr_wolfspiderIdleRight;
+				sprite_index = a;
 				doneMonsterDamage = false;
 			}
 		}
 		else if (!doneMonsterDamage){
-			sprite_index = spr_wolfspiderIdleRight;
+			sprite_index = a;
 		}
 	}
 
@@ -32,12 +32,12 @@
 		if (!doneMonsterDamage){
 			sprite_index = spr_wolfspiderDamageRight;
 			if (tMil == 9){
-				sprite_index = spr_wolfspiderIdleRight;
+				sprite_index = a;
 				doneMonsterDamage = true;
 			}
 		}
 		else if (doneMonsterDamage){
-			sprite_index = spr_wolfspiderIdleRight;
+			sprite_index = a;
 		}
 	}
 	
@@ -47,11 +47,11 @@
 	}
 	
 	if (tSec == 45){
-		sprite_index = spr_wolfspiderIdleRight;
+		sprite_index = a;
 	}
 	
 	if (obj_tutorialDialouge.startAttacking = true){
-		sprite_index = spr_wolfspiderIdleRight;
+		sprite_index = a;
 		draw_set_colour(c_red);
 
 		draw_rectangle(1000 - (tRound), 650, 1290, 660, false);
